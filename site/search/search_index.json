@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"JKK","text":"<p>This is a template repository for anyone that wants to use the MkDocs Material Theme.</p>"}]}

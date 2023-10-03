@@ -93,8 +93,18 @@ repo_url: https://github.com/jkk-research/jkk-research.github.io
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 nav:
-  - Welcome: index.md
-  - Dataset: dataset.md
+  - Home: 
+    - index.md
+    - About us: home/about.md
+    - Social media: home/social.md
+    - Videos: home/videos.md
+  - Dataset: 
+    - dataset/index.md
+    - jkk_dataset_01 : dataset/jkk_dataset_01.md
+    - jkk_dataset_02 : dataset/jkk_dataset_02.md
+  - Publications: 
+    - papers/index.md
+
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -152,7 +162,7 @@ theme:
   # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-logo-and-icons/#favicon             |
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
-  favicon: 'assets/images/favicon.ico'
+  favicon: '/img/favicon.ico'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -192,7 +202,7 @@ theme:
     # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color             |
     # |                                                                                                    |
     # +----------------------------------------------------------------------------------------------------+
-    primary: 'indigo'
+    primary: 'light blue'
     
     # +----------------------------------------------------------------------------------------------------+
     # |                                                                                                    |
@@ -278,13 +288,13 @@ theme:
   
   # Navigation:
   #
-  #- navigation.expand      # Expand all collapsable sections.
+  - navigation.expand      # Expand all collapsable sections.
   #- navigation.instant     # Instant loading pages.
   #- navigation.indexes     # Attach pages directly to Sections. Incompatible with "toc.integrate"
   #- navigation.sections    # Render top sections as groups.
   - navigation.tabs         # Render top sections as tabs at the top.
   #- navigation.tabs.sticky # Tabs won't disappear when scrolling down. Requires "navigation.tabs".
-  #- navigation.top         # Adds a "Back to top" that is shown when scrolling up.
+  - navigation.top         # Adds a "Back to top" that is shown when scrolling up.
   #- navigation.tracking    # Updates the url with highlighted section anchor.
   
   # Search
@@ -502,3 +512,6 @@ markdown_extensions:
   #- pymdownx.tabbed:
   #- pymdownx.tasklist:
   #- pymdownx.tilde:
+
+# plugins:
+#   - meta

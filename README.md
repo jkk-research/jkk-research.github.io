@@ -6,6 +6,13 @@ A big thank you goes to the following people/groups:
 - [squidfunk] for the [MkDocs Material Theme].
 - [facelessuser] for the [PyMdown Extensions].
 
+## Commands
+
+``` r
+$ mkdocs build
+$ mkdocs serve
+```
+
 ## License
 This template is served under the MIT license.  
 Read the [LICENSE] file for more info.

@@ -117,6 +117,7 @@ nav:
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 theme:
+  logo: /img/jkk03.svg
 
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -190,8 +191,7 @@ theme:
     # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-scheme              |
     # |                                                                                                    |
     # +----------------------------------------------------------------------------------------------------+
-    scheme: 'default'
-    
+    scheme: youtube
     # +----------------------------------------------------------------------------------------------------+
     # |                                                                                                    |
     # | "primary" is used to set the main color of the Material Theme.                                     |
@@ -202,8 +202,8 @@ theme:
     # | - https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color             |
     # |                                                                                                    |
     # +----------------------------------------------------------------------------------------------------+
-    primary: 'light blue'
-    
+    primary: 'custom'
+
     # +----------------------------------------------------------------------------------------------------+
     # |                                                                                                    |
     # | The "accent" is used for moments such as hovering over links.                                      |
@@ -278,6 +278,8 @@ theme:
   # |                                                                                                      |
   # +------------------------------------------------------------------------------------------------------+
   features:
+  - content.code.copy
+  - content.code.select
   # Announce
   #
   #- announce.dismiss # Adds a "X" button to dismiss a news banner/mark it as read.*
@@ -383,8 +385,8 @@ theme:
 # | - https://www.mkdocs.org/user-guide/configuration/#extra_css                                           |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-#extra_css:
-
+extra_css:
+- stylesheets/extra.css
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
 # | Similar to the "extra_css" option does the "extra_javascript" option allow you to set custom JS files  |
@@ -512,6 +514,17 @@ markdown_extensions:
   #- pymdownx.tabbed:
   #- pymdownx.tasklist:
   #- pymdownx.tilde:
+  - attr_list
+  # - pymdownx.emoji:
+  #   emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #   emoji_generator: !!python/name:material.extensions.emoji.to_svg  
+  # - pymdownx.highlight:
+  #   anchor_linenums: true
+  #   line_spans: __span
+  #   pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 # plugins:
 #   - meta

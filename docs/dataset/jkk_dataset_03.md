@@ -31,7 +31,7 @@ wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EYl_ahy5p
 
 ```
 
-<img src="../img/road61_map.png" />
+<img src="https://github.com/jkk-research/jkk-research.github.io/blob/master/docs/img/road61_2.png" />
 
 ### `highway_data_M6.zip`
 

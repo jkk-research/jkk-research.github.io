@@ -102,6 +102,7 @@ nav:
     - dataset/index.md
     - jkk_dataset_01 : dataset/jkk_dataset_01.md
     - jkk_dataset_02 : dataset/jkk_dataset_02.md
+    - jkk_dataset_03 : dataset/jkk_dataset_03.md
   - Publications: 
     - papers/index.md
 

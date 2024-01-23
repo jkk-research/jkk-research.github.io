@@ -1,8 +1,7 @@
-The log data is in .bag format, the standard logging format for ROS. To simply view and play the data Foxglove Studio is the easiest solution. It works on Windows, Linux and Mac. Another popular option is MATLAB. The data can be imported, viewed and edited in MATLAB. If you are familiar with ROS C++ or python can be a good option too. Python also offers possibilities top open the rosbags without ROS, similarly to MATLAB. The postprocessed 3D pointcloud data is in .pcd (Point Cloud Data) file format, it is a common format used inside Point Cloud Library (PCL). Also pcd can be imported easily to MATLAB / python.
-One of our most researched topic is self-driving (a.k.a autonomous) vehicles. We believe that fully self-driving technology can lead to safe, easy and sustainable transportation. We are preparing for this new technology-to-come by studying and researching its fundamentals and exploring the possibilities it offers. This process helps us gain unique knowledge on the mixed field of mechatronics, robotics and artificial intelligence. Future transportation can be safe, easy and sustainable without compromises.
+This dataset contains the raw data of naturalistic driving, utilized for Human-Like Behavior studies of Automated Vehicles (HLB4AV).
 
 
-### `leaf-2022-03-18-gyor.bag`
+### `rural_road_data_road62.zip`
 
 Size: `2.12 GB` 
 
@@ -18,7 +17,7 @@ wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EVlk6YgDt
 
 <img src="https://raw.githubusercontent.com/szenergy/szenergy-public-resources/master/data/rosbag/img/leaf-2022-03-18-gyor.png" />
 
-### `leaf-2021-04-23-campus.bag`
+### `rural_road_data_road31.zip`
 
 Size: `3.37 GB` 
 
@@ -32,9 +31,9 @@ wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EYl_ahy5p
 
 ```
 
-<img src="https://raw.githubusercontent.com/szenergy/szenergy-public-resources/master/data/rosbag/img/leaf-2021-04-23-campus.png" />
+<img src="../img/road61_map.png" />
 
-### `leaf-2021-07-02-zala-uni-track.bag`
+### `highway_data_M6.zip`
 
 Size: `1.16 GB` 
 
@@ -48,7 +47,7 @@ wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EaUlnq2Kc
 
 <img src="https://raw.githubusercontent.com/szenergy/szenergy-public-resources/master/data/rosbag/img/leaf-2021-07-02-zala-uni-track.png" />
 
-### `leaf-2020-06-10-campus.bag`
+### `highway_data_M7.zip`
 
 Size: `2.36 GB` 
 

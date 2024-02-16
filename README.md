@@ -10,6 +10,7 @@ A big thank you goes to the following people/groups:
 
 ``` r
 $ pip install mkdocs
+$ pip install mkdocs-material
 $ mkdocs build
 $ mkdocs serve
 ```

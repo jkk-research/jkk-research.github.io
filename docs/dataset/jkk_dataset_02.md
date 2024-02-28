@@ -1,6 +1,11 @@
-The log data is in .mcap format, the standard logging format for ROS 2. 
+
+The log data is in .mcap format, the standard logging format for [`ROS 2`](https://docs.ros.org/). 
+
+## Python notebook
 
 [Open MCAP in python notebook](https://github.com/jkk-research/jkk-research.github.io/blob/master/notebooks/mcap_basics.ipynb){ .md-button }
+
+## Some images
 
 ![](/img/jkk_dataset_02_2023_07_11-11_12.svg)
 

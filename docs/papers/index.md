@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Papers overview
 
 - [Curve Trajectory Model for Human Preferred Path Planning of Automated Vehicles](https://link.springer.com/article/10.1007/s42154-023-00259-8) - *Gergő Ignéczi, Ernő Horváth, Roland Tóth, Krisztian Nyilas*  - Springer Automotive Innovation [PDF](https://link.springer.com/content/pdf/10.1007/s42154-023-00259-8.pdf) `2024` [![Static Badge](https://img.shields.io/badge/avaible-on_github-43AEC5) ![GitHub Repo stars](https://img.shields.io/github/stars/gfigneczi1/hlb)](https://github.com/gfigneczi1/hlb)

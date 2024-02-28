@@ -75,8 +75,8 @@ docs_dir: docs/
 # | - https://www.mkdocs.org/user-guide/configuration/#edit_uri                                            |
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
-repo_name: jkk-research/jkk-research.github.io
-repo_url: https://github.com/jkk-research/jkk-research.github.io
+# repo_name: jkk-research/jkk-research.github.io
+repo_url: https://github.com/jkk-research/
 #edit_uri: tree/master/docs # Uncomment to define a different URI/URL for the "edit" option
 
 # +--------------------------------------------------------------------------------------------------------+
@@ -105,7 +105,10 @@ nav:
     - jkk_dataset_03 : dataset/jkk_dataset_03.md
   - Publications: 
     - papers/index.md
-
+  - Workshops: 
+    - workshops/index.md
+    - 2023 november : workshops/2023_11.md
+    - 2024 april : workshops/2024_04.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -308,7 +311,8 @@ theme:
   
   # Table of Contents
   #
-  #- toc.integrate          # Include the TOC sections in the left navugation.
+  # - toc.integrate          # Include the TOC sections in the left navugation.
+  - toc.follow
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -526,6 +530,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - toc:
+      permalink: true
 
 # plugins:
 #   - meta

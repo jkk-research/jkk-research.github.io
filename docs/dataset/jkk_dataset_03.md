@@ -13,7 +13,7 @@ wget https://laesze-my.sharepoint.com/personal/igneczi_gergo_ferenc_hallgato_sze
 
 ```
 
-The data contains information of 15 drivers, who were selected to have relevant driving experience. Dr001-Dr003 are professional drivers who have extra driving certificate.
+The data contains information of 17 drivers, who were selected to have relevant driving experience. Dr001-Dr003 are professional drivers who have extra driving certificate.
 The following table shows the details of participants:
 
 | **Driver ID** | **Type** | **Age** | **Driving Experience** | **Driving Frequency** | **Milage per year** |
@@ -33,6 +33,8 @@ The following table shows the details of participants:
 | 013 | N-P | 52 | 10+ | 4 | 4 |
 | 014 | N-P | 36 | 10+ | 4 | 5 |
 | 015 | N-P | 32 | 10+ | 3 | 4 |
+| 021 | N-P | 51 | 10+ | 4 | 5 |
+| 023 | N-P | 39 | 10+ | 2 | 3 |
 
 Explanation to notations:<br/>
 - P: Professional, N-P: Non-Professional <br/>
@@ -133,3 +135,28 @@ The data is recorded in every 10 ms. Localization information is available at ev
 The following repository contains algorithms for driver model analysis and prototypes for ADAS functions endowed with human-like features.
 
 [github.com/gfigneczi1/hlb](https://github.com/gfigneczi1/hlb){ .md-button .md-button--primary }
+
+The following scripts are used for the data process:
+
+- Lane reconstruction from reference data: 
+   Run segmentor profile "MapValidation" and evaluator profile "MapValidation", based on this description: 
+
+   [Evaluation description](https://github.com/gfigneczi1/hlb/tree/main/_matlab_evaluation/HLB){ .md-button .md-button--primary } 
+   
+   Place the raw mat files (without the map data) into the _temp folder.
+
+- Traffic information for which dash-cam video is available:
+
+   [Traffic label procession](https://github.com/gfigneczi1/hlb/blob/main/_matlab_evaluation/HLB/04_standaloneScripts/trafficLabelProcession.m){ .md-button .md-button--primary } 
+
+   In this case, you shall define the path of the corresponding xlsx file that contains the relevant traffic information.
+
+- Standardize names for the proper storing:
+
+   [Standardize names](https://github.com/gfigneczi1/hlb/blob/main/_matlab_evaluation/HLB/04_standaloneScripts/dataSetStandardizeNames.m){ .md-button .md-button--primary } 
+
+- Merge data for drivers where multiple short runs are available:
+  
+   [Merge data](https://github.com/gfigneczi1/hlb/blob/main/_matlab_evaluation/HLB/04_standaloneScripts/labelInfoToMat.m){ .md-button .md-button--primary } 
+
+   For this script, you shall also store all unmerged data in the _temp folder.

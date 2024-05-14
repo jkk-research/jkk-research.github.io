@@ -107,8 +107,10 @@ nav:
     - papers/index.md
   - Workshops: 
     - workshops/index.md
-    - 2023 november : workshops/2023_11.md
-    - 2024 april : workshops/2024_04.md
+    - F1/10 hands-on (ROS 2): workshops/f1tenth_real_a.md
+    - ROS 2 install: workshops/ros2_a.md
+    - F1/10 simulation (ROS 2): workshops/f1tenth_sim_a.md
+    - Wheeltec hands-on (ROS 1) : workshops/wheeltec_real_a.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

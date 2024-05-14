@@ -1,14 +1,16 @@
-# `ROS 2` F1/10 simulation workshop
+# `ROS 2` F1/10 Wheeltec Gazebo simulation workshop
 
 The workshop is ROS 2 compatible [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 
 ## Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DIYktkx3XLM?si=loa8CQQRUQFfFfuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/90cVRC2Hd7Y?si=GUiIyuXk71Bu1uGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requirements (high-level)
-- ROS 2 Humble: [docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html)
-- Gazebo Fortress: [gazebosim.org/docs/fortress/install_ubuntu](https://gazebosim.org/docs/fortress/install_ubuntu), read more about integration: [gazebosim.org/docs/fortress/ros2_integration](https://gazebosim.org/docs/fortress/ros2_integration)
-- `ros-gz-bridge` install with a single command: `sudo apt install ros-humble-ros-gz-bridge`
+1. ROS 2 Humble: 🟠 see previous workshops or [docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html) 
+2. Gazebo Fortress: ✅ current workshop [gazebosim.org/docs/fortress/install_ubuntu](https://gazebosim.org/docs/fortress/install_ubuntu)
+3. `ROS gz bridge`:  ✅ current workshop, ROS integration. Install with a single command: `sudo apt install ros-humble-ros-gz-bridge`, [gazebosim.org/docs/fortress/ros2_integration](https://gazebosim.org/docs/fortress/ros2_integration)
+4. Build and run custom worlds and models  ✅ current workshop (e.g. `F1/10` / `Wheeltec, Roboworks`) 
  
 ## Binary Installation on Ubuntu
 
@@ -51,6 +53,76 @@ Issue the following command:
 sudo apt install ros-humble-ros-gz-bridge
 ```
 
+## Additional settings to WSL2
+
+!!! danger "Warning - WSL2"
+
+    There is an [issue](https://github.com/gazebosim/gz-sim/issues/1841), which can be set even in `~/.bashrc`:
+
+```bash
+export LIBGL_ALWAYS_SOFTWARE=1
+```
+
+Set it in `~/.bashrc`:
+```bash
+echo "export LIBGL_ALWAYS_SOFTWARE=1" >> ~/.bashrc
+```
+
+<details>
+<summary> Don't forget to source bashrc.</summary>
+
+``` bash
+source ~/.bashrc
+```
+</details>
+
+After new terminal or `source`:
+
+```bash
+echo $LIBGL_ALWAYS_SOFTWARE
+```
+
+should  print `1`. Alternatively 
+
+
+```bash
+cat ~/.bashrc | grep LIBGL
+```
+should print the line.
+
+## Check the installation
+
+
+!!! success 
+
+    Now the `ign gazebo` should work and the `ros2` commands should be available.
+
+
+![](https://sze-info.github.io/arj/szimulacio/ign_gazebo_02.png)
+
+Try at least one of the following commands:
+
+```bash
+ign gazebo
+```
+
+```bash
+ign gazebo -v 4 -r ackermann_steering.sdf
+```
+
+```bash
+ign gazebo shapes.sdf
+```
+
+
+![](https://api.gazebosim.org/1.0/images/fortress/img/snap.gif)
+
+```bash
+ign param --versions
+```
+
+
+
 ## Packages and build
 
 Detailed description of the packages and build process.
@@ -76,30 +148,6 @@ cd ~/ros2_ws
 colcon build --symlink-install --packages-select robotverseny_application robotverseny_description robotverseny_bringup robotverseny_gazebo 
 ```
 
-## Additional settings to WSL2
-
-!!! danger "Warning - WSL2"
-
-    There is an [issue](https://github.com/gazebosim/gz-sim/issues/1841), which can be set even in `~/.bashrc`:
-
-```bash
-export LIBGL_ALWAYS_SOFTWARE=1
-```
-
-Set it in `~/.bashrc`:
-```bash
-echo "export LIBGL_ALWAYS_SOFTWARE=1" >> ~/.bashrc
-```
-
-<details>
-<summary> Don't forget to source bashrc.</summary>
-
-``` bash
-source ~/.bashrc
-```
-</details>
-
-After new terminal or `source`, `echo $LIBGL_ALWAYS_SOFTWARE` should  print `1`.
 
 ## Run
 

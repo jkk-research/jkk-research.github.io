@@ -11,7 +11,12 @@ The workshop is ROS 2 compatible [![Static Badge](https://img.shields.io/badge/R
 2. Gazebo Fortress: ✅ current workshop [gazebosim.org/docs/fortress/install_ubuntu](https://gazebosim.org/docs/fortress/install_ubuntu)
 3. `ROS gz bridge`:  ✅ current workshop, ROS integration. Install with a single command: `sudo apt install ros-humble-ros-gz-bridge`, [gazebosim.org/docs/fortress/ros2_integration](https://gazebosim.org/docs/fortress/ros2_integration)
 4. Build and run custom worlds and models  ✅ current workshop (e.g. `F1/10` / `Wheeltec, Roboworks`) 
- 
+
+<figure markdown="span">
+  ![Image title](https://raw.githubusercontent.com/robotverseny/robotverseny.github.io/main/img/f1tenth_wheeltec_roboworks01.png){ width="80%" }
+  <figcaption>Official F1/10 vehicle vs Wheeltec Roboworks Ackermann Rosbot mini vehicle</figcaption>
+</figure>
+
 ## Binary Installation on Ubuntu
 
 Fortress binaries are provided for Ubuntu Bionic, Focal and Jammy. All of the Fortress
@@ -162,6 +167,8 @@ source ~/ros2_ws/install/setup.bash
 ``` bash
 ros2 launch robotverseny_bringup roboworks.launch.py
 ```
+
+![](https://raw.githubusercontent.com/rudolfkrecht/robotverseny/main/img/gazebo_and_rviz01.png)
 
 ## Useful commands
 

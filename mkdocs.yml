@@ -109,6 +109,7 @@ nav:
     - workshops/index.md
     - F1/10 hands-on (ROS 2): workshops/f1tenth_real_a.md
     - ROS 2 install: workshops/ros2_a.md
+    - ROS 2 LIDAR clustering: workshops/clustering_a.md
     - F1/10 simulation (ROS 2): workshops/f1tenth_sim_a.md
     - Wheeltec hands-on (ROS 1) : workshops/wheeltec_real_a.md
 
@@ -482,6 +483,17 @@ extra:
 # +--------------------------------------------------------------------------------------------------------+
 markdown_extensions:
   - attr_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg 
   - md_in_html
   - markdown.extensions.admonition:
   - markdown.extensions.codehilite:

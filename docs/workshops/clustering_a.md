@@ -9,7 +9,7 @@ This short workshop will guide you how to filter and cluster LIDAR data into obj
 4. Clustering the non-grund data into objects with `lidar_cluster` ✅ 
 
 
-## Video owerview
+## Video overview
 
 In the following a screen record of the steps are presented:
 TODO:
@@ -147,7 +147,11 @@ cd ~/ros2_ws
 colcon build --packages-select patchworkpp lidar_cluster --symlink-install
 ```
 
-## What to expect
+
+## `Step 3.` - Run
+
+
+### What to expect
 
 ```mermaid
 graph TD;
@@ -163,9 +167,6 @@ graph TD;
     classDef dash fill:#ffffff,stroke:#152742,stroke-width:2px,color:#15274, stroke-dasharray: 5 5
     classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
 ```
-
-
-## Run
 
 <details>
 <summary> Don't forget to source before ROS commands.</summary>
@@ -193,7 +194,7 @@ Alternatively use an example clustering algorithm (`version 2.`):
 ros2 launch lidar_cluster euclidean_spatial.launch.py
 ```
 
-Alternatively use an example clustering algorithm (`version 2.`):
+Alternatively use an example clustering algorithm (`version 3.`):
 ```bash
 ros2 launch lidar_cluster euclidean_grid.launch.py
 ```

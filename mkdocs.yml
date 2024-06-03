@@ -107,6 +107,7 @@ nav:
     - papers/index.md
   - Workshops: 
     - workshops/index.md
+    - workshops/ros2_b.md
     - F1/10 hands-on (ROS 2): workshops/f1tenth_real_a.md
     - ROS 2 install: workshops/ros2_a.md
     - ROS 2 LIDAR clustering: workshops/clustering_a.md

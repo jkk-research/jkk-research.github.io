@@ -12,7 +12,32 @@ This document also served as small overview of the `Bavarian-Hungarian Self-driv
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DIYktkx3XLM?si=loa8CQQRUQFfFfuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-## Installation
+
+# Windows WSL2
+
+**Windows Subsystem for Linux** is a compatibility layer for native running of Linux-based elements on Windows 10 or Windows 11-based systems. You should choose to use WSL if you do not want to install native Ubuntu (e.g. 18.04 / 22.04) on your computers.
+
+Steps to install:
+
+- Run as administrator, open a PowerShell window.
+- Copy the command below. You hereby authorize the use of WSL.
+``` bash
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+- Restart the computer by entering the letter `Y`. *(optional)*
+- Open the Microsoft Store and search for Windows Subsystem for Linux Preview. Install it.
+- Also search for Ubuntu 22.04 in the Microsoft Store and install **or** PowerShell (Admin):
+``` bash
+wsl --install -d Ubuntu-22.04
+```
+- For easier handling, it is worth installing the Windows Terminal program as well. Also search for Windows Terminal in the Microsoft Store and install it.
+- Start the Windows Terminal program and open the settings with the Ctrl+, (Control and comma) key combination. Select Ubuntu 22.04 from the drop-down list of the Default Profile setting line.
+- Restart the Windows Terminal. When starting for the first time, enter a user name and password of your choice.
+- We recommend the VS Code editor to develop the solution. Install from: [code.visualstudio.com/download](https://code.visualstudio.com/download)
+- Finally, install the VS Code Remote Development add-on to be available using WSL: [marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com /items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+
+
+## Installation (after you have Ubuntu)
 
 !!! danger "ROS 2"
     ROS 1 versions are only discussed for historical reasons, ROS 2 is recommended for current developments.

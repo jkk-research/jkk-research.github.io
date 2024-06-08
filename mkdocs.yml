@@ -113,6 +113,7 @@ nav:
       - LIDAR clustering: workshops/clustering_a.md
       - F1/10 simulation: workshops/f1tenth_sim_a.md
       - F1/10 hands-on: workshops/f1tenth_real_a.md
+      - workshops/control_sim.md
     - ROS 1 (legacy):
       - Wheeltec hands-on (ROS 1) : workshops/wheeltec_real_a.md
 

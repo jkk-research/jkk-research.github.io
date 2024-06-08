@@ -1,7 +1,5 @@
 ---
-layout: default
 title: ROS 2 introduction
-parent: Bevezetés
 # icon: material/math-integral-box # elméleti tananyag
 # hide:
 #   - navigation

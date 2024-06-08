@@ -104,10 +104,13 @@ ros2 launch sim_wayp_plan_tools waypoint_to_target.launch.py
 ### 5. Start a control
 
 There are some options:
+
 - `single_goal_pursuit`: Pure pursuit (for vehicles / robots), a simple cross-track error method
 - `multiple_goal_pursuit`: Multiple goal pursuit for vehicles / robots an implementation of our [paper](https://hjic.mk.uni-pannon.hu/index.php/hjic/article/view/914)
 - `stanley_control`: Stanley controller, a heading error + cross-track error method
 - `follow_the_carrot`: Follow-the-carrot, the simplest controller
+
+![](https://raw.githubusercontent.com/jkk-research/wayp_plan_tools/ros2/csv/control_overview01.svg)
 
 This is a pure pursuit example:
 
@@ -131,6 +134,12 @@ After `ign gazebo -v 4 -r ackermann_steering.sdf` (terminal 1) and `source ~/ros
 ``` r
 ros2 launch sim_wayp_plan_tools all_in_once.launch.py
 ```
+
+## Evaluation
+
+The following image shows some example runs:
+
+![](https://raw.githubusercontent.com/jkk-research/sim_wayp_plan_tools/ros2/img/csv_eval01.svg)
 
 ## Troubleshoot 
 

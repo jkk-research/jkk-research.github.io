@@ -12,7 +12,9 @@ This short workshop will guide you how to filter and cluster LIDAR data into obj
 ## Video overview
 
 In the following a screen record of the steps are presented:
-TODO:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YJyczb53vrg?si=rqnKHgE7y70-5B3a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## `Step 1.` - Download the raw data
 
@@ -204,4 +206,5 @@ ros2 launch lidar_cluster rviz02.launch.py
 ```
 
 !!! success
-    TODO: If everything works as expected you should see a similar rviz window. 
+    If everything works as expected you should see a similar rviz window. 
+    ![lidar_cluster01](https://raw.githubusercontent.com/jkk-research/lidar_cluster_ros2/ros2/img/lidar_cluster01.png)

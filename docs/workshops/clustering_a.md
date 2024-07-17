@@ -1,37 +1,37 @@
 # Workshop on ROS 2 LIDAR clustering
 
-This short workshop will guide you how to filter and cluster LIDAR data into objets. Objects in our case are pedestrians, cars, buildings and so on. The workshop is ROS 2 compatible [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
+This short workshop will guide you through filtering LIDAR data into objects. Objects could be pedestrians, cars, buildings, and so on. This workshop is ROS 2 compatible. [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 
 ## Requirements (high-level overview)
 1. ROS 2 Humble: 🟠 see previous workshops or [docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html) 
 2. A log file with raw LIDAR data (MCAP format) ✅ 
-3. Filtering out the ground plane with `patchworkpp` ✅ 
-4. Clustering the non-grund data into objects with `lidar_cluster` ✅ 
+3. The `patchworkpp` package to filter out the ground plane ✅ 
+4. The `lidar_cluster` package to perform the clustering ✅ 
 
 
 ## Video overview
 
-In the following a screen record of the steps are presented:
+The following screen recording demonstrates the steps involved:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YJyczb53vrg?si=rqnKHgE7y70-5B3a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## `Step 1.` - Download the raw data
 
-In order to cluster LIDAR data, first you need - no surprise - LIDAR data. Use any of the following 3 option.
+In order to cluster LIDAR data, first you need - no surprise - LIDAR data. Use any of the following 3 options.
 
-### `Option A.` - Download our MCAP from a link 
+### `Option A.` - Download our MCAP from the link below 
 
 [Download MCAP [~540MB] :material-download: ](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1){ .md-button }
 
-In our case `/mnt/c/bag/` is used as the `.mcap` folder, if you use other, modify it when executing the following steps.
+In our examples the `.mcap` file is going to be saved in `/mnt/c/bag/`. If you want to use another directory, please change it accordingly.
 
-### `Option B.` - Download our MCAP as a terminal command
+### `Option B.` - Download our MCAP through your terminal
 
 <details>
 <summary> Don't forget to change directory first.</summary>
 
-In our case /mnt/c/bag/ is used as a final destination:
+In our case `/mnt/c/bag/` is used as a final destination:
 
 ``` bash
 cd /mnt/c/bag/
@@ -43,26 +43,28 @@ wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42F
 ```
 
 
-### `Option C.` - Use own MCAP
-You can use your own MCAP, please note that you have to change following:
+### `Option C.` - Use your own MCAP
+You can use your own MCAP, but in that case, you may need to change following:
 
-- LIDAR topic which is on our case `/lexus3/os_center/points` and the 
-- LIDAR frame (in our case: `lexus3/os_center_a_laser_data_frame`) 
+- The LIDAR topic 
+    - In our examples it's `/lexus3/os_center/points`
+- LIDAR frame 
+    - In our examples it's `lexus3/os_center_a_laser_data_frame`
 
-In the following steps based on your own data, topic and frame must be set.
+Never forget to update these in later steps if you use your own MCAP.
 
 ### Check your raw data
 
-Play your bag e.g. with:
+Play your bag using the following command (or however you wish):
 ``` bash
 ros2 bag play /mnt/c/bag/lexus3-2024-04-05-gyor.mcap -l
 ```
 
 !!! info 
-    In the `play` command `-l` means to loop the mcap file.
+    The `-l` option in the `play` command loops the mcap file.
 
 !!! success
-    If everything works as expected you shold see a bunch of topics in another terminal
+    If everything works as expected you should see a bunch of topics in another terminal
     <details>
     <summary> Topics</summary>
     In another terminal issue the command:
@@ -70,7 +72,7 @@ ros2 bag play /mnt/c/bag/lexus3-2024-04-05-gyor.mcap -l
     ``` bash
     ros2 topic list
     ```
-    You sholud see a similar list opf topics:
+    You should see a similar list of topics:
 
     ``` bash
     /clock
@@ -94,7 +96,7 @@ ros2 bag play /mnt/c/bag/lexus3-2024-04-05-gyor.mcap -l
     ```
     </details>
 
-    Also there must be at least a `sensor_msgs/msg/PointCloud2`, chechk with:
+    Also there must be at least one `sensor_msgs/msg/PointCloud2`, check with:
     ``` bash
      ros2 topic type /lexus3/os_center/points
     ```
@@ -106,24 +108,22 @@ ros2 bag play /mnt/c/bag/lexus3-2024-04-05-gyor.mcap -l
 ## `Step 2.` - Install `ROS 2` packages
 
 !!! info 
-    If you don't have ` ~/ros2_ws/` directory, use your own workspace, or create it:
+    If you don't have the `~/ros2_ws/` directory already, create it with the following command:
     ```bash
     mkdir -p ~/ros2_ws/src
     ```
+    If you have your own workspace, make sure to update the paths accordingly in the following steps.
 
 ### Clone `patchworkpp` package
-`patchwork-plusplus-ros` is ROS 2 package of Patchwork++ (@ IROS'22), which provides fast and robust LIDAR ground segmentation. This package is developed by [KAIST](https://github.com/url-kaist/) (Korea Advanced Institute of Science & Technology), but you can use the [JKK research](https://github.com/jkk-research/) fork too.
+`patchwork-plusplus-ros` is ROS 2 package of Patchwork++ (@ IROS'22), which provides fast and robust LIDAR ground segmentation. We recommend the [JKK research](https://github.com/jkk-research/) fork which contains some improvements, alternatively you can use the original [KAIST](https://github.com/url-kaist/) version. 
 
 ```bash
 cd ~/ros2_ws/src
 ```
-
 ```bash
 git clone https://github.com/jkk-research/patchwork-plusplus-ros
 ```
-
-Alternatively you can download the `ROS2` branch from KAIST:
-
+or
 ```bash
 git clone https://github.com/url-kaist/patchwork-plusplus-ros -b ROS2
 ```
@@ -185,21 +185,25 @@ ros2 bag play /mnt/c/bag/lexus3-2024-04-05-gyor.mcap -l
 ```bash
 ros2 launch patchworkpp demo.launch.py  cloud_topic:=/lexus3/os_center/points cloud_frame:=lexus3/os_center_a_laser_data_frame
 ```
-Use an example clustering algorithm (`version 1.`):
+Use one of the following clustering algorithms:
 
 ```bash
 ros2 launch lidar_cluster dbscan_spatial.launch.py
 ```
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a non-grid based clustering algorithm.
+On a modern 6-core CPU or better, you can expect a performance of at least 10 Hz. 
 
-Alternatively use an example clustering algorithm (`version 2.`):
 ```bash
 ros2 launch lidar_cluster euclidean_spatial.launch.py
 ```
+Non-grid clustering based on euclidean distance. 
+On a modern 6-core CPU or better, you can expect a performance of at least 5 Hz. 
 
-Alternatively use an example clustering algorithm (`version 3.`):
 ```bash
 ros2 launch lidar_cluster euclidean_grid.launch.py
 ```
+Voxel grid based clustering based on euclidean distance.
+On a modern 6-core CPU or better, you can expect a performance of at least 100 Hz. 
 
 ```bash
 ros2 launch lidar_cluster rviz02.launch.py

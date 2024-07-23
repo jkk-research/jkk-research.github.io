@@ -13,9 +13,26 @@ You can instanly view the data in [Foxglove Studio](https://foxglove.dev/) (Free
 
 ![](/img/dataset02A.png)
 
-One of the easiest way to getting started with the dataset is to look at the notebook examples:
+### Python scripts for MCAP
 
-[Open MCAP in python notebook](https://github.com/jkk-research/jkk-research.github.io/blob/master/notebooks/mcap_basics.ipynb){ .md-button }
+One of the easiest way to getting started with the dataset is to look at the examples:
+
+
+[MCAP scripts examples](https://github.com/jkk-research/jkk_utils/tree/ros2/mcap_scripts){ .md-button }
+
+[Further MCAP in python notebook](https://github.com/jkk-research/jkk-research.github.io/blob/master/notebooks/mcap_to_trajectory.ipynb){ .md-button }
+
+!!! danger "Important note"
+    MCAP is ROS 2 agnostic, and can be used in any Python project, but `rosbag2-api` **does rely**  on ROS2. Use `mcap-ros2-support` which is not dependent on ROS 2.
+
+
+`Python MCAP ROS2 support` package (`mcap-ros2-support`) provides ROS2 support for the Python MCAP file format reader. It has no dependencies on ROS2 itself or a ROS 2 environment, and can be used in any Python project.
+
+On windows / linux / mac install the following packages:
+
+``` bash
+pip install mcap mcap-ros2-support matplotlib numpy pandas scipy
+```
 
 ## Dataset description
 

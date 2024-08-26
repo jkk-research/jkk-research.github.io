@@ -12,11 +12,13 @@
         <meta name="author" content="jkk-research">
       
       
-        <link rel="canonical" href="https://jkk-research.github.io/workshops/wheeltec_real_a/">
+        <link rel="canonical" href="https://jkk-research.github.io/workshops/control_sim/">
       
       
-        <link rel="prev" href="../control_sim/">
+        <link rel="prev" href="../f1tenth_real_a/">
       
+      
+        <link rel="next" href="../wheeltec_real_a/">
       
       
       <link rel="icon" href="/img/favicon.ico">
@@ -24,7 +26,7 @@
     
     
       
-        <title>Wheeltec hands-on (ROS 1) - JKK Research Center</title>
+        <title>Control simulation - JKK Research Center</title>
       
     
     
@@ -78,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ros-1-real-robot-workshop" class="md-skip">
+        <a href="#ros-2-sim_wayp_plan_tools-package" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Wheeltec hands-on (ROS 1)
+              Control simulation
             
           </span>
         </div>
@@ -729,8 +731,10 @@
                 
   
   
+    
   
   
+  
     
     
     
@@ -738,13 +742,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -758,7 +760,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             ROS 2
@@ -874,10 +876,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../control_sim/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Control simulation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -886,6 +906,198 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ros-2-sim_wayp_plan_tools-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROS 2 sim_wayp_plan_tools package
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS 2 sim_wayp_plan_tools package">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#packages-and-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      Packages and build
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Packages and build">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clone-the-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone the packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-ros-2-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build ROS 2 packages
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage-of-wayp_plan_tools-as-a-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage of wayp_plan_tools as a simulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage of wayp_plan_tools as a simulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-start-the-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start the simulation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-start-the-gazebo-bridge" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Start the Gazebo bridge
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Start the Gazebo bridge">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optional-teleoperation-via-keyboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional: teleoperation via keyboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-load-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Load waypoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-waypoint-to-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Waypoint to target
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-start-a-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Start a control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-visualize-results-in-rviz2" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Visualize results in RViz2
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#or-run-everything-with-a-single-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Or run everything with a single command
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Or run everything with a single command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -903,8 +1115,6 @@
                 
   
   
-    
-  
   
   
     
@@ -914,11 +1124,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
         
           
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
@@ -932,7 +1144,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             ROS 1 (legacy)
@@ -943,30 +1155,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Wheeltec hands-on (ROS 1)
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../wheeltec_real_a/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -975,194 +1167,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#the-megoldas_zala23-ros-1-package" class="md-nav__link">
-    <span class="md-ellipsis">
-      The megoldas_zala23 ROS 1 package
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-robot-used-in-the-competition" class="md-nav__link">
-    <span class="md-ellipsis">
-      The robot used in the competition
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#video" class="md-nav__link">
-    <span class="md-ellipsis">
-      Video
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#internet-access-on-the-robot-platform" class="md-nav__link">
-    <span class="md-ellipsis">
-      Internet access on the robot platform
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-the-ros-1-package" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install the ROS 1 package
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#start-solution-using-screen-recommended" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start solution using screen (recommended)
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ros-connection" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROS connection
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#some-explanatory-animations" class="md-nav__link">
-    <span class="md-ellipsis">
-      Some explanatory animations
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Some explanatory animations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#start-solution-per-component" class="md-nav__link">
-    <span class="md-ellipsis">
-      Start solution per component
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Additional information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#workspaces" class="md-nav__link">
-    <span class="md-ellipsis">
-      Workspaces
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topic-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Topic management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#robot-platform-language-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Robot platform language settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rosbag-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rosbag management
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1200,8 +1204,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1210,55 +1212,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#the-megoldas_zala23-ros-1-package" class="md-nav__link">
+  <a href="#ros-2-sim_wayp_plan_tools-package" class="md-nav__link">
     <span class="md-ellipsis">
-      The megoldas_zala23 ROS 1 package
+      ROS 2 sim_wayp_plan_tools package
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-robot-used-in-the-competition" class="md-nav__link">
-    <span class="md-ellipsis">
-      The robot used in the competition
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#video" class="md-nav__link">
-    <span class="md-ellipsis">
-      Video
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Usage
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Usage">
+    <nav class="md-nav" aria-label="ROS 2 sim_wayp_plan_tools package">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#internet-access-on-the-robot-platform" class="md-nav__link">
+  <a href="#requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Internet access on the robot platform
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-the-ros-1-package" class="md-nav__link">
-    <span class="md-ellipsis">
-      Install the ROS 1 package
+      Requirements
     </span>
   </a>
   
@@ -1270,19 +1236,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage_1" class="md-nav__link">
+  <a href="#packages-and-build" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage
+      Packages and build
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Usage">
+    <nav class="md-nav" aria-label="Packages and build">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#start-solution-using-screen-recommended" class="md-nav__link">
+  <a href="#clone-the-packages" class="md-nav__link">
     <span class="md-ellipsis">
-      Start solution using screen (recommended)
+      Clone the packages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-ros-2-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build ROS 2 packages
     </span>
   </a>
   
@@ -1294,28 +1269,79 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ros-connection" class="md-nav__link">
+  <a href="#usage-of-wayp_plan_tools-as-a-simulation" class="md-nav__link">
     <span class="md-ellipsis">
-      ROS connection
+      Usage of wayp_plan_tools as a simulation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage of wayp_plan_tools as a simulation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-start-the-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start the simulation
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#some-explanatory-animations" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#2-start-the-gazebo-bridge" class="md-nav__link">
     <span class="md-ellipsis">
-      Some explanatory animations
+      2. Start the Gazebo bridge
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Some explanatory animations">
+    <nav class="md-nav" aria-label="2. Start the Gazebo bridge">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#start-solution-per-component" class="md-nav__link">
+  <a href="#optional-teleoperation-via-keyboard" class="md-nav__link">
     <span class="md-ellipsis">
-      Start solution per component
+      Optional: teleoperation via keyboard
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-load-waypoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Load waypoints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-waypoint-to-target" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Waypoint to target
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-start-a-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Start a control
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-visualize-results-in-rviz2" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Visualize results in RViz2
     </span>
   </a>
   
@@ -1327,19 +1353,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-information" class="md-nav__link">
+  <a href="#or-run-everything-with-a-single-command" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional information
+      Or run everything with a single command
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Additional information">
+    <nav class="md-nav" aria-label="Or run everything with a single command">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#workspaces" class="md-nav__link">
+  <a href="#evaluation" class="md-nav__link">
     <span class="md-ellipsis">
-      Workspaces
+      Evaluation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshoot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshoot
     </span>
   </a>
   
@@ -1347,33 +1382,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#topic-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Topic management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#robot-platform-language-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Robot platform language settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#rosbag-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      Rosbag management
-    </span>
-  </a>
   
 </li>
       
@@ -1395,158 +1403,105 @@
   
 
 
-<h1 id="ros-1-real-robot-workshop"><code>ROS 1</code> real robot workshop<a class="headerlink" href="#ros-1-real-robot-workshop" title="Permanent link">&para;</a></h1>
+<h2 id="ros-2-sim_wayp_plan_tools-package">ROS 2 <code>sim_wayp_plan_tools</code> package<a class="headerlink" href="#ros-2-sim_wayp_plan_tools-package" title="Permanent link">&para;</a></h2>
+<p>Gazebo Fortress ROS 2 simulation for the waypoint and planner tools.</p>
+<p><img alt="" src="https://raw.githubusercontent.com/jkk-research/sim_wayp_plan_tools/ros2/img/gz_rviz01.gif" /></p>
+<h3 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h3>
 <ul>
-<li>A small overview of the <code>Bavarian-Hungarian Self-driving vehicles</code> workshop.</li>
-<li><strong>Date</strong>: 2023.11.03. </li>
-<li><strong>Place</strong>: Győr, Hungary.</li>
+<li>ROS 2 Humble: <a href="https://docs.ros.org/en/humble/Installation.html">docs.ros.org/en/humble/Installation.html</a></li>
+<li>Gazebo Fortress: <a href="https://gazebosim.org/docs/fortress/install_ubuntu">gazebosim.org/docs/fortress/install_ubuntu</a>, read more about integration: <a href="https://gazebosim.org/docs/fortress/ros2_integration">gazebosim.org/docs/fortress/ros2_integration</a></li>
+<li><code>ros-gz-bridge</code> install with a single command: <code>sudo apt install ros-humble-ros-gz-bridge</code></li>
 </ul>
-<h2 id="the-megoldas_zala23-ros-1-package">The <code>megoldas_zala23</code> ROS 1 package<a class="headerlink" href="#the-megoldas_zala23-ros-1-package" title="Permanent link">&para;</a></h2>
-<p>🤖 In the following a very simple wall/gap following approach will be presented and described. The origin of he code is based on the work of Suresh Babu (University of Virginia, <a href="https://github.com/linklab-uva/f1tenth_gtc_tutorial/blob/master/LICENSE">license</a>). Link to the original code: <a href="https://github.com/linklab-uva/f1tenth_gtc_tutorial">github.com/linklab-uva/f1tenth_gtc_tutorial</a>.</p>
-<p>The name of the package is a comes from a hungarian expression (<code>megoldas</code>: solution / Lösung).</p>
-<h2 id="the-robot-used-in-the-competition">The robot used in the competition<a class="headerlink" href="#the-robot-used-in-the-competition" title="Permanent link">&para;</a></h2>
-<p>Wheeltec / Roboworks Rosbot mini Ackermann robot
-<img alt="main" src="https://raw.githubusercontent.com/robotverseny/megoldas_zala23/main/etc/wheeltec_roboworks_ack01.png" /></p>
-<p>On-board computer
-- Nvidia Jetson Nano</p>
-<p>Sensors
-- Orbbec Depth Camera
-- LSN10 LIDAR</p>
-<h2 id="video">Video<a class="headerlink" href="#video" title="Permanent link">&para;</a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-PStmHQlJaU?si=eOFQazJ38qJyHe2u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>Prerequisites:
-- WiFi-enabled computer with Ubuntu 18.04 / 20.04 operating system and ROS Melodic / Noetic installation
-- Internet access (Ethernet cable or WiFi)</p>
-<ol>
-<li>Turn on the robot platform.</li>
-<li>Use the computer to connect to the WiFi network created by the robot. The name of the WiFi network is unique for each robot platform, the <code>#</code> at the end of the SSID changes according to the number of the robot platform:
-<div class="highlight"><pre><span></span><code>SSID: WHEELTEC_CAR_5.5_#
-Password: dongguan
-</code></pre></div></li>
-<li>Use SSH to connect to the on-board computer of the robot platform with the following terminal command:
-<div class="highlight"><pre><span></span><code>ssh wheeltec@192.168.0.100
+<h2 id="packages-and-build">Packages and build<a class="headerlink" href="#packages-and-build" title="Permanent link">&para;</a></h2>
+<p>It is assumed that the workspace is <code>~/ros2_ws/</code>.</p>
+<h3 id="clone-the-packages">Clone the packages<a class="headerlink" href="#clone-the-packages" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>cd ~/ros2_ws/src &amp;&amp; \
+git clone https://github.com/jkk-research/wayp_plan_tools &amp;&amp; \
+git clone https://github.com/jkk-research/sim_wayp_plan_tools
 </code></pre></div>
-A password will be required, the default password is <code>dongguan</code></li>
-</ol>
-<h3 id="internet-access-on-the-robot-platform">Internet access on the robot platform<a class="headerlink" href="#internet-access-on-the-robot-platform" title="Permanent link">&para;</a></h3>
-<p>Software packages can be downloaded to the on-board computer of the robot platform, which requires internet access.</p>
+<h3 id="build-ros-2-packages">Build ROS 2 packages<a class="headerlink" href="#build-ros-2-packages" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code>cd ~/ros2_ws
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>colcon build --packages-select wayp_plan_tools sim_wayp_plan_tools --symlink-install
+</code></pre></div></p>
+<h2 id="usage-of-wayp_plan_tools-as-a-simulation">Usage of <code>wayp_plan_tools</code> as a simulation<a class="headerlink" href="#usage-of-wayp_plan_tools-as-a-simulation" title="Permanent link">&para;</a></h2>
+<h3 id="1-start-the-simulation">1. Start the simulation<a class="headerlink" href="#1-start-the-simulation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>ign gazebo -v 4 -r ackermann_steering.sdf
+</code></pre></div>
+<h3 id="2-start-the-gazebo-bridge">2. Start the Gazebo bridge<a class="headerlink" href="#2-start-the-gazebo-bridge" title="Permanent link">&para;</a></h3>
+<p>Don't forget to <code>source</code> before ROS commands.</p>
+<div class="highlight"><pre><span></span><code><span class="n">source</span><span class="w"> </span><span class="o">~/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">install</span><span class="o">/</span><span class="n">local_setup.bash</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">sim_wayp_plan_tools</span><span class="w"> </span><span class="n">gazebo_bridge.launch.py</span>
+</code></pre></div>
+<p>In the background this <code>launch</code> file starts nodes similar to:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">ros_gz_bridge</span><span class="w"> </span><span class="n">parameter_bridge</span><span class="w"> </span><span class="o">/</span><span class="n">world</span><span class="o">/</span><span class="n">ackermann_steering</span><span class="o">/</span><span class="n">pose</span><span class="o">/</span><span class="n">info</span><span class="o">@</span><span class="n">geometry_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">PoseArray</span><span class="p">[</span><span class="n">ignition.msgs.Pose_V</span>
+<span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">ros_gz_bridge</span><span class="w"> </span><span class="n">parameter_bridge</span><span class="w"> </span><span class="o">/</span><span class="n">model</span><span class="o">/</span><span class="n">vehicle_blue</span><span class="o">/</span><span class="n">cmd_vel</span><span class="o">@</span><span class="n">geometry_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Twist</span><span class="p">]</span><span class="n">ignition.msgs.Twist</span>
+<span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">ros_gz_bridge</span><span class="w"> </span><span class="n">parameter_bridge</span><span class="w"> </span><span class="o">/</span><span class="n">model</span><span class="o">/</span><span class="n">vehicle_blue</span><span class="o">/</span><span class="n">odometry</span><span class="o">@</span><span class="n">nav_msgs</span><span class="o">/</span><span class="n">msg</span><span class="o">/</span><span class="n">Odometry</span><span class="p">[</span><span class="n">ignition.msgs.Odometry</span><span class="w"> </span><span class="o">--</span><span class="n">ros</span><span class="o">-</span><span class="n">args</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span><span class="o">/</span><span class="n">model</span><span class="o">/</span><span class="n">vehicle_blue</span><span class="o">/</span><span class="n">odometry</span><span class="o">:=/</span><span class="n">odom</span>
+</code></pre></div>
+More about the bridge here: <a href="https://github.com/gazebosim/ros_gz/blob/ros2/ros_gz_bridge/README.md">github.com/gazebosim/ros_gz/blob/ros2/ros_gz_bridge/README.md</a></p>
+<p>Also this <code>launch</code> creates <code>/tf</code> from the <code>PoseArray</code> with <code>pose_arr_to_tf</code>.</p>
+<h4 id="optional-teleoperation-via-keyboard"><em>Optional</em>: teleoperation via keyboard<a class="headerlink" href="#optional-teleoperation-via-keyboard" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">teleop_twist_keyboard</span><span class="w"> </span><span class="n">teleop_twist_keyboard</span><span class="w"> </span><span class="o">--</span><span class="n">ros</span><span class="o">-</span><span class="n">args</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span><span class="o">/</span><span class="n">cmd_vel</span><span class="o">:=/</span><span class="n">model</span><span class="o">/</span><span class="n">vehicle_blue</span><span class="o">/</span><span class="n">cmd_vel</span>
+</code></pre></div>
+<h3 id="3-load-waypoints">3. Load waypoints<a class="headerlink" href="#3-load-waypoints" title="Permanent link">&para;</a></h3>
+<p>Use you ROS 2 workspace as <code>file_dir</code>:
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">wayp_plan_tools</span><span class="w"> </span><span class="n">waypoint_loader</span><span class="w"> </span><span class="o">--</span><span class="n">ros</span><span class="o">-</span><span class="n">args</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">file_name</span><span class="o">:=</span><span class="n">sim_waypoints1.csv</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">file_dir</span><span class="o">:=$</span><span class="n">HOME</span><span class="o">/</span><span class="n">ros2_ws</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">sim_wayp_plan_tools</span><span class="o">/</span><span class="n">csv</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span>__<span class="n">ns</span><span class="o">:=/</span><span class="n">sim1</span>
+</code></pre></div>
+Or simply with default parameters:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">sim_wayp_plan_tools</span><span class="w"> </span><span class="n">waypoint_loader.launch.py</span>
+</code></pre></div>
+<h3 id="4-waypoint-to-target">4. Waypoint to target<a class="headerlink" href="#4-waypoint-to-target" title="Permanent link">&para;</a></h3>
+<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">wayp_plan_tools</span><span class="w"> </span><span class="n">waypoint_to_target</span><span class="w"> </span><span class="o">--</span><span class="n">ros</span><span class="o">-</span><span class="n">args</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">lookahead_min</span><span class="o">:=</span><span class="m">2.5</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">lookahead_max</span><span class="o">:=</span><span class="m">4.5</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">mps_alpha</span><span class="o">:=</span><span class="m">1.5</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">mps_beta</span><span class="o">:=</span><span class="m">3.5</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">waypoint_topic</span><span class="o">:=</span><span class="n">waypointarray</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">tf_frame_id</span><span class="o">:=</span><span class="n">base_link</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">tf_child_frame_id</span><span class="o">:=</span><span class="n">map</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span>__<span class="n">ns</span><span class="o">:=/</span><span class="n">sim1</span>
+</code></pre></div>
+Or simply with default parameters:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">sim_wayp_plan_tools</span><span class="w"> </span><span class="n">waypoint_to_target.launch.py</span>
+</code></pre></div>
+<h3 id="5-start-a-control">5. Start a control<a class="headerlink" href="#5-start-a-control" title="Permanent link">&para;</a></h3>
+<p>There are some options:</p>
 <ul>
-<li>Ethernet: connect the Ethernet cable to the Ethernet port of the on-board computer of the robot platform.</li>
-<li>WiFi: after issuing the <code>nmtui</code> terminal command, connect to the available WiFi network.
-<div class="highlight"><pre><span></span><code>nmtui
-</code></pre></div></li>
+<li><code>single_goal_pursuit</code>: Pure pursuit (for vehicles / robots), a simple cross-track error method</li>
+<li><code>multiple_goal_pursuit</code>: Multiple goal pursuit for vehicles / robots an implementation of our <a href="https://hjic.mk.uni-pannon.hu/index.php/hjic/article/view/914">paper</a></li>
+<li><code>stanley_control</code>: Stanley controller, a heading error + cross-track error method</li>
+<li><code>follow_the_carrot</code>: Follow-the-carrot, the simplest controller</li>
 </ul>
-<p><img src="https://user-images.githubusercontent.com/11504709/160778891-0c06e338-405f-43c6-8aac-928af33c057e.png" width="50%" /></p>
-<h3 id="install-the-ros-1-package">Install the <code>ROS 1</code> package<a class="headerlink" href="#install-the-ros-1-package" title="Permanent link">&para;</a></h3>
-<p>After installation, the functions of the robot platform can be accessed using ROS. The sample solution of the competition can also be deployed by ROS.</p>
-<p>Create a workspace and install the sample solution on the robot:</p>
-<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/workshop_ws/src
+<p><img alt="" src="https://raw.githubusercontent.com/jkk-research/wayp_plan_tools/ros2/csv/control_overview01.svg" /></p>
+<p>This is a pure pursuit example:</p>
+<p><div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">run</span><span class="w"> </span><span class="n">wayp_plan_tools</span><span class="w"> </span><span class="n">single_goal_pursuit</span><span class="w"> </span><span class="o">--</span><span class="n">ros</span><span class="o">-</span><span class="n">args</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">cmd_topic</span><span class="o">:=/</span><span class="n">model</span><span class="o">/</span><span class="n">vehicle_blue</span><span class="o">/</span><span class="n">cmd_vel</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">wheelbase</span><span class="o">:=</span><span class="m">1.0</span><span class="w"> </span><span class="o">-</span><span class="n">p</span><span class="w"> </span><span class="n">waypoint_topic</span><span class="o">:=</span><span class="n">targetpoints</span><span class="w"> </span><span class="o">-</span><span class="n">r</span><span class="w"> </span>__<span class="n">ns</span><span class="o">:=/</span><span class="n">sim1</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/workshop_ws/
+Or simply with default parameters:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">sim_wayp_plan_tools</span><span class="w"> </span><span class="n">single_goal_pursuit.launch.py</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>catkin<span class="w"> </span>init
+<h3 id="6-visualize-results-in-rviz2">6. Visualize results in <code>RViz2</code><a class="headerlink" href="#6-visualize-results-in-rviz2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">sim_wayp_plan_tools</span><span class="w"> </span><span class="n">rviz1.launch.py</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/workshop_ws/src/
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/robotverseny/megoldas_zala23
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/workshop_ws/
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>catkin<span class="w"> </span>build<span class="w"> </span>megoldas_zala23
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;source /home/wheeltec/workshop_ws/devel/setup.bash&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span><span class="w"> </span>~/.bashrc
-</code></pre></div>
-<p>Install <code>screen</code>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>mc<span class="w"> </span>screen
+<h1 id="or-run-everything-with-a-single-command">Or run everything with a single command<a class="headerlink" href="#or-run-everything-with-a-single-command" title="Permanent link">&para;</a></h1>
+<p>After <code>ign gazebo -v 4 -r ackermann_steering.sdf</code> (terminal 1) and <code>source ~/ros2_ws/install/local_setup.bash</code> (terminal 2), run this command (also in terminal 2): 
+<div class="highlight"><pre><span></span><code><span class="n">ros2</span><span class="w"> </span><span class="n">launch</span><span class="w"> </span><span class="n">sim_wayp_plan_tools</span><span class="w"> </span><span class="n">all_in_once.launch.py</span>
 </code></pre></div></p>
-<p>Install jks visualization rviz plugin: depending on ROS 1 version (<strong>melodic</strong> / <strong>noetic</strong>):</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-melodic-jsk-rviz-plugins
+<h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
+<p>The following image shows some example runs:</p>
+<p><img alt="" src="https://raw.githubusercontent.com/jkk-research/sim_wayp_plan_tools/ros2/img/csv_eval01.svg" /></p>
+<h2 id="troubleshoot">Troubleshoot<a class="headerlink" href="#troubleshoot" title="Permanent link">&para;</a></h2>
+<p>Kill <code>ign gazebo server</code> if stuck:</p>
+<div class="highlight"><pre><span></span><code><span class="n">ps</span><span class="w"> </span><span class="n">aux</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="n">ign</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-noetic-jsk-rviz-plugins
+<div class="highlight"><pre><span></span><code><span class="n">ab</span><span class="w">  </span><span class="m">12345</span><span class="w"> </span><span class="m">49.9</span><span class="w">  </span><span class="m">1.2</span><span class="w"> </span><span class="m">2412624</span><span class="w"> </span><span class="m">101608</span><span class="w"> </span><span class="o">?</span><span class="w">      </span><span class="n">Sl</span><span class="w">   </span><span class="m">08</span><span class="o">:</span><span class="m">26</span><span class="w">  </span><span class="m">27</span><span class="o">:</span><span class="m">20</span><span class="w"> </span><span class="n">ign</span><span class="w"> </span><span class="n">gazebo</span><span class="w"> </span><span class="n">server</span>
+<span class="n">ab</span><span class="w">  </span><span class="m">12346</span><span class="w">  </span><span class="m">518</span><span class="w">  </span><span class="m">6.6</span><span class="w"> </span><span class="m">10583664</span><span class="w"> </span><span class="m">528352</span><span class="w"> </span><span class="o">?</span><span class="w">     </span><span class="n">Sl</span><span class="w">   </span><span class="m">08</span><span class="o">:</span><span class="m">26</span><span class="w"> </span><span class="m">283</span><span class="o">:</span><span class="m">45</span><span class="w"> </span><span class="n">ign</span><span class="w"> </span><span class="n">gazebo</span><span class="w"> </span><span class="n">gui</span>
+<span class="n">ab</span><span class="w">  </span><span class="m">12347</span><span class="w">  </span><span class="m">0.0</span><span class="w">  </span><span class="m">0.0</span><span class="w">   </span><span class="m">9396</span><span class="w">  </span><span class="m">2400</span><span class="w"> </span><span class="n">pts</span><span class="o">/</span><span class="m">2</span><span class="w">    </span><span class="n">S</span><span class="o">+</span><span class="w">   </span><span class="m">09</span><span class="o">:</span><span class="m">21</span><span class="w">   </span><span class="m">0</span><span class="o">:</span><span class="m">00</span><span class="w"> </span><span class="n">grep</span><span class="w"> </span><span class="o">--</span><span class="n">color</span><span class="o">=</span><span class="n">auto</span><span class="w"> </span><span class="n">ign</span>
 </code></pre></div>
-<h2 id="usage_1">Usage<a class="headerlink" href="#usage_1" title="Permanent link">&para;</a></h2>
-<h3 id="start-solution-using-screen-recommended">Start solution using screen (recommended)<a class="headerlink" href="#start-solution-using-screen-recommended" title="Permanent link">&para;</a></h3>
-<p>The script <code>verseny_start.sh</code> sets the required environmental variables, starts the ROS nodes and finally after <em>2 minutes</em> <strong>stops</strong> everything. Have a look at the code: <a href="https://raw.githubusercontent.com/robotverseny/megoldas_zala23/main/etc/verseny_start.sh">verseny_start.sh</a> </p>
-<div class="highlight"><pre><span></span><code>rosrun megoldas_zala23 verseny_start.sh
+<p>Once you have identified the PID, use the kill command followed by the PID to terminate the process. For example:</p>
+<div class="highlight"><pre><span></span><code><span class="n">kill</span><span class="w"> </span><span class="m">12345</span>
 </code></pre></div>
-<p>The <code>verseny_start.sh</code> shell script usually launches several virtual terminals, such as: <code>roscore</code>, <code>turn_on_wheeltec_robot</code>, <code>lsn10_lidar</code>, <code>megoldas1.launch</code>. All components of the solution can be stopped with the following command:
-<div class="highlight"><pre><span></span><code>rosrun megoldas_zala23 stop_all.sh
-</code></pre></div></p>
-<p>Further commands:</p>
-<ul>
-<li>list screen: <code>screen -ls</code></li>
-<li>restore screen: <code>screen -r roscore</code> / <code>screen -r turn_on_wheeltec_robot</code> / <code>screen -r megoldas1</code></li>
-<li>detach: <code>Ctrl-a</code> + <code>Ctrl-d</code></li>
-</ul>
-<h2 id="ros-connection">ROS connection<a class="headerlink" href="#ros-connection" title="Permanent link">&para;</a></h2>
-<p>The ROS topics advertised by the robot platform are also available on the computer connected to the platform, with the appropriate setting of the <code>ROS_MASTER_URI</code> variable:
-<div class="highlight"><pre><span></span><code><span class="n">export</span><span class="w"> </span><span class="n">ROS_MASTER_URI</span><span class="o">=</span><span class="n">http</span><span class="o">://</span><span class="m">192.168</span><span class="n">.</span><span class="m">0.100</span><span class="o">:</span><span class="m">11311</span>
-</code></pre></div>
-After the appropriate setting of the variable, the topics can be listed and visualized using Rviz:
-<div class="highlight"><pre><span></span><code>rostopic list
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>rosrun rviz rviz
-</code></pre></div></p>
-<h2 id="some-explanatory-animations">Some explanatory animations<a class="headerlink" href="#some-explanatory-animations" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>roslaunch megoldas_zala23 rviz1.launch
-</code></pre></div>
-<p><img alt="" src="https://raw.githubusercontent.com/robotverseny/megoldas_zala23/main/etc/left_right01.gif" />
-<img alt="" src="https://raw.githubusercontent.com/robotverseny/megoldas_zala23/main//etc/trajectory01.gif" />
-<img alt="" src="https://raw.githubusercontent.com/robotverseny/megoldas_zala23/main//etc/angles01.svg" /></p>
-<h3 id="start-solution-per-component">Start solution per component<a class="headerlink" href="#start-solution-per-component" title="Permanent link">&para;</a></h3>
-<p>The solution can also be started per component, not just as a single shell script. This requires four terminal windows on the on-board computer of the robot platform and issuing the following commands per terminal:</p>
-<div class="highlight"><pre><span></span><code>roscore
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>roslaunch<span class="w"> </span>turn_on_wheeltec_robot<span class="w"> </span>turn_on_wheeltec_robot.launch
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>roslaunch<span class="w"> </span>lsn10<span class="w"> </span>lsn10.launch
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>roslaunch<span class="w"> </span>megoldas_zala23<span class="w"> </span>megoldas1.launch
-</code></pre></div>
-<h2 id="additional-information">Additional information<a class="headerlink" href="#additional-information" title="Permanent link">&para;</a></h2>
-<h3 id="workspaces">Workspaces<a class="headerlink" href="#workspaces" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>~/wheeltec_robot/src
-~/catkin_workspace/src
-~/workshop_ws/src/
-</code></pre></div>
-<h2 id="topic-management">Topic management<a class="headerlink" href="#topic-management" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>rostopic hz /scan
-rostopic echo /scan -n1
-rostopic type /scan
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>sensor_msgs/LaserScan
-</code></pre></div>
-<h2 id="robot-platform-language-settings">Robot platform language settings<a class="headerlink" href="#robot-platform-language-settings" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>sudo dpkg-reconfigure locales
-</code></pre></div>
-<p><img alt="" src="https://raw.githubusercontent.com/robotverseny/megoldas_zala23/main//etc/locales.png" /></p>
-<p><strong>reboot</strong></p>
-<h2 id="rosbag-management">Rosbag management<a class="headerlink" href="#rosbag-management" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code>cd ~/rosbags
-rosbag record -a -o test1
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>rsync -avzh --progress wheeltec@192.168.0.100:/home/wheeltec/rosbags/ /mnt/c/bag/wheeltec/
-rosbag info test1_2023-03-30-12-37-22.bag
-rosbag play test1_2023-03-30-12-37-22.bag
-</code></pre></div></p>
-<p>You can even visualize rosbags in <a href="https://foxglove.dev/">Foxglove studio</a>:</p>
-<p><img alt="Alt text" src="https://raw.githubusercontent.com/robotverseny/megoldas_zala23/main//etc/rosbag_foxglove01.gif" /></p>
-<p><a href="https://drive.google.com/drive/folders/1CAh-EIHjlvURHi62bxNnC9pIxUP5A00K?usp=drive_link">Download rosbags</a></p>
-<ul>
-<li><a href="https://github.com/robotverseny/megoldas_zala23/blob/main/etc/explain.ipynb">Further explanation ipynotebook</a></li>
-<li><a href="https://robotverseny.github.io/">Competition homepage</a></li>
-<li><a href="https://foxglove.dev/">Foxglove studio</a></li>
-</ul>
 
 
 
 
 
 
+
+  
+  
 
 
 

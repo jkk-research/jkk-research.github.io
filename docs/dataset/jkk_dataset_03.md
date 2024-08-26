@@ -5,22 +5,22 @@ This dataset contains the raw data of naturalistic driving, utilized for Human-L
 
 ![](/img/ldm1.svg)
 
-[Download from here](https://laesze-my.sharepoint.com/personal/igneczi_gergo_ferenc_hallgato_sze_hu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Figneczi%5Fgergo%5Fferenc%5Fhallgato%5Fsze%5Fhu%2FDocuments%2FDataset%2Fjkk%5Fdataset%5F03%2Ezip&parent=%2Fpersonal%2Figneczi%5Fgergo%5Fferenc%5Fhallgato%5Fsze%5Fhu%2FDocuments%2FDataset&ga=1?download=1){ .md-button } or get it with `wget`:
+The zipped measurements can be downloaded from the following link.
+[Download from here](https://laesze-my.sharepoint.com/:u:/g/personal/igneczi_gergo_ferenc_hallgato_sze_hu/EbVJe6U9VIxLnCtZuJNKifwB4_Uzle12HcY3wH9LszN-7g?e=bJrSmw?download=1){ .md-button }.
+<br/>
+<br/>
+To access the original files, along with the labelling traffic data, click here:<br/>
+[Access data](https://laesze-my.sharepoint.com/:f:/g/personal/igneczi_gergo_ferenc_hallgato_sze_hu/EqnW-jkwHXhBktzEBxmA35IBT_yrBJPgMg_PwjxKP17JHg?e=eJTZBX){ .md-button }.
 
-``` py
-
-wget https://laesze-my.sharepoint.com/personal/igneczi_gergo_ferenc_hallgato_sze_hu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Figneczi%5Fgergo%5Fferenc%5Fhallgato%5Fsze%5Fhu%2FDocuments%2FDataset%2Fjkk%5Fdataset%5F03&ga=1 -O leaf-2022-03-18-gyor.bag
-
-```
 
 The data contains information of 17 drivers, who were selected to have relevant driving experience. Dr001-Dr003 are professional drivers who have extra driving certificate.
 The following table shows the details of participants:
 
 | **Driver ID** | **Type** | **Age** | **Driving Experience** | **Driving Frequency** | **Milage per year** |
 | ------- | ------- | ------- | ------- | ------- | -------- |
-| 001 | N-P | 31 | 10+ | 3 | 4 |
-| 002 | N-P | 32 | 10+ | 3 | 4 |
-| 003 | N-P | 28 | 10+ | 3 | 5 |
+| 001 | P | 31 | 10+ | 3 | 4 |
+| 002 | P | 32 | 10+ | 3 | 4 |
+| 003 | P | 28 | 10+ | 3 | 5 |
 | 004 | N-P | 31 | 10+ | 4 | 5 |
 | 005 | N-P | 46 | 10+ | 4 | 4 |
 | 006 | N-P | 25 | 6-10 | 2 | 2 |

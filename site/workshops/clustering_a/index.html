@@ -22,18 +22,18 @@
       
       
       <link rel="icon" href="/img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
     
     
       
-        <title>ROS 2 LIDAR clustering - JKK Research Center</title>
+        <title>LIDAR clustering - JKK Research Center</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35e1ed30.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.3cba04c6.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -74,9 +74,6 @@
     <body dir="ltr" data-md-color-scheme="youtube" data-md-color-primary="custom" data-md-color-accent="indigo">
   
     
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -116,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ROS 2 LIDAR clustering
+              LIDAR clustering
             
           </span>
         </div>
@@ -129,9 +126,9 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="youtube" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="youtube" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
     
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
@@ -139,15 +136,18 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
     
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
       </label>
     
   
 </form>
       
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -176,7 +176,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -338,17 +338,16 @@
   
   
   
-    
-    
+  
     
     
     
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
           
@@ -356,7 +355,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -376,6 +375,7 @@
             
               
                 
+  
   
   
   
@@ -399,6 +399,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../home/about/" class="md-nav__link">
         
@@ -419,6 +420,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../home/social/" class="md-nav__link">
         
@@ -436,6 +438,7 @@
             
               
                 
+  
   
   
   
@@ -466,17 +469,16 @@
   
   
   
-    
-    
+  
     
     
     
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
           
@@ -484,7 +486,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -504,6 +506,7 @@
             
               
                 
+  
   
   
   
@@ -527,6 +530,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../dataset/jkk_dataset_01/" class="md-nav__link">
         
@@ -547,6 +551,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../../dataset/jkk_dataset_02/" class="md-nav__link">
         
@@ -564,6 +569,7 @@
             
               
                 
+  
   
   
   
@@ -594,17 +600,16 @@
   
   
   
-    
-    
+  
     
     
     
       
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    
+    <li class="md-nav__item md-nav__item--nested">
       
-        
         
         
           
@@ -612,7 +617,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -632,6 +637,7 @@
             
               
                 
+  
   
   
   
@@ -664,17 +670,19 @@
     
   
   
-    
-    
+  
     
     
     
       
+        
+        
       
+      
+    
     
     <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
-        
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
@@ -703,6 +711,7 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../" class="md-nav__link">
         
@@ -722,13 +731,54 @@
                 
   
   
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ROS 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            ROS 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
   
     <li class="md-nav__item">
-      <a href="../f1tenth_real_a/" class="md-nav__link">
+      <a href="../ros2_b/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    F1/10 hands-on (ROS 2)
+    ROS 2 introduction
   </span>
   
 
@@ -740,6 +790,7 @@
             
               
                 
+  
   
   
   
@@ -765,6 +816,7 @@
     
   
   
+  
     <li class="md-nav__item md-nav__item--active">
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -777,7 +829,7 @@
           
   
   <span class="md-ellipsis">
-    ROS 2 LIDAR clustering
+    LIDAR clustering
   </span>
   
 
@@ -788,7 +840,7 @@
         
   
   <span class="md-ellipsis">
-    ROS 2 LIDAR clustering
+    LIDAR clustering
   </span>
   
 
@@ -811,50 +863,64 @@
       
         <li class="md-nav__item">
   <a href="#requirements-high-level-overview" class="md-nav__link">
-    Requirements (high-level overview)
+    <span class="md-ellipsis">
+      Requirements (high-level overview)
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#video-owerview" class="md-nav__link">
-    Video owerview
+  <a href="#video-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video overview
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#step-1-download-the-raw-data" class="md-nav__link">
-    Step 1. - Download the raw data
+    <span class="md-ellipsis">
+      Step 1. - Download the raw data
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Step 1. - Download the raw data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-download-our-mcap-from-a-link" class="md-nav__link">
-    Option A. - Download our MCAP from a link
+  <a href="#option-a-download-our-mcap-from-the-link-below" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option A. - Download our MCAP from the link below
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-download-our-mcap-as-a-terminal-command" class="md-nav__link">
-    Option B. - Download our MCAP as a terminal command
+  <a href="#option-b-download-our-mcap-through-your-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option B. - Download our MCAP through your terminal
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-c-use-own-mcap" class="md-nav__link">
-    Option C. - Use own MCAP
+  <a href="#option-c-use-your-own-mcap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option C. - Use your own MCAP
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#check-your-raw-data" class="md-nav__link">
-    Check your raw data
+    <span class="md-ellipsis">
+      Check your raw data
+    </span>
   </a>
   
 </li>
@@ -866,7 +932,9 @@
       
         <li class="md-nav__item">
   <a href="#step-2-install-ros-2-packages" class="md-nav__link">
-    Step 2. - Install ROS 2 packages
+    <span class="md-ellipsis">
+      Step 2. - Install ROS 2 packages
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Step 2. - Install ROS 2 packages">
@@ -874,21 +942,27 @@
         
           <li class="md-nav__item">
   <a href="#clone-patchworkpp-package" class="md-nav__link">
-    Clone patchworkpp package
+    <span class="md-ellipsis">
+      Clone patchworkpp package
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#clone-lidar_cluster-package" class="md-nav__link">
-    Clone lidar_cluster package
+    <span class="md-ellipsis">
+      Clone lidar_cluster package
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#build-the-packages" class="md-nav__link">
-    Build the packages
+    <span class="md-ellipsis">
+      Build the packages
+    </span>
   </a>
   
 </li>
@@ -899,16 +973,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#step-3-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3. - Run
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3. - Run">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#what-to-expect" class="md-nav__link">
-    What to expect
+    <span class="md-ellipsis">
+      What to expect
+    </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    Run
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -926,12 +1010,13 @@
   
   
   
+  
     <li class="md-nav__item">
       <a href="../f1tenth_sim_a/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    F1/10 simulation (ROS 2)
+    F1/10 simulation
   </span>
   
 
@@ -946,6 +1031,97 @@
   
   
   
+  
+    <li class="md-nav__item">
+      <a href="../f1tenth_real_a/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    F1/10 hands-on
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_sim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control simulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ROS 1 (legacy)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            ROS 1 (legacy)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../wheeltec_real_a/" class="md-nav__link">
         
@@ -956,6 +1132,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -996,50 +1180,64 @@
       
         <li class="md-nav__item">
   <a href="#requirements-high-level-overview" class="md-nav__link">
-    Requirements (high-level overview)
+    <span class="md-ellipsis">
+      Requirements (high-level overview)
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#video-owerview" class="md-nav__link">
-    Video owerview
+  <a href="#video-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video overview
+    </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#step-1-download-the-raw-data" class="md-nav__link">
-    Step 1. - Download the raw data
+    <span class="md-ellipsis">
+      Step 1. - Download the raw data
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Step 1. - Download the raw data">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#option-a-download-our-mcap-from-a-link" class="md-nav__link">
-    Option A. - Download our MCAP from a link
+  <a href="#option-a-download-our-mcap-from-the-link-below" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option A. - Download our MCAP from the link below
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-b-download-our-mcap-as-a-terminal-command" class="md-nav__link">
-    Option B. - Download our MCAP as a terminal command
+  <a href="#option-b-download-our-mcap-through-your-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option B. - Download our MCAP through your terminal
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#option-c-use-own-mcap" class="md-nav__link">
-    Option C. - Use own MCAP
+  <a href="#option-c-use-your-own-mcap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option C. - Use your own MCAP
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#check-your-raw-data" class="md-nav__link">
-    Check your raw data
+    <span class="md-ellipsis">
+      Check your raw data
+    </span>
   </a>
   
 </li>
@@ -1051,7 +1249,9 @@
       
         <li class="md-nav__item">
   <a href="#step-2-install-ros-2-packages" class="md-nav__link">
-    Step 2. - Install ROS 2 packages
+    <span class="md-ellipsis">
+      Step 2. - Install ROS 2 packages
+    </span>
   </a>
   
     <nav class="md-nav" aria-label="Step 2. - Install ROS 2 packages">
@@ -1059,21 +1259,27 @@
         
           <li class="md-nav__item">
   <a href="#clone-patchworkpp-package" class="md-nav__link">
-    Clone patchworkpp package
+    <span class="md-ellipsis">
+      Clone patchworkpp package
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#clone-lidar_cluster-package" class="md-nav__link">
-    Clone lidar_cluster package
+    <span class="md-ellipsis">
+      Clone lidar_cluster package
+    </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#build-the-packages" class="md-nav__link">
-    Build the packages
+    <span class="md-ellipsis">
+      Build the packages
+    </span>
   </a>
   
 </li>
@@ -1084,16 +1290,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#step-3-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3. - Run
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3. - Run">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#what-to-expect" class="md-nav__link">
-    What to expect
+    <span class="md-ellipsis">
+      What to expect
+    </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    Run
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1116,27 +1332,28 @@
 
 
 <h1 id="workshop-on-ros-2-lidar-clustering">Workshop on ROS 2 LIDAR clustering<a class="headerlink" href="#workshop-on-ros-2-lidar-clustering" title="Permanent link">&para;</a></h1>
-<p>This short workshop will guide you how to filter and cluster LIDAR data into objets. Objects in our case are pedestrians, cars, buildings and so on. The workshop is ROS 2 compatible <a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a></p>
+<p>This short workshop will guide you through filtering LIDAR data into objects. Objects could be pedestrians, cars, buildings, and so on. This workshop is ROS 2 compatible. <a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a></p>
 <h2 id="requirements-high-level-overview">Requirements (high-level overview)<a class="headerlink" href="#requirements-high-level-overview" title="Permanent link">&para;</a></h2>
 <ol>
 <li>ROS 2 Humble: 🟠 see previous workshops or <a href="https://docs.ros.org/en/humble/Installation.html">docs.ros.org/en/humble/Installation.html</a> </li>
 <li>A log file with raw LIDAR data (MCAP format) ✅ </li>
-<li>Filtering out the ground plane with <code>patchworkpp</code> ✅ </li>
-<li>Clustering the non-grund data into objects with <code>lidar_cluster</code> ✅ </li>
+<li>The <code>patchworkpp</code> package to filter out the ground plane ✅ </li>
+<li>The <code>lidar_cluster</code> package to perform the clustering ✅ </li>
 </ol>
-<h2 id="video-owerview">Video owerview<a class="headerlink" href="#video-owerview" title="Permanent link">&para;</a></h2>
-<p>In the following a screen record of the steps are presented:
-TODO:</p>
+<h2 id="video-overview">Video overview<a class="headerlink" href="#video-overview" title="Permanent link">&para;</a></h2>
+<p>The following screen recording demonstrates the steps involved:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YJyczb53vrg?si=rqnKHgE7y70-5B3a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <h2 id="step-1-download-the-raw-data"><code>Step 1.</code> - Download the raw data<a class="headerlink" href="#step-1-download-the-raw-data" title="Permanent link">&para;</a></h2>
-<p>In order to cluster LIDAR data, first you need - no surprise - LIDAR data. Use any of the following 3 option.</p>
-<h3 id="option-a-download-our-mcap-from-a-link"><code>Option A.</code> - Download our MCAP from a link<a class="headerlink" href="#option-a-download-our-mcap-from-a-link" title="Permanent link">&para;</a></h3>
+<p>In order to cluster LIDAR data, first you need - no surprise - LIDAR data. Use any of the following 3 options.</p>
+<h3 id="option-a-download-our-mcap-from-the-link-below"><code>Option A.</code> - Download our MCAP from the link below<a class="headerlink" href="#option-a-download-our-mcap-from-the-link-below" title="Permanent link">&para;</a></h3>
 <p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1">Download MCAP [~540MB] <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span> </a></p>
-<p>In our case <code>/mnt/c/bag/</code> is used as the <code>.mcap</code> folder, if you use other, modify it when executing the following steps.</p>
-<h3 id="option-b-download-our-mcap-as-a-terminal-command"><code>Option B.</code> - Download our MCAP as a terminal command<a class="headerlink" href="#option-b-download-our-mcap-as-a-terminal-command" title="Permanent link">&para;</a></h3>
+<p>In our examples the <code>.mcap</code> file is going to be saved in <code>/mnt/c/bag/</code>. If you want to use another directory, please change it accordingly.</p>
+<h3 id="option-b-download-our-mcap-through-your-terminal"><code>Option B.</code> - Download our MCAP through your terminal<a class="headerlink" href="#option-b-download-our-mcap-through-your-terminal" title="Permanent link">&para;</a></h3>
 <details>
 <summary> Don't forget to change directory first.</summary>
 
-In our case /mnt/c/bag/ is used as a final destination:
+In our case `/mnt/c/bag/` is used as a final destination:
 
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/mnt/c/bag/
 </code></pre></div>
@@ -1144,30 +1361,36 @@ In our case /mnt/c/bag/ is used as a final destination:
 
 <div class="highlight"><pre><span></span><code>wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1  -O lexus3-2024-04-05-gyor.mcap
 </code></pre></div>
-<h3 id="option-c-use-own-mcap"><code>Option C.</code> - Use own MCAP<a class="headerlink" href="#option-c-use-own-mcap" title="Permanent link">&para;</a></h3>
-<p>You can use your own MCAP, please note that you have to change following:</p>
+<h3 id="option-c-use-your-own-mcap"><code>Option C.</code> - Use your own MCAP<a class="headerlink" href="#option-c-use-your-own-mcap" title="Permanent link">&para;</a></h3>
+<p>You can use your own MCAP, but in that case, you may need to change following:</p>
 <ul>
-<li>LIDAR topic which is on our case <code>/lexus3/os_center/points</code> and the </li>
-<li>LIDAR frame (in our case: <code>lexus3/os_center_a_laser_data_frame</code>) </li>
+<li>The LIDAR topic <ul>
+<li>In our examples it's <code>/lexus3/os_center/points</code></li>
 </ul>
-<p>In the following steps based on your own data, topic and frame must be set.</p>
+</li>
+<li>LIDAR frame <ul>
+<li>In our examples it's <code>lexus3/os_center_a_laser_data_frame</code></li>
+</ul>
+</li>
+</ul>
+<p>Never forget to update these in later steps if you use your own MCAP.</p>
 <h3 id="check-your-raw-data">Check your raw data<a class="headerlink" href="#check-your-raw-data" title="Permanent link">&para;</a></h3>
-<p>Play your bag e.g. with:
+<p>Play your bag using the following command (or however you wish):
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>bag<span class="w"> </span>play<span class="w"> </span>/mnt/c/bag/lexus3-2024-04-05-gyor.mcap<span class="w"> </span>-l
 </code></pre></div></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>In the <code>play</code> command <code>-l</code> means to loop the mcap file.</p>
+<p>The <code>-l</code> option in the <code>play</code> command loops the mcap file.</p>
 </div>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p>If everything works as expected you shold see a bunch of topics in another terminal
+<p>If everything works as expected you should see a bunch of topics in another terminal
 <details>
 <summary> Topics</summary>
 In another terminal issue the command:</p>
 <p><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>list
 </code></pre></div>
-You sholud see a similar list opf topics:</p>
+You should see a similar list of topics:</p>
 <p><div class="highlight"><pre><span></span><code>/clock
 /events/read_split
 /lexus3/gps/duro/current_pose
@@ -1188,7 +1411,7 @@ You sholud see a similar list opf topics:</p>
 /tf_static<span class="w">   </span>
 </code></pre></div>
 </details></p>
-<p>Also there must be at least a <code>sensor_msgs/msg/PointCloud2</code>, chechk with:
+<p>Also there must be at least one <code>sensor_msgs/msg/PointCloud2</code>, check with:
 <div class="highlight"><pre><span></span><code><span class="w"> </span>ros2<span class="w"> </span>topic<span class="w"> </span><span class="nb">type</span><span class="w"> </span>/lexus3/os_center/points
 </code></pre></div>
 Result:
@@ -1198,19 +1421,20 @@ Result:
 <h2 id="step-2-install-ros-2-packages"><code>Step 2.</code> - Install <code>ROS 2</code> packages<a class="headerlink" href="#step-2-install-ros-2-packages" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you don't have <code>~/ros2_ws/</code> directory, use your own workspace, or create it:
+<p>If you don't have the <code>~/ros2_ws/</code> directory already, create it with the following command:
 <div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>-p<span class="w"> </span>~/ros2_ws/src
-</code></pre></div></p>
+</code></pre></div>
+If you have your own workspace, make sure to update the paths accordingly in the following steps.</p>
 </div>
 <h3 id="clone-patchworkpp-package">Clone <code>patchworkpp</code> package<a class="headerlink" href="#clone-patchworkpp-package" title="Permanent link">&para;</a></h3>
-<p><code>patchwork-plusplus-ros</code> is ROS 2 package of Patchwork++ (@ IROS'22), which provides fast and robust LIDAR ground segmentation. This package is developed by <a href="https://github.com/url-kaist/">KAIST</a> (Korea Advanced Institute of Science &amp; Technology), but you can use the <a href="https://github.com/jkk-research/">JKK research</a> fork too.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
+<p><code>patchwork-plusplus-ros</code> is ROS 2 package of Patchwork++ (@ IROS'22), which provides fast and robust LIDAR ground segmentation. We recommend the <a href="https://github.com/jkk-research/">JKK research</a> fork which contains some improvements, alternatively you can use the original <a href="https://github.com/url-kaist/">KAIST</a> version. </p>
+<p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/jkk-research/patchwork-plusplus-ros
 </code></pre></div>
-<p>Alternatively you can download the <code>ROS2</code> branch from KAIST:</p>
+or
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/url-kaist/patchwork-plusplus-ros<span class="w"> </span>-b<span class="w"> </span>ROS2
-</code></pre></div>
+</code></pre></div></p>
 <h3 id="clone-lidar_cluster-package">Clone <code>lidar_cluster</code> package<a class="headerlink" href="#clone-lidar_cluster-package" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~/ros2_ws/src
 </code></pre></div>
@@ -1221,7 +1445,8 @@ Result:
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>colcon<span class="w"> </span>build<span class="w"> </span>--packages-select<span class="w"> </span>patchworkpp<span class="w"> </span>lidar_cluster<span class="w"> </span>--symlink-install
 </code></pre></div>
-<h2 id="what-to-expect">What to expect<a class="headerlink" href="#what-to-expect" title="Permanent link">&para;</a></h2>
+<h2 id="step-3-run"><code>Step 3.</code> - Run<a class="headerlink" href="#step-3-run" title="Permanent link">&para;</a></h2>
+<h3 id="what-to-expect">What to expect<a class="headerlink" href="#what-to-expect" title="Permanent link">&para;</a></h3>
 <pre class="mermaid"><code>graph TD;
 
     p1[ /lexus3/os_center/points&lt;br/&gt;sensor_msgs::PointCloud2]:::white --&gt; patchwork([ /patchwork_node]):::light
@@ -1234,7 +1459,6 @@ Result:
     classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#15274
     classDef dash fill:#ffffff,stroke:#152742,stroke-width:2px,color:#15274, stroke-dasharray: 5 5
     classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff</code></pre>
-<h2 id="run">Run<a class="headerlink" href="#run" title="Permanent link">&para;</a></h2>
 <details>
 <summary> Don't forget to source before ROS commands.</summary>
 
@@ -1246,21 +1470,33 @@ Result:
 </code></pre></div>
 <p><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>patchworkpp<span class="w"> </span>demo.launch.py<span class="w">  </span>cloud_topic:<span class="o">=</span>/lexus3/os_center/points<span class="w"> </span>cloud_frame:<span class="o">=</span>lexus3/os_center_a_laser_data_frame
 </code></pre></div>
-Use an example clustering algorithm (<code>version 1.</code>):</p>
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>lidar_cluster<span class="w"> </span>dbscan_spatial.launch.py
+Use one of the following clustering algorithms:</p>
+<p><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>lidar_cluster<span class="w"> </span>dbscan_spatial.launch.py
 </code></pre></div>
-<p>Alternatively use an example clustering algorithm (<code>version 2.</code>):
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>lidar_cluster<span class="w"> </span>euclidean_spatial.launch.py
-</code></pre></div></p>
-<p>Alternatively use an example clustering algorithm (<code>version 2.</code>):
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>lidar_cluster<span class="w"> </span>euclidean_grid.launch.py
-</code></pre></div></p>
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a non-grid based clustering algorithm.
+On a modern 6-core CPU or better, you can expect a performance of at least 10 Hz. </p>
+<p><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>lidar_cluster<span class="w"> </span>euclidean_spatial.launch.py
+</code></pre></div>
+Non-grid clustering based on euclidean distance. 
+On a modern 6-core CPU or better, you can expect a performance of at least 5 Hz. </p>
+<p><div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>lidar_cluster<span class="w"> </span>euclidean_grid.launch.py
+</code></pre></div>
+Voxel grid based clustering based on euclidean distance.
+On a modern 6-core CPU or better, you can expect a performance of at least 100 Hz. </p>
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>launch<span class="w"> </span>lidar_cluster<span class="w"> </span>rviz02.launch.py
 </code></pre></div>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p>TODO: If everything works as expected you should see a similar rviz window. </p>
+<p>If everything works as expected you should see a similar rviz window. 
+<img alt="lidar_cluster01" src="https://raw.githubusercontent.com/jkk-research/lidar_cluster_ros2/ros2/img/lidar_cluster01.png" /></p>
 </div>
+
+
+
+
+
+
+
 
 
 
@@ -1271,6 +1507,7 @@ Use an example clustering algorithm (<code>version 1.</code>):</p>
             </div>
           
           
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
@@ -1310,7 +1547,7 @@ Use an example clustering algorithm (<code>version 1.</code>):</p>
       
     
     <a href="https://jkk-research/jkk-research.github.io" target="_blank" rel="noopener" title="jkk-research" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
     </a>
   
 </div>
@@ -1325,10 +1562,10 @@ Use an example clustering algorithm (<code>version 1.</code>):</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.expand", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select", "navigation.expand", "navigation.tabs", "navigation.top", "toc.follow"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.aecac24b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.af256bd8.min.js"></script>
       
     
   </body>

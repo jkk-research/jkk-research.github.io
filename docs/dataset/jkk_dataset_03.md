@@ -1,8 +1,5 @@
 This dataset contains the raw data of naturalistic driving, utilized for Human-Like Behavior studies of Automated Vehicles (HLB4AV).
 
-
-### `jkk_dataset_03.zip`
-
 ![](/img/ldm1.svg)
 
 The zipped measurements can be downloaded from the following link.

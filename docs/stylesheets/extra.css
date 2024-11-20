@@ -19,3 +19,11 @@
     --md-footer-fg-color--light: #b9e7f2;
     --md-footer-fg-color--lighter: #d9eef3;
   }
+
+  .sze-color-primary {
+    color: #43AEC5;
+  }
+
+  .sze-color {
+    color: #43AEC5;
+  }

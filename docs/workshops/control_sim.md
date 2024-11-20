@@ -27,7 +27,10 @@ Gazebo Fortress ROS 2 simulation for the waypoint and planner tools.
 It is assumed that the workspace is `~/ros2_ws/`.
 
 ### Clone the packages
-```
+
+Clone [wayp_plan_tools](https://github.com/jkk-research/wayp_plan_tools) and [sim_wayp_plan_tools](https://github.com/jkk-research/sim_wayp_plan_tools) packages.
+
+```bash
 cd ~/ros2_ws/src && \
 git clone https://github.com/jkk-research/wayp_plan_tools && \
 git clone https://github.com/jkk-research/sim_wayp_plan_tools
@@ -51,11 +54,13 @@ ign gazebo -v 4 -r ackermann_steering.sdf
 
 ### 2. Start the Gazebo bridge
 
-Don't forget to `source` before ROS commands.
+<details>
+<summary> Open a neew terminal and don't forget to source before ROS commands.</summary>
 
-``` r
-source ~/ros2_ws/install/local_setup.bash
+``` bash
+source ~/ros2_ws/install/setup.bash
 ```
+</details>
 
 ``` r
 ros2 launch sim_wayp_plan_tools gazebo_bridge.launch.py
@@ -130,12 +135,27 @@ ros2 launch sim_wayp_plan_tools rviz1.launch.py
 
 # Or run everything with a single command
 
-After `ign gazebo -v 4 -r ackermann_steering.sdf` (terminal 1) and `source ~/ros2_ws/install/local_setup.bash` (terminal 2), run this command (also in terminal 2): 
+After `ign gazebo -v 4 -r ackermann_steering.sdf` (terminal 1) open a new terminal.
+
+<details>
+<summary> Don't forget to source bashrc.</summary>
+
+``` bash
+source ~/.bashrc
+```
+</details>
+
+Run this command (in terminal 2): 
+
 ``` r
 ros2 launch sim_wayp_plan_tools all_in_once.launch.py
 ```
 
 ## Evaluation
+
+``` bash 
+ros2 run rqt_reconfigure rqt_reconfigure
+```
 
 The following image shows some example runs:
 
@@ -160,4 +180,3 @@ Once you have identified the PID, use the kill command followed by the PID to te
 ``` r
 kill 12345
 ```
-

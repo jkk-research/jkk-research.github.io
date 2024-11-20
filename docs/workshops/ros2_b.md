@@ -8,7 +8,7 @@ title: ROS 2 introduction
 
  
 
-## `ROS 2` intro
+## `ROS 2` :simple-ros:{ .sze-color } intro
 
 
 `ROS 2`, the latest release of `ROS`, is a set of software libraries and tools (middleware) that help develop robot applications. By definition, middleware is software that connects software components. It is a layer that sits between the operating system and applications on both sides of a distributed computer network. `ROS 2` uses the permissive open source [Apache 2.0](https://choosealicense.com/licenses/apache-2.0/) license.
@@ -258,23 +258,28 @@ string frame_id
 
 A `Header` és a`Point` a típusból épül fel a `PoseStamped` típus struktúrája:
 
-``` bash
+```  { .bash .annotate }
 $ ros2 interface show geometry_msgs/msg/PoseStamped
 std_msgs/Header header
   uint32 seq
   time stamp
   string frame_id
 geometry_msgs/Pose pose
-  geometry_msgs/Point position
+  geometry_msgs/Point position # (1) 
     float64 x
     float64 y
     float64 z
-  geometry_msgs/Quaternion orientation
+  geometry_msgs/Quaternion orientation # (2)
     float64 x
     float64 y
     float64 z
     float64 w
+
 ```
+{ .annotate }
+
+1.  :man_raising_hand: This should look familiar: `geometry_msgs/msg/Point` has already been discussed.
+2.  :man_raising_hand: `geometry_msgs/Quaternion` is a type that represents a rotation in 3D space.
 
 ### Publishing / Subscribing
 

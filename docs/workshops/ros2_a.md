@@ -1,4 +1,4 @@
-## `ROS 2` install hands-on workshop
+## `ROS 2` install hands-on workshop :simple-ros:{ .sze-color } 
 
 This document will guide you through the installation process of `ROS 2`.
 

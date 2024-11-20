@@ -54,10 +54,19 @@ All libraries should be ready to use and the `ign gazebo` app ready to be execut
 
 Issue the following command:
 
-```bash
-sudo apt install ros-humble-ros-gz-bridge
-```
 
+=== "Humble"
+
+    ```bash
+    sudo apt install ros-humble-ros-gz-bridge
+    ```
+
+=== "Jazzy"
+
+    ```bash
+    sudo apt install ros-$ROS_DISTRO-ros-gz-bridge
+    ```
+    
 ## Additional settings to WSL2
 
 !!! danger "Warning - WSL2"

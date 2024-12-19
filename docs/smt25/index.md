@@ -27,9 +27,9 @@ The 2nd Sustainable Mobility and Transportation Symposium, an interdisciplinary 
 
 ## Imortant Dates
 
-- **Competition date**: october 2025 *(TODO: exact date to be announced)*
-- **Registration opens**: *(TODO: exact date to be announced)*
-- **Registration deadline**: *(TODO: exact date to be announced)*
+- **Competition date**: October 16th -18th, 2025
+- **Registration opens**: March 3rd, 2025
+- **Registration deadline**: September 24th, 2025
 
 
 ## Place
@@ -48,4 +48,7 @@ All necessary information about the race e.g. rules, scoring system, simulation 
 - In-person competition
 
 # Flyer
+
+[View flyer](f1tenth_flyer01.pdf){ .md-button .md-button--primary }
+
 

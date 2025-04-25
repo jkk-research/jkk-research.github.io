@@ -3,7 +3,12 @@ hide:
   - navigation
 ---
 
-## About F1/10 Autonomous Racing
+# Cancelled ❌
+
+Roboracer / F1tenth is cancelled in 2025, hopefully we can organize it in 2026! ✔️
+
+
+## About F1/10 (Roboracer) Autonomous Racing
 
 F1TENTH (F1/10) Autonomous Racing is a semi-regular competition organized by an international community of researchers, engineers, and autonomous systems enthusiasts. The teams participating in an F1TENTH compatition will build a 1:10 scaled autonomous race car according to a given specification and write software for it to fulfill the objectives for the competition: Don’t crash and minimize laptime.
 
@@ -13,23 +18,15 @@ F1TENTH (F1/10) Autonomous Racing is a semi-regular competition organized by an 
   <figcaption>F1TENTH car</figcaption>
 </figure>
 
-## About SMT 2025
+## About SMT 2026
 
-The 2nd Sustainable Mobility and Transportation Symposium, an interdisciplinary scientific conference organized by the Audi Hungaria Faculty of Vehicle Engineering and the Vehicle Industry Reserach Center of Széchenyi István University. The conference is dedicated to exploring the latest advancements and innovations in the field of automotive technology and transportation, and aims to bring together experts from various domains to foster collaboration, share insights, and shape the future of mobility. 
+The 3rd Sustainable Mobility and Transportation Symposium, an interdisciplinary scientific conference organized by the Audi Hungaria Faculty of Vehicle Engineering and the Vehicle Industry Reserach Center of Széchenyi István University. The conference is dedicated to exploring the latest advancements and innovations in the field of automotive technology and transportation, and aims to bring together experts from various domains to foster collaboration, share insights, and shape the future of mobility. 
 
 ## Official Websites
 
 - [smtsymposium.sze.hu](https://smtsymposium.sze.hu/)
 - [roboracer.ai](https://roboracer.ai/race.html)
 
-
-# F1/10 @SMT2025
-
-## Imortant Dates
-
-- **Competition date**: October 16th -18th, 2025
-- **Registration opens**: March 3rd, 2025
-- **Registration deadline**: September 24th, 2025
 
 
 ## Place

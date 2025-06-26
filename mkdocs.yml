@@ -543,6 +543,9 @@ markdown_extensions:
   - pymdownx.superfences
   - toc:
       permalink: true
+  - footnotes
 
-# plugins:
-#   - meta
+plugins:
+  - search
+  - bibtex:
+      bib_file: "refs.bib"

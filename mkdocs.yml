@@ -117,7 +117,7 @@ nav:
     - ROS 1 (legacy):
       - Wheeltec hands-on (ROS 1) : workshops/wheeltec_real_a.md
   - Assets:
-    - Vehciles: assets/vehciles.md
+    - Vehicles: assets/vehicles.md
     - Test track: assets/zalazone.md
     - Laboratory: assets/lab.md
   - F1/10 @SMT25: smt25/index.md

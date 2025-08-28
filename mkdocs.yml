@@ -45,7 +45,7 @@ site_url: 'https://jkk-research.github.io' # Uncomment to set a canonical URL
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 copyright: |
-  &copy; Author
+  &copy; SZE-JKK
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -116,6 +116,10 @@ nav:
       - workshops/control_sim.md
     - ROS 1 (legacy):
       - Wheeltec hands-on (ROS 1) : workshops/wheeltec_real_a.md
+  - Assets:
+    - Vehciles: assets/vehciles.md
+    - Test track: assets/zalazone.md
+    - Laboratory: assets/lab.md
   - F1/10 @SMT25: smt25/index.md
 
 # +--------------------------------------------------------------------------------------------------------+

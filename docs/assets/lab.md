@@ -1,0 +1,1 @@
+The Vehicle Industry Research Center operates multiple laboratories, both at the ZalaZONE facility and on our Győr campus.

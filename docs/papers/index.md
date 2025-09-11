@@ -14,7 +14,8 @@ hide:
 | @igneczi2024curve       | [![](https://img.shields.io/github/stars/gfigneczi1/hlb)<br/>github.com/gfigneczi1/hlb](https://github.com/gfigneczi1/hlb)
 | @enisz2024kalman        | [![](https://img.shields.io/github/stars/jkk-research/kalman_pos)<br/>github.com/jkk-research/kalman_pos](https://github.com/jkk-research/kalman_pos)
 | @machines11121079       | [![](https://img.shields.io/github/stars/jkk-research/pos-prediction)<br/>github.com/jkk-research/pos-prediction](https://github.com/jkk-research/pos-prediction)
-|<img width=200/>|<img width=600/>
+| @Razdan2025ProductAssurance | Technical report, no code repository available
+
 
 
 

@@ -6,7 +6,7 @@
   <figcaption>Lexus</figcaption>
 </figure>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dlljhM7CWtI?si=4jBqlPoRq89P07O9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FmAkOa9vDyY?si=1MDCRIBAIX-M5OMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Nissan Leaf
 **Sensors**: 2x Ouster OS1-64 LIDAR, 2x Velodyne VLP16 LIDAR, SICK LMS111 LIDAR, Stereolabs Zed / Zed2
@@ -14,6 +14,16 @@
 <figure markdown="span">
   ![Image](/assets/images_common/vehcile_leaf01.png){ width="80%" }
   <figcaption>Nissan Leaf</figcaption>
+</figure>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9eFqsei1J70?si=Y9rnsmGnoiofxhiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# Traffic Cone Manipulation Robot
+**Sensors**: Intel RealSense RGB-D camera, IMU, GPS(GNSS)
+
+<figure markdown="span">
+  ![Image title](/assets/images_common/robot_traffic_cone01.png){ width="60%" }
+  <figcaption>Traffic Cone Manipulation Robot</figcaption>
 </figure>
 
 # Szenergy 
@@ -35,10 +45,3 @@
   ![Image title](https://raw.githubusercontent.com/robotverseny/robotverseny.github.io/main/img/f1tenth_wheeltec_roboworks01.png){ width="60%" }
 </figure>
 
-# Traffic Cone Manipulation Robot
-**Sensors**: Intel RealSense RGB-D camera, IMU, GPS(GNSS)
-
-<figure markdown="span">
-  ![Image title](/assets/images_common/robot_traffic_cone01.png){ width="60%" }
-  <figcaption>Traffic Cone Manipulation Robot</figcaption>
-</figure>

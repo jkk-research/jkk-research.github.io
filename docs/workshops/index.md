@@ -6,6 +6,12 @@ hide:
 
 # Workshops overview
 
+## `2025.11.05` Győr `ROS 2`: Wheeltec & Roboracer
+
+During the workshop Wheeltec and Roboracer based real-world challage was carried out, based on `ROS 2` Humble.
+
+![](/img/workshop4_a.png){: style="height:200px"}
+
 ## `2024.06.08` Győr `ROS 2`
 
 During the workshop F1/10 based simulation was presented based on `ROS 2` Humble.

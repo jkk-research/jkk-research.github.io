@@ -1,10 +1,14 @@
 # `ROS 2` F1/10 Wheeltec Gazebo simulation workshop
 
-The workshop is ROS 2 compatible [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
+The workshop is ROS 2 compatible [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/) and [![Static Badge](https://img.shields.io/badge/ROS_2-Jazzy-34aec5)](https://docs.ros.org/en/jazzy/)
 
 ## Video
 
+Part 1 of the video series about the workshop is available on YouTube:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/90cVRC2Hd7Y?si=GUiIyuXk71Bu1uGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Part 2 (TODO)
 
 ## Requirements (high-level)
 1. ROS 2 Humble: 🟠 see previous workshops or [docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html) 
@@ -154,6 +158,14 @@ git clone https://github.com/rudolfkrecht/robotverseny
 
 ## Build
 
+Build the following packages:
+
+- `robotverseny_application`
+- `robotverseny_description`
+- `robotverseny_bringup`
+- `robotverseny_gazebo`
+- `megoldas_sim24`
+
 ``` bash
 cd ~/ros2_ws
 ```
@@ -163,7 +175,7 @@ colcon build --symlink-install --packages-select robotverseny_application robotv
 ```
 
 
-## Run
+## Run the simulation
 
 <details>
 <summary> Don't forget to source before ROS commands.</summary>
@@ -177,7 +189,36 @@ source ~/ros2_ws/install/setup.bash
 ros2 launch robotverseny_bringup roboworks.launch.py
 ```
 
-![](https://raw.githubusercontent.com/rudolfkrecht/robotverseny/main/img/gazebo_and_rviz01.png)
+## Run the controllers
+
+After starting the simulation, we will need a controller to drive the robot. Two simple controllers are provided: `simple_pursuit.py` and `follow_the_gap.py`. An image of the simulation with follow_the_gap controller is shown below.
+
+![](https://raw.githubusercontent.com/robotverseny/megoldas_sim24/refs/heads/main/img/sim01.png)
+
+In a new terminal:
+
+<details>
+<summary> Don't forget to source before ROS commands.</summary>
+
+``` bash
+source ~/ros2_ws/install/setup.bash
+```
+</details>
+
+```bash
+ros2 launch megoldas_sim24 megoldas1.launch.py # start simple_pursuit
+```
+```bash
+ros2 run megoldas_sim24 simple_pursuit.py
+```
+```bash
+ros2 launch megoldas_sim24 megoldas2.launch.py # start follow_the_gap
+```
+```bash
+ros2 run megoldas_sim24 follow_the_gap.py
+```
+
+
 
 ## Useful commands
 
@@ -225,3 +266,44 @@ ros2 topic list
 /tf_static
 ```
 </details>
+
+
+## Transformations
+
+The frame `/odom_combined` is practically the same as `/map`, there is a static `0,0,0` transform between them. The only dynamic transform is between `/odom_combined` and `/base_link`.
+
+```mermaid
+
+graph TD
+    %% Root frame
+    map([ map]):::light
+    odom_combined([ odom_combined]):::light
+    base_link([ base_link]):::light
+    chassis([ chassis]):::light
+    camera_link([ camera_link]):::light
+    imu_link([ imu_link]):::light
+    laser([ laser]):::light
+
+    %% connections
+    odom_combined -.->|dynamic| base_link
+    base_link -->|static| chassis
+    base_link -->|static| camera_link
+    base_link -->|static| imu_link
+    base_link -->|static| laser
+    map ==>|static - same| odom_combined
+
+classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742  
+classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
+classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
+classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
+
+```
+You can visualize the frames with:
+
+``` bash
+ros2 run rqt_tf_tree rqt_tf_tree
+```
+
+!!! danger
+
+    There might be even more frames, but we are not using them.

@@ -273,9 +273,8 @@ ros2 topic list
 The frame `/odom_combined` is practically the same as `/map`, there is a static `0,0,0` transform between them. The only dynamic transform is between `/odom_combined` and `/base_link`.
 
 ```mermaid
+graph TD;
 
-graph TD
-    %% Root frame
     map([ map]):::light
     odom_combined([ odom_combined]):::light
     base_link([ base_link]):::light
@@ -284,7 +283,6 @@ graph TD
     imu_link([ imu_link]):::light
     laser([ laser]):::light
 
-    %% connections
     odom_combined -.->|dynamic| base_link
     base_link -->|static| chassis
     base_link -->|static| camera_link
@@ -296,8 +294,8 @@ classDef light fill:#34aec5,stroke:#152742,stroke-width:2px,color:#152742
 classDef dark fill:#152742,stroke:#34aec5,stroke-width:2px,color:#34aec5
 classDef white fill:#ffffff,stroke:#152742,stroke-width:2px,color:#152742
 classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
-
 ```
+
 You can visualize the frames with:
 
 ``` bash
@@ -307,3 +305,4 @@ ros2 run rqt_tf_tree rqt_tf_tree
 !!! danger
 
     There might be even more frames, but we are not using them.
+

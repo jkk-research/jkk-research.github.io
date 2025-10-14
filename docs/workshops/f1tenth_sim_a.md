@@ -108,6 +108,24 @@ cat ~/.bashrc | grep LIBGL
 ```
 should print the line.
 
+## Optional: Install `rviz-2d-overlay` plugin
+
+For better visualization (rviz top left corner yellow text), install the `rviz-2d-overlay` plugin:
+
+=== "Humble"
+
+    ```bash
+    sudo apt install ros-humble-rviz-2d-overlay*
+    ```
+
+=== "Jazzy"
+
+    ```bash
+    sudo apt install ros-$ROS_DISTRO-rviz-2d-overlay*
+    ```
+
+
+
 ## Check the installation
 
 
@@ -179,7 +197,7 @@ cd ~/ros2_ws
 ```
 
 ``` bash
-colcon build --symlink-install --packages-select robotverseny_application robotverseny_description robotverseny_bringup robotverseny_gazebo 
+colcon build --symlink-install --packages-select robotverseny_application robotverseny_description robotverseny_bringup robotverseny_gazebo megoldas_sim24
 ```
 
 
@@ -317,3 +335,10 @@ ros2 run rqt_tf_tree rqt_tf_tree
 
     There might be even more frames, but we are not using them.
 
+## Additional resources
+
+- [github.com/robotverseny](https://github.com/robotverseny)
+- [github.com/robotverseny/robotverseny_gazebo24](https://github.com/robotverseny/robotverseny_gazebo24)
+- [github.com/robotverseny/megoldas_sim24](https://github.com/robotverseny/megoldas_sim24)
+- [robotverseny.github.io](https://robotverseny.github.io)
+- [sze-info.github.io/ajr/szimulacio/f1tenth_sim_a](https://sze-info.github.io/ajr/szimulacio/f1tenth_sim_a/)

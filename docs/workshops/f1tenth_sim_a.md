@@ -228,7 +228,7 @@ ros2 run megoldas_sim24 follow_the_gap.py
 
 The results can be seen in the animation below:
 
-![](https://raw.githubusercontent.com/jkk-research/jkk-research.github.io/refs/heads/master/docs/img/sim02.jpg)
+![](https://raw.githubusercontent.com/jkk-research/jkk-research.github.io/refs/heads/master/docs/img/sim02.gif)
 
 
 ## Useful commands

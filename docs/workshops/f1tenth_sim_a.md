@@ -147,14 +147,22 @@ Detailed description of the packages and build process.
 
 It is assumed that the workspace is `~/ros2_ws/`.
 
+The `robotverseny_gazebo24` package contains the Gazebo 2.4 world and model files for the Wheeltec Roboworks robot, while the `megoldas_sim24` package contains simple controllers to drive the robot in the simulation.
+
 
 ``` bash
 cd ~/ros2_ws/src
 ```
 
 ``` bash
-git clone https://github.com/rudolfkrecht/robotverseny
+git clone https://github.com/robotverseny/robotverseny_gazebo24
 ```
+
+``` bash
+git clone https://github.com/robotverseny/megoldas_sim24
+```
+
+
 
 ## Build
 
@@ -218,6 +226,9 @@ ros2 launch megoldas_sim24 megoldas2.launch.py # start follow_the_gap
 ros2 run megoldas_sim24 follow_the_gap.py
 ```
 
+The results can be seen in the animation below:
+
+![](https://raw.githubusercontent.com/jkk-research/jkk-research.github.io/refs/heads/master/docs/img/sim02.jpg)
 
 
 ## Useful commands

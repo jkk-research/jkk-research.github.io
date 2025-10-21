@@ -8,7 +8,9 @@ Part 1 of the video series about the workshop is available on YouTube:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/90cVRC2Hd7Y?si=GUiIyuXk71Bu1uGd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Part 2 (TODO)
+Part 2 of the video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZlNOnPJfS9c?si=Cj6xaboiXv5sCHvL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Requirements (high-level)
 1. ROS 2 Humble: 🟠 see previous workshops or [docs.ros.org/en/humble/Installation.html](https://docs.ros.org/en/humble/Installation.html) 
@@ -335,6 +337,46 @@ ros2 run rqt_tf_tree rqt_tf_tree
 
     There might be even more frames, but we are not using them.
 
+## Performance troubleshooting
+
+If the simulation is slow, try the following:
+
+Add `--cmake-args -DCMAKE_BUILD_TYPE=Release` to the build command. And or adjust `--parallel-workers N` to the number of CPU cores. Example: 
+
+``` bash
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --parallel-workers 4 --packages-select robotverseny_application robotverseny_description robotverseny_bringup robotverseny_gazebo megoldas_sim24
+```
+
+As suggested by [DDS settings for ROS 2 and Autoware](https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/dds-settings/): set the config file path and enlarge the Linux kernel maximum buffer size.
+
+``` bash
+# Increase the maximum receive buffer size for network packets
+sudo sysctl -w net.core.rmem_max=2147483647  # 2 GiB, default is 208 KiB
+
+# IP fragmentation settings
+sudo sysctl -w net.ipv4.ipfrag_time=3  # in seconds, default is 30 s
+sudo sysctl -w net.ipv4.ipfrag_high_thresh=134217728  # 128 MiB
+```
+
+To make it permanent,
+
+``` bash
+sudo nano /etc/sysctl.d/10-cyclone-max.conf
+```
+
+Paste the following into the file:
+``` bash
+# Increase the maximum receive buffer size for network packets
+net.core.rmem_max=2147483647  # 2 GiB, default is 208 KiB
+
+# IP fragmentation settings
+net.ipv4.ipfrag_time=3  # in seconds, default is 30 s
+net.ipv4.ipfrag_high_thresh=134217728  # 128 MiB, default is 256 KiB
+```
+Save and exit (`CTRL+O`, `ENTER`, `CTRL+X`).
+
+Also have a look at [Network settings for ROS 2 and Autoware](https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/) and [Performance Troubleshooting](https://autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/performance-troubleshooting/)
+
 ## Additional resources
 
 - [github.com/robotverseny](https://github.com/robotverseny)
@@ -342,3 +384,4 @@ ros2 run rqt_tf_tree rqt_tf_tree
 - [github.com/robotverseny/megoldas_sim24](https://github.com/robotverseny/megoldas_sim24)
 - [robotverseny.github.io](https://robotverseny.github.io)
 - [sze-info.github.io/ajr/szimulacio/f1tenth_sim_a](https://sze-info.github.io/ajr/szimulacio/f1tenth_sim_a/)
+- [autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/performance-troubleshooting](https://autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/performance-troubleshooting/)

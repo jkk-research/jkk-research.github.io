@@ -27,7 +27,7 @@ The short link to this page: [go.sze.hu/wh](https://go.sze.hu/wh)
 |---|---|
 |🟢 | 21.0 `V`- 25.0`V` |
 |🟡 | 20.0`V`- 21.0`V` |
-|🔴 | > 20.0 `V` |
+|🔴 | < 20.0 `V` |
 
 ![](https://raw.githubusercontent.com/robotverseny/fyi/refs/heads/main/etc/wheetec_battery01.png)
 
@@ -84,7 +84,7 @@ r2
 </details>
 
 ```bash
-ros2 launch turn_on_wheeltec_robot turn_on_wheeltec_robot.launch.py lidar:=true camera:=true foxglove:=true joy:=false
+ros2 launch turn_on_wheeltec_robot turn_on_wheeltec_robot.launch.py lidar:=true camera:=false foxglove:=true joy:=false
 ```
 
 The preferred way is to use the provided script [`start_drivers`](https://github.com/robotverseny/drivers/blob/main/shell/start_drivers.sh), which starts the robot drivers in the background (witht the help of [`screen`](https://github.com/szenergy/szenergy-public-resources/wiki/H-cheatsheet#screen)).
@@ -153,7 +153,7 @@ Copy the data to your local computer with `rsync`. On your **local** computer ru
 
 
 ```bash
-rsync -avzh --progress wheeltec@192.168.0.100:/home/wheeltec/bag/my_record1 /mnt/c/bag/
+rsync -avzh --progress wheeltec@192.168.0.100:/home/wheeltec/bag/scenario01 /mnt/c/bag/
 ```
 
 !!! Warning
@@ -203,9 +203,11 @@ classDef red fill:#ef4638,stroke:#152742,stroke-width:2px,color:#fff
 
 ## `5.` Code editing in VS code
 
-The recommended way to edit code on the robot is to use VS code with the `Remote - SSH` extension.
+The recommended way to edit code on the robot is to use VS code with the [`Remote - SSH` extension](https://code.visualstudio.com/docs/remote/ssh).
 
 ![](https://sze-info.github.io/ajr/assets/images_common/vscodebasics02.png)
+
+![](https://code.visualstudio.com/assets/docs/remote/ssh/architecture-ssh.png)
 
 ## `6.` Commands
 
@@ -231,3 +233,7 @@ The recommended way to edit code on the robot is to use VS code with the `Remote
 - [github.com/robotverseny/jkk_utils/tree/mcap_rec/mcap_rec](https://github.com/robotverseny/jkk_utils/tree/mcap_rec/mcap_rec)
 - [github.com/robotverseny/megoldas_sim24](https://github.com/robotverseny/megoldas_sim24)
 - [jkk-research.github.io/workshops/f1tenth_sim_a](https://jkk-research.github.io/workshops/f1tenth_sim_a)
+- [code.visualstudio.com/docs/remote/ssh](https://code.visualstudio.com/docs/remote/ssh)
+
+
+![](/img/wheeltec_roboworks01.png)

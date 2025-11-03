@@ -246,6 +246,11 @@ ros2 launch megoldas_sim24 megoldas2.launch.py # start follow_the_gap
 ros2 run megoldas_sim24 follow_the_gap.py
 ```
 
+- [simple_pursuit](https://github.com/robotverseny/megoldas_sim24/blob/main/megoldas_sim24/simple_pursuit.py)
+- [follow_the_gap](https://github.com/robotverseny/megoldas_sim24/blob/main/megoldas_sim24/follow_the_gap.py)
+- [megoldas1.launch.py](https://github.com/robotverseny/megoldas_sim24/blob/main/launch/megoldas1.launch.py)
+- [megoldas2.launch.py](https://github.com/robotverseny/megoldas_sim24/blob/main/launch/megoldas2.launch.py)
+
 The results can be seen in the animation below:
 
 ![](https://raw.githubusercontent.com/jkk-research/jkk-research.github.io/refs/heads/master/docs/img/sim02.gif)

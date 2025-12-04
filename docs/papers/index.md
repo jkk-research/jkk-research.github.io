@@ -20,7 +20,6 @@ hide:
 
 
 
-
 # Bibliography
 
 The list is generated from the [`refs.bib`](https://github.com/jkk-research/jkk-research.github.io/blob/master/refs.bib) file.

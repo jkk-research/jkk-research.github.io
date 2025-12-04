@@ -15,6 +15,7 @@ hide:
 | @enisz2024kalman        | [![](https://img.shields.io/github/stars/jkk-research/kalman_pos)<br/>github.com/jkk-research/kalman_pos](https://github.com/jkk-research/kalman_pos)
 | @machines11121079       | [![](https://img.shields.io/github/stars/jkk-research/pos-prediction)<br/>github.com/jkk-research/pos-prediction](https://github.com/jkk-research/pos-prediction)
 | @Razdan2025ProductAssurance | Technical report, no code repository available
+| @marko2025roboust      | [![](https://img.shields.io/github/stars/norbertmarko/ground-normal-prediction)<br/>github.com/norbertmarko/ground-normal-prediction](https://github.com/norbertmarko/ground-normal-prediction)
 
 
 

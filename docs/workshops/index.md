@@ -11,6 +11,7 @@ hide:
 During the workshop Wheeltec and Roboracer based real-world challage was carried out, based on `ROS 2` Humble.
 
 ![](/img/workshop4_a.png){: style="height:200px"}
+![](/img/workshop4_b.png){: style="height:200px"}
 
 ## `2024.06.08` Győr `ROS 2`
 

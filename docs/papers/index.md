@@ -16,7 +16,7 @@ hide:
 | @machines11121079       | [![](https://img.shields.io/github/stars/jkk-research/pos-prediction)<br/>github.com/jkk-research/pos-prediction](https://github.com/jkk-research/pos-prediction)
 | @Razdan2025ProductAssurance | Technical report, no code repository available
 | @marko2025roboust      | [![](https://img.shields.io/github/stars/norbertmarko/ground-normal-prediction)<br/>github.com/norbertmarko/ground-normal-prediction](https://github.com/norbertmarko/ground-normal-prediction)
-
+| @unger2024clustering   | [![](https://img.shields.io/github/stars/jkk-research/lidar_cluster_ros2)<br/>github.com/jkk-research/lidar_cluster_ros2](https://github.com/jkk-research/lidar_cluster_ros2)
 
 
 

@@ -26,6 +26,13 @@
   <figcaption>Traffic Cone Manipulation Robot</figcaption>
 </figure>
 
+# Unitree Go2 Edu
+**Sensors**: Unitree 4D LiDAR L2, HD Wide-angle Camera, IMU
+<figure markdown="span">
+  ![Image title](/assets/images_common/robot_unitree_go2_edu01.png){ width="60%" }
+  <figcaption>Unitree Go2 Edu</figcaption>
+</figure>
+
 # Szenergy 
 **Sensors**: Ouster OS1-128 LIDAR, SICK LMS111 LIDAR, Stereolabs Zed2i
 

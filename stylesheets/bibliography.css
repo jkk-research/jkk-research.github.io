@@ -1,0 +1,130 @@
+/* Bibliography styling with preview images */
+
+/* Bibliography list with previews */
+.md-content .footnote ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.md-content .footnote ol li {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.md-content .footnote ol li:last-child {
+    border-bottom: none;
+}
+
+/* Preview image container */
+.md-content .footnote ol li::before {
+    content: '';
+    display: block;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    border: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+
+/* Fallback for entries without preview image */
+.md-content .footnote ol li::before {
+    background-color: #f5f5f5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Crect width='150' height='150' fill='%23f0f0f0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='40' fill='%23ccc'%3E📄%3C/text%3E%3C/svg%3E");
+}
+
+/* Content wrapper for text */
+.md-content .footnote ol li > * {
+    flex: 1;
+}
+
+/* Make paper titles bold and black */
+.md-content .footnote ol li {
+    color: #333;
+}
+
+/* Target the title (usually the first part before the period or journal name) */
+.md-content .footnote ol li::first-line {
+    font-weight: 700;
+    color: #000;
+}
+
+/* Alternative: If titles are in a specific element, target them directly */
+/* Adjust this selector based on your HTML structure */
+.md-content .footnote ol li > p:first-of-type,
+.md-content .footnote ol li > span:first-of-type {
+    font-weight: 700;
+    color: #7e7e7e;
+}
+
+/* Links styling */
+.md-content .footnote a[href*="doi.org"],
+.md-content .footnote a[href*="github.com"],
+.md-content .footnote a[href*="arxiv.org"],
+.md-content .footnote a[href*="mdpi.com"],
+.md-content .footnote a[href*="ieeexplore"],
+.md-content .footnote a[href*="scopus"] {
+    display: inline-block;
+    margin: 0.3em 0.3em 0.3em 0;
+    padding: 0.2em 0.6em;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-size: 0.8em;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s;
+    font-weight: normal;
+    color: #2196F3;
+}
+
+.md-content .footnote a[href*="doi.org"]:hover,
+.md-content .footnote a[href*="github.com"]:hover,
+.md-content .footnote a[href*="arxiv.org"]:hover {
+    background-color: #e8f4f8;
+    border-color: #4CAF50;
+    transform: translateY(-1px);
+}
+
+/* Icons for different link types */
+.md-content .footnote a[href*="doi.org"]::before {
+    content: "📄 ";
+}
+
+.md-content .footnote a[href*="github.com"]::before {
+    content: "💻 ";
+}
+
+.md-content .footnote a[href*="arxiv.org"]::before {
+    content: "📝 ";
+}
+
+/* Author and journal styling - keep lighter */
+.md-content .footnote ol li em {
+    color: #666;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Year emphasis */
+.md-content .footnote ol li {
+    line-height: 1.6;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .md-content .footnote ol li {
+        flex-direction: column;
+    }
+    
+    .md-content .footnote ol li::before {
+        min-width: 100%;
+        max-width: 100%;
+        height: 200px;
+    }
+}

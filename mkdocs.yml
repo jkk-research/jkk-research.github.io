@@ -124,9 +124,9 @@ nav:
     - Capabilities: assets/capabilities.md
   - F1/10 @SMT25: smt25/index.md
   - Wiki:
-    - wiki/index.md
-    - PACMod actuation: wiki/pacmod_actuation.md
     - Sensorset 2026-L: wiki/sensorset2026-l.md
+    - PACMod actuation: wiki/pacmod_actuation.md
+    - Novatel PwrPak7 RTK config: wiki/Novatel_config.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

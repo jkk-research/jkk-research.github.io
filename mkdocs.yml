@@ -123,6 +123,10 @@ nav:
     - Laboratory: assets/lab.md
     - Capabilities: assets/capabilities.md
   - F1/10 @SMT25: smt25/index.md
+  - Wiki:
+    - wiki/index.md
+    - PACMod actuation: wiki/pacmod_actuation.md
+    - Sensorset 2026-L: wiki/sensorset2026-l.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

@@ -127,6 +127,9 @@ nav:
     - Sensorset 2026-L: wiki/sensorset2026-l.md
     - PACMod actuation: wiki/pacmod_actuation.md
     - Novatel PwrPak7 RTK config: wiki/Novatel_config.md
+    - ROS 2 Docker Humble: wiki/Docker_humble.md
+    - ROS2 DDS: wiki/ros2_dds.md
+    - ROS2 Joystick setup: wiki/ros2_joystick.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

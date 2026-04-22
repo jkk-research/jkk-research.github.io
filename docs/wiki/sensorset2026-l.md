@@ -1,8 +1,14 @@
+---
+title: Lexus rx450h sensorset 2026.L
+# permalink: /wiki/2026.L/
+icon: material/car
+---
+
 # `2026.L` sensorset
 
 Vehicle: Lexus rx450h 
 
-Sensors:
+## Sensors
 
 |Type|Name|Pieces| ROS2 driver |
 |---|---|---|---|

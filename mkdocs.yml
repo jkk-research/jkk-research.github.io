@@ -124,12 +124,24 @@ nav:
     - Capabilities: assets/capabilities.md
   - F1/10 @SMT25: smt25/index.md
   - Wiki:
-    - Sensorset 2026-L: wiki/sensorset2026-l.md
-    - PACMod actuation: wiki/pacmod_actuation.md
-    - Novatel PwrPak7 RTK config: wiki/Novatel_config.md
-    - ROS 2 Docker Humble: wiki/Docker_humble.md
-    - ROS2 DDS: wiki/ros2_dds.md
-    - ROS2 Joystick setup: wiki/ros2_joystick.md
+    - wiki/index.md
+    - Vehicles:
+      - Sensorset 2026-L: wiki/sensorset2026-l.md
+    - ROS 2:
+      - ROS 2 Docker Humble: wiki/docker_humble.md
+      - ROS2 DDS: wiki/ros2_dds.md
+      - ROS2 Joystick setup: wiki/ros2_joystick.md
+    # - Networking:
+    #   - ROS 2 Networking: wiki/ros2_networking.md
+    #   - ROS 2 QoS: wiki/ros2_qos.md
+    - Sensors:
+      - GPS/GNSS:
+        - Novatel PwrPak7 RTK config: wiki/novatel_config.md
+      # - LIDAR:
+      # - Cameras:
+      # - IMU:
+      - CAN bus:
+        - PACMod actuation: wiki/pacmod_actuation.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

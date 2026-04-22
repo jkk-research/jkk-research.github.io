@@ -33,7 +33,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      DOCS_VERSION: dev
+      DOCS_VERSION: 2026-spring
       DOCS_ALIAS: latest
     steps:
     - uses: actions/checkout@v4
@@ -51,5 +51,5 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "actions@github.com"
-        mike deploy --push --update-aliases "$DOCS_VERSION" "$DOCS_ALIAS"
-        mike set-default --push "$DOCS_ALIAS"
+        GIT_TAG=$(git describe --tags --abbrev=0)
+        mike deploy $GIT_TAG latest --push --update-aliases

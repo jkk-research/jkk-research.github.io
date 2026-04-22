@@ -29,6 +29,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      DOCS_VERSION: dev
+      DOCS_ALIAS: latest
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python 3.x
@@ -43,4 +46,5 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "actions@github.com"
-        mkdocs gh-deploy --force
+        mike deploy --push --update-aliases "$DOCS_VERSION" "$DOCS_ALIAS"
+        mike set-default --push "$DOCS_ALIAS"

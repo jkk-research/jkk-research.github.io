@@ -12,6 +12,11 @@ A big thank you goes to the following people/groups:
 $ python3 -m  pip install mkdocs mkdocs-material mkdocs-slides "mkdocs-material[imaging]" mkdocs-bibtex
 $ mkdocs build
 $ mkdocs serve
+
+# Versioned docs deployment (mike)
+$ mike deploy --update-aliases 1.0 latest
+$ mike set-default latest
+$ mike serve
 ```
 
 ## License

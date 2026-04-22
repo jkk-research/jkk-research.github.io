@@ -126,7 +126,9 @@ nav:
   - Wiki:
     - wiki/index.md
     - Vehicles:
-      - Sensorset 2026-L: wiki/sensorset2026-l.md
+      - Sensorset 2026-Lexus: wiki/sensorset2026-lexus.md
+      - Sensorset 2026-Leaf: wiki/sensorset2026-leaf.md
+      - Sensorset 2026-Szenergy: wiki/sensorset2026-szenergy.md
     - ROS 2:
       - ROS 2 Docker Humble: wiki/docker_humble.md
       - ROS2 DDS: wiki/ros2_dds.md
@@ -439,6 +441,9 @@ extra_css:
 # |                                                                                                        |
 # +--------------------------------------------------------------------------------------------------------+
 extra:
+  version:
+    provider: mike
+
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
   # | The social section allows you to set a list of entries which would be displayed in the footer of the |
@@ -575,3 +580,5 @@ plugins:
   - search
   - bibtex:
       bib_file: "refs.bib"
+  - mike:
+      canonical_version: latest

@@ -125,25 +125,52 @@ nav:
   - F1/10 @SMT25: smt25/index.md
   - Wiki:
     - wiki/index.md
-    - Vehicles:
-      - Sensorset 2026-Lexus: wiki/sensorset2026-lexus.md
-      - Sensorset 2026-Leaf: wiki/sensorset2026-leaf.md
-      - Sensorset 2026-Szenergy: wiki/sensorset2026-szenergy.md
-    - ROS 2:
-      - ROS 2 Docker Humble: wiki/docker_humble.md
-      - ROS2 DDS: wiki/ros2_dds.md
-      - ROS2 Joystick setup: wiki/ros2_joystick.md
-    # - Networking:
-    #   - ROS 2 Networking: wiki/ros2_networking.md
-    #   - ROS 2 QoS: wiki/ros2_qos.md
-    - Sensors:
-      - GPS/GNSS:
+    - Hardware:
+      - Ground Vehicles:
+        - Sensorset 2026-Lexus: wiki/sensorset2026-lexus.md
+        - Sensorset 2026-Leaf: wiki/sensorset2026-leaf.md
+        - Sensorset 2026-Szenergy: wiki/sensorset2026-szenergy.md
+      - Sensors:
+        - GPS/GNSS:
+          - Novatel PwrPak7 RTK config: wiki/novatel_config.md
+          - Swift Navigation Duro: wiki/piksi_config.md
+          - Fixposition Vision-RTK 2: wiki/fixposition_config.md
+          - Vectornav VN-300: wiki/vectornav_config.md
+        - LIDAR:
+          - Ouster: wiki/ouster_os1-128.md
+          - Luminar: wiki/luminar.md
+        - Radar:
+          - Bosch Automotive Radar Gen 6: wiki/bosch_radar.md
+        - Cameras:
+          - Stereolabs ZED: wiki/zed.md
+          - Tier IV C2: wiki/tier4_c2.md
+        - IMU:
+          - Microstrain LORD IMU: wiki/microstrain.md
+        - CAN bus:
+          - PACMod actuation: wiki/pacmod_actuation.md
+    - Software:    
+      - ROS 2:
+        - ROS Drivers:
+          - ROS 2 Ouster driver: wiki/ros2_ouster.md
+          - ROS 2 Luminar driver: wiki/ros2_luminar.md
+          - ROS 2 ZED driver: wiki/ros2_zed.md
+          - ROS 2 Tier IV C2 driver: wiki/ros2_tier4_c2.md
+          - ROS 2 Microstrain driver: wiki/ros2_microstrain.md
+          - ROS 2 PacMod: wiki/ros2_pacmod.md
+        - ROS 2 Docker Humble: wiki/docker_humble.md
+        - ROS2 DDS: wiki/ros2_dds.md
+        - ROS2 Joystick setup: wiki/ros2_joystick.md
+      - Networking:
+        - ROS 2 Networking: wiki/ros2_networking.md
+        - ROS 2 QoS: wiki/ros2_qos.md
+      - Localization:
         - Novatel PwrPak7 RTK config: wiki/novatel_config.md
-      # - LIDAR:
-      # - Cameras:
-      # - IMU:
-      - CAN bus:
-        - PACMod actuation: wiki/pacmod_actuation.md
+      - Autoware:
+        - Autoware Getting Started: wiki/autoware_auto.md
+      - HD Maps:
+        - HD Map Creation: wiki/hdmap_creation.md
+        - HD Map Usage: wiki/hdmap_usage.md
+      
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -318,7 +345,7 @@ theme:
   
   # Navigation:
   #
-  - navigation.expand      # Expand all collapsable sections.
+  #- navigation.expand      # Expand all collapsable sections.
   #- navigation.instant     # Instant loading pages.
   #- navigation.indexes     # Attach pages directly to Sections. Incompatible with "toc.integrate"
   #- navigation.sections    # Render top sections as groups.

@@ -1,7 +1,5 @@
 # PwrPak7
 
-Compact GNSS receiver with multi-constellation tracking, 16 GB internal storage, and optional INS support.
-
 ## Specifications
 
 | Parameter | Value |

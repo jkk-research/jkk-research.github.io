@@ -1,7 +1,5 @@
 # VN-310
 
-Tactical-grade Dual Antenna GNSS-Aided Inertial Navigation System with dual multi-band GNSS receivers and integrated IMU.
-
 ## Specifications
 
 | Parameter | Value |

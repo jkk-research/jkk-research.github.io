@@ -1,6 +1,5 @@
-# Duro
+# SwiftNav Duro
 
-Ruggedized RTK GNSS+INS receiver with centimeter-level accuracy and military-grade durability.
 
 ## Specifications
 

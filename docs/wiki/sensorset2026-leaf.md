@@ -1,4 +1,10 @@
-# `2026.L` sensorset
+---
+title: Nissan Leaf Sensorset 
+# permalink: /wiki/2026.L/
+icon: material/car
+---
+
+
 
 Vehicle: Nissan Leaf 1.gen
 
@@ -13,8 +19,3 @@ Sensors:
 |GPS| Fixposition Vision-RTK 2|1| [fixposition_ros_driver](https://github.com/fixposition/fixposition_driver)|
 
 
-## PDF layout
-
-- [Lexus autonomous FOV2 PDF](img/Lexus_autonomous_fov2.pdf)
-
-![svg](img/Lexus_autonomous_fov2.svg)

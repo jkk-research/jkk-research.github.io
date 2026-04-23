@@ -132,12 +132,12 @@ nav:
         - Sensorset 2026-Szenergy: wiki/sensorset2026-szenergy.md
       - Sensors:
         - GPS/GNSS:
-          - Novatel PwrPak7 RTK config: wiki/novatel_config.md
-          - Swift Navigation Duro: wiki/piksi_config.md
-          - Fixposition Vision-RTK 2: wiki/fixposition_config.md
-          - Vectornav VN-300: wiki/vectornav_config.md
+          - Novatel PwrPak7 RTK : wiki/novatel.md
+          - Swift Navigation Duro: wiki/swift_navigation.md
+          - Fixposition Vision-RTK 2: wiki/fixposition.md
+          - Vectornav VN-310: wiki/vectornav.md
         - LIDAR:
-          - Ouster: wiki/ouster_os1-128.md
+          - Ouster: wiki/ouster.md
           - Luminar: wiki/luminar.md
         - Radar:
           - Bosch Automotive Radar Gen 6: wiki/bosch_radar.md
@@ -146,8 +146,10 @@ nav:
           - Tier IV C2: wiki/tier4_c2.md
         - IMU:
           - Microstrain LORD IMU: wiki/microstrain.md
-        - CAN bus:
+      - Actuation:
+        - PacMod:
           - PACMod actuation: wiki/pacmod_actuation.md
+        - Labview: wiki/labview.md
     - Software:    
       - ROS 2:
         - ROS Drivers:

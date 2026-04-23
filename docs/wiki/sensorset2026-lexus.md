@@ -4,8 +4,6 @@ title: Lexus rx450h sensorset 2026.L
 icon: material/car
 ---
 
-# `2026.L` sensorset
-
 Vehicle: Lexus rx450h 
 
 ## Sensors
@@ -23,7 +21,7 @@ Vehicle: Lexus rx450h
 |IMU| Microstrain LORD IMU|1| [microstrain_inertial](https://github.com/LORD-MicroStrain/microstrain_inertial) |
 
 
-## PDF layout
+## Dimensions
 
 - [Lexus autonomous FOV2 PDF](img/Lexus_autonomous_fov2.pdf)
 

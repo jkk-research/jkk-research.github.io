@@ -15,7 +15,6 @@
 | Precision | ±2 cm |
 | MTTF | ≥250,000 hrs |
 
-![OS2 Lidar](https://ouster.imgix.net/02-Products/01-Hardware/Products-OS2/06-Ouster-products-os2.png?ixlib=js-3.8.0&q=75&auto=format%2Ccompress&w=828&max-w=2048)
 
 ---
 
@@ -36,8 +35,6 @@
 | IP Rating | IP68 & IP69K |
 | MTTF | ≥250,000 hrs |
 
-![OS1 Lidar](https://ouster.imgix.net/RRAI_09.jpg?ixlib=js-3.8.0&q=75&auto=format%2Ccompress&w=828&max-w=2048)
-
 ---
 
 ## OS0 - Short-Range Lidar
@@ -55,8 +52,6 @@
 | Operating Temp | -40°C to 60°C |
 | IP Rating | IP68 & IP69K |
 | MTTF | ≥250,000 hrs |
-
-![OS0 Lidar](https://ouster.imgix.net/02-Products/01-Hardware/Products-OS0/05-Ouster-products-os0.png?ixlib=js-3.8.0&q=75&auto=format%2Ccompress&w=828&max-w=2048)
 
 
 ---

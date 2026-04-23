@@ -12,7 +12,7 @@
 
 [luminar-ros](https://github.com/jkk-research/luminar_ros2_driver) - ROS 2 driver for Luminar Iris
 
-![Luminar Iris Lidar](https://cdn.sanity.io/images/tlr3dtkn/production/9c1a7d8a85ebee04a4a4ede4dfb008d90a6c0f7f-800x800.png)
+![Luminar Iris Lidar](https://autonomoustuff.com/-/media/Images/Hexagon/Hexagon-Core/autonomousstuff/products/luminar-iris-1680x885.ashx?la=en&h=885&w=1680&hash=9B5DD84E988ECCBFD8F6AA7ADAFC5DC4)
 
 ## References
 

@@ -15,6 +15,8 @@ Ruggedized RTK GNSS+INS receiver with centimeter-level accuracy and military-gra
 
 Centimeter-level RTK accuracy, continuous INS positioning, IP67 rated, M12 connectors
 
+![Duro GNSS Receiver](https://www.carnegierobotics.com/AutonomousVehicles/GNSS-INS-Reciever/Global-Navigation-Satellite-System-Receiver/Duro/Gallery/GNSSreceiver-DURO1.jpg)
+
 ## ROS 2 Driver
 
 [duro_gps_driver](https://github.com/szenergy/duro_gps_driver) - ROS 2 driver for Carnegie Robotics Duro

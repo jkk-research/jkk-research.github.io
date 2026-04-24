@@ -1851,9 +1851,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visuals" class="md-nav__link">
+  <a href="#technical-specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Visuals
+      Technical specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros-2-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROS 2 Driver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -2764,9 +2782,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#visuals" class="md-nav__link">
+  <a href="#technical-specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Visuals
+      Technical specifications
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros-2-driver" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROS 2 Driver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -2792,10 +2828,7 @@
 
 <h1 id="tier-iv-c2-camera-datasheet-short">TIER IV C2 Camera Datasheet (Short)<a class="headerlink" href="#tier-iv-c2-camera-datasheet-short" title="Permanent link">&para;</a></h1>
 <p><img alt="TIER IV C2" src="https://tier4.github.io/edge-auto-docs/_images/c2_header.jpg" /></p>
-<h2 id="visuals">Visuals<a class="headerlink" href="#visuals" title="Permanent link">&para;</a></h2>
-<p><img alt="C2 block diagram" src="https://tier4.github.io/edge-auto-docs/_images/C2_block_diagram.drawio.png" /></p>
-<p><img alt="C2 synchronization timing" src="https://tier4.github.io/edge-auto-docs/_images/c2_sync_1.png" /></p>
-<p><img alt="C2 mechanical outline (120 deg)" src="https://tier4.github.io/edge-auto-docs/_images/c2_outline_120.png" /></p>
+<h2 id="technical-specifications">Technical specifications<a class="headerlink" href="#technical-specifications" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
@@ -2809,7 +2842,7 @@
 <td>Sony IMX490, 1/1.55 in optical format, 3.0 um pixel</td>
 </tr>
 <tr>
-<td>Effective resolution</td>
+<td>Resolution</td>
 <td>2880 x 1860 (5.4 MP)</td>
 </tr>
 <tr>
@@ -2825,8 +2858,8 @@
 <td>GMSL2</td>
 </tr>
 <tr>
-<td>Output format</td>
-<td>YUV422, 8-bit, 16-bit/pixel</td>
+<td>Output image format</td>
+<td>YUV422, 8-bit, 16-bit per pixel</td>
 </tr>
 <tr>
 <td>Max frame rate</td>
@@ -2838,7 +2871,7 @@
 </tr>
 <tr>
 <td>Serializer</td>
-<td>Analog Devices MAX9295A</td>
+<td>ADI MAX9295A</td>
 </tr>
 <tr>
 <td>ISP</td>
@@ -2846,23 +2879,19 @@
 </tr>
 <tr>
 <td>Drive modes</td>
-<td>Master mode, Trigger mode (FSYNC)</td>
-</tr>
-<tr>
-<td>Synchronization</td>
-<td>Trigger input over GMSL (sensor readout aligned to FSYNC)</td>
+<td>Master mode, trigger mode (FSYNC)</td>
 </tr>
 <tr>
 <td>Connector</td>
 <td>Fakra Z, metal shield</td>
 </tr>
 <tr>
-<td>Camera size variants</td>
-<td>45 x 45 x 48.6 mm / 53.55 mm / 53.04 mm / 45.9 mm</td>
+<td>Size variants</td>
+<td>45 x 45 x 48.6 / 53.55 / 53.04 / 45.9 mm</td>
 </tr>
 <tr>
 <td>Weight variants</td>
-<td>115 g / 142 g / 125 g / 107 g</td>
+<td>115 / 142 / 125 / 107 g</td>
 </tr>
 <tr>
 <td>Lens FoV variants (H/V, LDC OFF)</td>
@@ -2878,7 +2907,7 @@
 </tr>
 <tr>
 <td>Power consumption</td>
-<td>4.6 W typ. at 30 fps, room temperature</td>
+<td>4.6 W typ. at 30 fps</td>
 </tr>
 <tr>
 <td>Operating temperature</td>
@@ -2898,8 +2927,14 @@
 </tr>
 </tbody>
 </table>
-<p>Reference:
-https://tier4.github.io/edge-auto-docs/reference_manual/C2_technical_reference_manual.html</p>
+<h2 id="ros-2-driver">ROS 2 Driver<a class="headerlink" href="#ros-2-driver" title="Permanent link">&para;</a></h2>
+<ul>
+<li>No official ROS 2 driver listed in the Tier IV C2 technical reference manual.</li>
+</ul>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ul>
+<li>https://tier4.github.io/edge-auto-docs/reference_manual/C2_technical_reference_manual.html</li>
+</ul>
 
 
 

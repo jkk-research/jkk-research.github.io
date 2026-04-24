@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#zed-2i-vs-zed-2-quick-sheet" class="md-skip">
+        <a href="#stereolabs-zed-2i-vs-zed-2-datasheet-short" class="md-skip">
           Skip to content
         </a>
       
@@ -1830,18 +1830,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#choose-fast" class="md-nav__link">
+  <a href="#technical-specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Choose fast
+      Technical specifications
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
+  <a href="#ros-2-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Sources
+      ROS 2 Driver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -2773,18 +2782,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#choose-fast" class="md-nav__link">
+  <a href="#technical-specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Choose fast
+      Technical specifications
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
+  <a href="#ros-2-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Sources
+      ROS 2 Driver
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
     </span>
   </a>
   
@@ -2808,28 +2826,29 @@
   
 
 
-<h1 id="zed-2i-vs-zed-2-quick-sheet">ZED 2i vs ZED 2 (Quick Sheet)<a class="headerlink" href="#zed-2i-vs-zed-2-quick-sheet" title="Permanent link">&para;</a></h1>
+<h1 id="stereolabs-zed-2i-vs-zed-2-datasheet-short">Stereolabs ZED 2i vs ZED 2 Datasheet (Short)<a class="headerlink" href="#stereolabs-zed-2i-vs-zed-2-datasheet-short" title="Permanent link">&para;</a></h1>
 <p>
-    <img src="https://cdn.sanity.io/images/s18ewfw4/staging/a3348b200a33da0fe38860442c1b7ac11af24f84-4000x4000.png?rect=334,751,3332,2499&w=520&q=80&auto=format" alt="ZED 2i" width="48%" />
-    <img src="https://cdn.sanity.io/images/s18ewfw4/staging/cee1ff1fb481391c5fa835533faa25102e341bc8-4000x4000.png?rect=0,0,3668,3475&w=520&q=80&auto=format" alt="ZED 2 family" width="48%" />
+  <img src="https://cdn.sanity.io/images/s18ewfw4/staging/a3348b200a33da0fe38860442c1b7ac11af24f84-4000x4000.png?rect=334,751,3332,2499&w=520&q=80&auto=format" alt="ZED 2i" width="48%" />
+  <img src="https://cdn.sanity.io/images/s18ewfw4/staging/cee1ff1fb481391c5fa835533faa25102e341bc8-4000x4000.png?rect=0,0,3668,3475&w=520&q=80&auto=format" alt="ZED 2 family" width="48%" />
 </p>
 
+<h2 id="technical-specifications">Technical specifications<a class="headerlink" href="#technical-specifications" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Spec</th>
+<th>Parameter</th>
 <th>ZED 2i</th>
 <th>ZED 2</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Baseline</td>
+<td>Stereo baseline</td>
 <td>120 mm</td>
 <td>120 mm</td>
 </tr>
 <tr>
-<td>Max video modes</td>
+<td>Video modes</td>
 <td>2K@15, 1080p@30, 720p@60, 672x376 up to 100 FPS</td>
 <td>2K@15, 1080p@30, 720p@60, 672x376 up to 100 FPS</td>
 </tr>
@@ -2845,7 +2864,7 @@
 </tr>
 <tr>
 <td>Depth range (typical)</td>
-<td>0.3-20 m (2.1 mm) or 1.5-35 m (4 mm)</td>
+<td>0.3 to 20 m (2.1 mm) or 1.5 to 35 m (4 mm)</td>
 <td>Shorter practical range than 2i (model dependent)</td>
 </tr>
 <tr>
@@ -2854,23 +2873,22 @@
 <td>More limited optics options</td>
 </tr>
 <tr>
-<td>Sensors</td>
+<td>Onboard sensors</td>
 <td>IMU + barometer + magnetometer + temperature</td>
-<td>IMU-centric setup</td>
+<td>IMU-centric configuration</td>
 </tr>
 <tr>
 <td>Ruggedization</td>
 <td>IP66</td>
-<td>Lower environmental protection than 2i</td>
+<td>Lower environmental protection than ZED 2i</td>
 </tr>
 </tbody>
 </table>
-<h2 id="choose-fast">Choose fast<a class="headerlink" href="#choose-fast" title="Permanent link">&para;</a></h2>
+<h2 id="ros-2-driver">ROS 2 Driver<a class="headerlink" href="#ros-2-driver" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Choose ZED 2i for outdoor robots, harsh environments, and flexible optics.</li>
-<li>Choose ZED 2 when you already have a working legacy pipeline and do not need IP66 or lens options.</li>
+<li><a href="https://github.com/stereolabs/zed-ros2-wrapper">zed-ros2-wrapper</a> - Official ROS 2 wrapper</li>
 </ul>
-<h2 id="sources">Sources<a class="headerlink" href="#sources" title="Permanent link">&para;</a></h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
 <li>https://www.stereolabs.com/en-hu/products/zed-2</li>
 <li>https://www.stereolabs.com/en-hu/products/zed-2i</li>

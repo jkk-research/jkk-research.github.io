@@ -1918,36 +1918,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#additional-visuals" class="md-nav__link">
+  <a href="#technical-specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional visuals
+      Technical specifications
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-summary" class="md-nav__link">
+  <a href="#ros-2-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Technical summary
+      ROS 2 Driver
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Source
+      References
     </span>
   </a>
   
@@ -2791,36 +2782,27 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#additional-visuals" class="md-nav__link">
+  <a href="#technical-specifications" class="md-nav__link">
     <span class="md-ellipsis">
-      Additional visuals
+      Technical specifications
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#technical-summary" class="md-nav__link">
+  <a href="#ros-2-driver" class="md-nav__link">
     <span class="md-ellipsis">
-      Technical summary
+      ROS 2 Driver
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
+  <a href="#references" class="md-nav__link">
     <span class="md-ellipsis">
-      Notes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Source
+      References
     </span>
   </a>
   
@@ -2846,28 +2828,74 @@
 
 <h1 id="microstrain-3dm-gx5-ar-imuvru">MicroStrain 3DM-GX5-AR IMU/VRU<a class="headerlink" href="#microstrain-3dm-gx5-ar-imuvru" title="Permanent link">&para;</a></h1>
 <p><img alt="3DM-GX5-AR" src="https://media.hbkworld.com/transform/34d7211d-64af-4ffe-94c3-63ea53e82c15/3DM-GX5-SMALL-Product-Photo?io=transform:fill,width:1024&amp;quality=80" /></p>
-<p>The 3DM-GX5-AR is a compact, automotive-grade IMU/VRU designed for stabilization, mobile robotics, antenna pointing, and platform attitude estimation. It integrates a fully calibrated and temperature-compensated 3-axis accelerometer and 3-axis gyroscope with an onboard adaptive EKF for low-latency orientation output.</p>
-<h2 id="additional-visuals">Additional visuals<a class="headerlink" href="#additional-visuals" title="Permanent link">&para;</a></h2>
-<p><img alt="InertialConnect software status view" src="https://media.hbkworld.com/transform/680ca359-2810-4f17-b301-c93564f7d1fd/InertialConnect-Screenshot-GNSS-Statuses?io=transform:fill,width:1024&amp;quality=80" /></p>
-<p><img alt="USB connectivity kit" src="https://media.hbkworld.com/transform/307c4495-0f42-45b8-af92-af36ef4820d3/6212-3004-CONNECTIVITY-KIT-USB-AHRS-IMU-Product-Photo?io=transform:fill,width:1024&amp;quality=80" /></p>
-<h2 id="technical-summary">Technical summary<a class="headerlink" href="#technical-summary" title="Permanent link">&para;</a></h2>
+<h2 id="technical-specifications">Technical specifications<a class="headerlink" href="#technical-specifications" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Specification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sensor class</td>
+<td>IMU/VRU with triaxial accelerometer + triaxial gyroscope</td>
+</tr>
+<tr>
+<td>IMU sampling rate</td>
+<td>Up to 1000 Hz</td>
+</tr>
+<tr>
+<td>EKF output rate</td>
+<td>Up to 500 Hz</td>
+</tr>
+<tr>
+<td>Gyro in-run bias</td>
+<td>8 deg/hour (-40 to +85 C)</td>
+</tr>
+<tr>
+<td>Gyro ARW</td>
+<td>0.3 deg/sqrt(hour)</td>
+</tr>
+<tr>
+<td>Pitch/roll accuracy</td>
+<td>+/-0.25 deg static, +/-0.4 deg dynamic</td>
+</tr>
+<tr>
+<td>Accelerometer noise density</td>
+<td>25 ug/sqrt(Hz) (8 g), 80 ug/sqrt(Hz) (20 g)</td>
+</tr>
+<tr>
+<td>Interfaces</td>
+<td>USB, RS-232 (up to 921600 baud)</td>
+</tr>
+<tr>
+<td>Operating temperature</td>
+<td>-40 to +85 C</td>
+</tr>
+<tr>
+<td>Housing</td>
+<td>CNC anodized aluminum</td>
+</tr>
+<tr>
+<td>Dimensions</td>
+<td>36.0 x 36.6 x 11 mm</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>16.5 g</td>
+</tr>
+<tr>
+<td>Protocol/software</td>
+<td>MIP protocol, SensorConnect/InertialConnect</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ros-2-driver">ROS 2 Driver<a class="headerlink" href="#ros-2-driver" title="Permanent link">&para;</a></h2>
 <ul>
-<li>IMU sampling rate: up to 1000 Hz</li>
-<li>EKF output rate: up to 500 Hz</li>
-<li>Gyro performance: 8 deg/hour in-run bias (-40 to +85 C), ARW 0.3 deg/sqrt(hour)</li>
-<li>Pitch/roll accuracy: +/-0.25 deg static, +/-0.4 deg dynamic</li>
-<li>Accelerometer noise density: 25 ug/sqrt(Hz) (8 g option), 80 ug/sqrt(Hz) (20 g option)</li>
-<li>Interfaces: USB and RS-232 (up to 921600 baud)</li>
-<li>Operating temperature: -40 to +85 C</li>
-<li>Package: CNC anodized aluminum, 36.0 x 36.6 x 11 mm, 16.5 g</li>
+<li>No official ROS 2 driver is published on the product page.</li>
 </ul>
-<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
-<ul>
-<li>IMU and EKF outputs are independently configurable.</li>
-<li>Uses MIP protocol for efficient bandwidth usage.</li>
-<li>Configuration, visualization, and logging are supported through SensorConnect/InertialConnect tools.</li>
-</ul>
-<h2 id="source">Source<a class="headerlink" href="#source" title="Permanent link">&para;</a></h2>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
 <ul>
 <li>https://www.hbkworld.com/en/products/transducers/inertial-sensors/vertical-reference/3dm-gx5-ar</li>
 </ul>

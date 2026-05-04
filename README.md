@@ -9,7 +9,7 @@ A big thank you goes to the following people/groups:
 ## Commands
 
 ``` r
-$ python3 -m  pip install mkdocs mkdocs-material mkdocs-slides "mkdocs-material[imaging]" mkdocs-bibtex
+$ python3 -m  pip install mkdocs mkdocs-material mkdocs-slides "mkdocs-material[imaging]" mkdocs-bibtex mike
 $ mkdocs build
 $ mkdocs serve
 

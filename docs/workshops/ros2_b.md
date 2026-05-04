@@ -1,12 +1,13 @@
 ---
 title: ROS 2 introduction
 # icon: material/math-integral-box # elméleti tananyag
-# hide:
-#   - navigation
-#   - toc
 ---
 
- 
+
+<br><br><br>
+<center>
+<h1><a href="https://jkk-research.github.io/latest/workshops/ros2_b/">jkk-research.github.io</a></h1>
+</center>
 
 ## `ROS 2` :simple-ros:{ .sze-color } intro
 
@@ -31,16 +32,19 @@ graph TD;
 
 As a result of the above, `ROS 2` moved from the world of academic research to industrial use. It is interesting that NASA's VIPER lunar rover also runs `ROS 2`. It is also used by automotive giants such as Bosch, BMW and Volvo. Many other examples could be given from robotics companies. Links: [www.nasa.gov/viper/lunar-operations](https://www.nasa.gov/viper/lunar-operations), [rosindustrial.org/ric/current-members](https://rosindustrial .org/ric/current-members/), [www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers](https://www.bosch.com/stories/bringing-robotics-middleware -onto-tiny-microcontrollers/). ROS users in the world: [metrorobots.com/rosmap.html](http://metrorobots.com/rosmap.html).
 
-![ROS 2 in space](https://raw.githubusercontent.com/sze-info/ajr/master/docs/bevezetes/ros2space01.png)
 
-Kép forrása: [Robot Operating System 2: Design, Architecture, and Uses In The Wild:
-Steve Macenski et al.](https://arxiv.org/pdf/2211.07752.pdf)
+![](/assets/images_common/robot_fleet01.png)
+
+![ROS 2 in space](https://sze-info.github.io/ajr/assets/images_common/ros2space01.png)
+
+
+Image source: [Robot Operating System 2: Design, Architecture, and Uses In The Wild: Steve Macenski et al.](https://arxiv.org/pdf/2211.07752.pdf)
 
 ## Why should I use a framework for my robotics project?
 
 For our first robotics project, we can choose the path of creating our own solution without a framework. Obviously, this also has advantages (learning, running speed, etc.). But soon we will need an algorithm that has been implemented by others, but is not compatible with the original idea. Here it is advisable to consider using a framework (e.g. `ROS 2`). *Note* that `ROS 2` is not the only option, there are many similar, smaller frameworks: <a class="http" href="http://playerstage.sf.net">Player</a>, <a class="http" href="http://eris.liralab.it/yarp/">YARP</a>, <a class="http" href="http://www.orocos.org/"> Orocos</a>, <a class="http" href="http://carmen.sourceforge.net">CARMEN</a>, <a class="http" href="http://orca-robotics .sourceforge.net">Orca</a>, <a class="http" href="http://www.robots.ox.ac.uk/~pnewman/TheMOOS/index.html">MOOS</a >, and <a class="http" href="http://msdn.microsoft.com/en-us/robotics/default.aspx">Microsoft Robotics Studio</a>. Obviously, all of them have advantages, but in this case, due to the support, we narrow it down to `ROS 2`.
 
-![](https://www.ros.org/imgs/ros-equation.png)
+![](https://sze-info.github.io/ajr/assets/images_common/ros_components02.svg)
 
 Image source: [ros.org/blog/ecosystem](https://www.ros.org/blog/ecosystem/)
 
@@ -180,8 +184,7 @@ graph TD;
 - *Multi-threaded execution*
  `ROS 2` supports truly parallel running of multiple nodes, so modern multi-core processors can be used much better than `ROS 1`.
 
-![overview](https://raw.githubusercontent.com/sze-info/ajr/master/docs/bevezetes/ros_overview02.svg)
-Source: [husarnet.com/blog/ros2-docker](https://husarnet.com/blog/ros2-docker)
+![overview](https://sze-info.github.io/ajr/assets/images_common/ros_components02.svg)
 
 
 ### Other changes
@@ -191,7 +194,7 @@ Source: [husarnet.com/blog/ros2-docker](https://husarnet.com/blog/ros2-docker)
 
 ### Versions
 
-![Alt ​​text](https://raw.githubusercontent.com/sze-info/ajr/master/docs/bevezetes/ros2distros.svg)
+![Alt ​​text](https://sze-info.github.io/ajr/assets/images_common/ros2distros.svg)
 
 Percentage distribution of distros over time: [metrics.ros.org/rosdistro_rosdistro.html](https://metrics.ros.org/rosdistro_rosdistro.html)
 

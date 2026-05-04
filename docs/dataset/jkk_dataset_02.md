@@ -5,9 +5,9 @@ The log data is in .mcap format, the standard logging format for [`ROS 2`](https
 
 ### Download the `mcap` (bag) files
 
-[Download every MCAP as a ZIP](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download=1){ .md-button }
+[Download every MCAP as a ZIP](https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download=1){ .md-button }
 
-[Download a sample MCAP](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EWJBcyPd8YZOtdys4zo8kzIButGvzj-PjTS4D-PFoUfpnQ?download=1){ .md-button }
+[Download a sample MCAP](https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EWJBcyPd8YZOtdys4zo8kzIButGvzj-PjTS4D-PFoUfpnQ?download=1){ .md-button }
 
 You can instanly view the data in [Foxglove Studio](https://foxglove.dev/) (Free, online or on ay platform).
 
@@ -62,7 +62,7 @@ cd /mnt/c/bag/jkkds02/
 ```
 
 ``` bash
-wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download=1 -O jkkds02.zip
+wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download=1 -O jkkds02.zip
 ```
 
 Make sure you have `unzip` (`sudo apt-get install unzip`) and:

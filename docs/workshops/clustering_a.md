@@ -22,7 +22,7 @@ In order to cluster LIDAR data, first you need - no surprise - LIDAR data. Use a
 
 ### `Option A.` - Download our MCAP from the link below 
 
-[Download MCAP [~540MB] :material-download: ](https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1){ .md-button }
+[Download MCAP [~540MB] :material-download: ](https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1){ .md-button }
 
 In our examples the `.mcap` file is going to be saved in `/mnt/c/bag/`. If you want to use another directory, please change it accordingly.
 
@@ -39,7 +39,7 @@ cd /mnt/c/bag/
 </details>
 
 ```
-wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1  -O lexus3-2024-04-05-gyor.mcap
+wget https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/Eclwzn42FS9GunGay5LPq-EBA6U1dZseBFNDrr6P0MwB2w?download=1  -O lexus3-2024-04-05-gyor.mcap
 ```
 
 

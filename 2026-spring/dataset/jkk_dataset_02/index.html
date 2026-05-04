@@ -949,7 +949,7 @@
         
   
   <span class="md-ellipsis">
-    ROS 2 introduction
+    ROS 2 intro
   </span>
   
 
@@ -987,6 +987,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../workshops/control_sim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control simulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../workshops/f1tenth_sim_a/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Race simulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../workshops/clustering_a/" class="md-nav__link">
         
   
@@ -1008,74 +1050,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../workshops/f1tenth_sim_a/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    F1/10 simulation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../workshops/f1tenth_real_a/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    F1/10 hands-on
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../workshops/wheeltec_real_b/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Wheeltec 101
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../workshops/control_sim/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control simulation
   </span>
   
 
@@ -2931,8 +2910,8 @@
 <p>The log data is in .mcap format, the standard logging format for <a href="https://docs.ros.org/"><code>ROS 2</code></a>. <a href="https://mcap.dev/"><code>MCAP</code></a> is an open source container file format for multimodal log data. It supports multiple channels of timestamped pre-serialized data, and is ideal for use in pub/sub or robotics applications.</p>
 <h2 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <h3 id="download-the-mcap-bag-files">Download the <code>mcap</code> (bag) files<a class="headerlink" href="#download-the-mcap-bag-files" title="Permanent link">&para;</a></h3>
-<p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download=1">Download every MCAP as a ZIP</a></p>
-<p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EWJBcyPd8YZOtdys4zo8kzIButGvzj-PjTS4D-PFoUfpnQ?download=1">Download a sample MCAP</a></p>
+<p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download=1">Download every MCAP as a ZIP</a></p>
+<p><a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EWJBcyPd8YZOtdys4zo8kzIButGvzj-PjTS4D-PFoUfpnQ?download=1">Download a sample MCAP</a></p>
 <p>You can instanly view the data in <a href="https://foxglove.dev/">Foxglove Studio</a> (Free, online or on ay platform).</p>
 <p><img alt="" src="/img/dataset02A.png" /></p>
 <h3 id="python-scripts-for-mcap">Python scripts for MCAP<a class="headerlink" href="#python-scripts-for-mcap" title="Permanent link">&para;</a></h3>
@@ -3006,7 +2985,7 @@
 <h2 id="download-dataset-eg-to-mntcbagjkkds02">Download dataset, e.g. to <code>/mnt/c/bag/jkkds02/</code>:<a class="headerlink" href="#download-dataset-eg-to-mntcbagjkkds02" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>/mnt/c/bag/jkkds02/
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://laesze-my.sharepoint.com/:u:/g/personal/herno_o365_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download<span class="o">=</span><span class="m">1</span><span class="w"> </span>-O<span class="w"> </span>jkkds02.zip
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EVofDCG_ORZJh--XTVLFsFEBOUYB1eAbHAzdTVDdf19Y9g?download<span class="o">=</span><span class="m">1</span><span class="w"> </span>-O<span class="w"> </span>jkkds02.zip
 </code></pre></div>
 <p>Make sure you have <code>unzip</code> (<code>sudo apt-get install unzip</code>) and:</p>
 <div class="highlight"><pre><span></span><code>unzip<span class="w"> </span>jkkds02.zip

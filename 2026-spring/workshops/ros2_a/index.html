@@ -18,7 +18,7 @@
         <link rel="prev" href="../ros2_b/">
       
       
-        <link rel="next" href="../clustering_a/">
+        <link rel="next" href="../control_sim/">
       
       
       <link rel="icon" href="/img/favicon.ico">
@@ -831,7 +831,7 @@
         
   
   <span class="md-ellipsis">
-    ROS 2 introduction
+    ROS 2 intro
   </span>
   
 
@@ -1016,6 +1016,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Home / laboratory room installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-wsl-and-importing-the-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing WSL and Importing the Snapshot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing WSL and Importing the Snapshot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-recommended-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional recommended settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1031,6 +1061,48 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control_sim/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control simulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f1tenth_sim_a/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Race simulation
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1064,74 +1136,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../f1tenth_sim_a/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    F1/10 simulation
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../f1tenth_real_a/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    F1/10 hands-on
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../wheeltec_real_b/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Wheeltec 101
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../control_sim/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Control simulation
   </span>
   
 
@@ -3009,6 +3018,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Home / laboratory room installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installing-wsl-and-importing-the-snapshot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installing WSL and Importing the Snapshot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing WSL and Importing the Snapshot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#additional-recommended-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Additional recommended settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3040,7 +3079,7 @@
 
 <h2 id="ros-2-install-hands-on-workshop"><code>ROS 2</code> install hands-on workshop <span class="twemoji sze-color"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.807 0C1.353 0 .173 1.22.173 2.722c0 1.504 1.18 2.723 2.634 2.723 1.455 0 2.635-1.22 2.635-2.723S4.262 0 2.807 0zM12 0c-1.455 0-2.634 1.22-2.634 2.722 0 1.504 1.18 2.723 2.634 2.723 1.455 0 2.634-1.22 2.634-2.723S13.454 0 12 0zm9.193 0c-1.455 0-2.635 1.22-2.635 2.722 0 1.504 1.18 2.723 2.635 2.723 1.455 0 2.634-1.22 2.634-2.723S22.647 0 21.193 0zM2.807 9.277C1.353 9.277.173 10.497.173 12s1.18 2.722 2.634 2.722c1.455 0 2.635-1.219 2.635-2.722 0-1.504-1.18-2.723-2.635-2.723zm9.193 0c-1.455 0-2.634 1.22-2.634 2.723s1.18 2.722 2.634 2.722c1.455 0 2.634-1.219 2.634-2.722 0-1.504-1.18-2.723-2.634-2.723zm9.193 0c-1.455 0-2.635 1.22-2.635 2.723s1.18 2.722 2.635 2.722c1.455 0 2.634-1.219 2.634-2.722 0-1.504-1.18-2.723-2.634-2.723zM2.807 18.555c-1.454 0-2.634 1.22-2.634 2.722C.173 22.781 1.353 24 2.807 24c1.455 0 2.635-1.22 2.635-2.723s-1.18-2.722-2.635-2.722zm9.193 0c-1.455 0-2.634 1.22-2.634 2.722C9.366 22.781 10.546 24 12 24c1.455 0 2.634-1.22 2.634-2.723s-1.18-2.722-2.634-2.722zm9.193 0c-1.455 0-2.635 1.22-2.635 2.722 0 1.504 1.18 2.723 2.635 2.723 1.455 0 2.634-1.22 2.634-2.723s-1.18-2.722-2.634-2.722z"/></svg></span><a class="headerlink" href="#ros-2-install-hands-on-workshop" title="Permanent link">&para;</a></h2>
 <p>This document will guide you through the installation process of <code>ROS 2</code>.</p>
-<p>This document also served as small overview of the <code>Bavarian-Hungarian Self-driving vehicles</code> workshop. <strong>Date</strong>: 2024.06.08, <strong>place</strong>: Győr, Hungary.</p>
+<p>This document also served as small overview of the <code>Bavarian-Hungarian Self-driving vehicles</code> workshop.</p>
 <h2 id="install-ros-2-video">Install <code>ROS 2</code> video<a class="headerlink" href="#install-ros-2-video" title="Permanent link">&para;</a></h2>
 <p><a href="https://docs.ros.org/en/humble/"><img alt="Static Badge" src="https://img.shields.io/badge/ROS_2-Humble-34aec5" /></a></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DIYktkx3XLM?si=loa8CQQRUQFfFfuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -3078,7 +3117,7 @@
 </ol>
 <p>We recommend the first two of these 4 options, but of course the others are not prohibited either. Dual boot provides an insight into the Linux world, which is useful knowledge for an engineer today. Care must be taken during installation, as a wrong setting causes data loss, so a backup is also recommended. WSL (Windows Subsystem for Linux) is a lightweight compatibility layer for running Linux-based components on Windows 10 or Windows 11-based systems. As you can see in the following figure, the Linux kernel can access the hardware elements (CPU, memory, GPU) just as easily as the Windows kernel. Compared to this, the virtual machine (option 3) is a much slower solution that uses more abstraction layers, and is recommended for those who either have a very modern, fast machine or have already installed such systems. The native Windows build (option 4) is a given in principle, but since the majority of the documentation is available for Linux, it will mean a lot of extra work.</p>
 <p>Illustration of the first three options:</p>
-<p><img alt="wsl overview" src="https://raw.githubusercontent.com/sze-info/ajr/master/docs/telepites/wsl_overview01.svg" /></p>
+<p><img alt="wsl overview" src="https://sze-info.github.io/ajr/assets/images_common/wsl_overview01.svg" /></p>
 <p>The following description applies to Ubuntu 22.04 Jammy. <em>Note</em> that other versions are also supported, their installation and descriptions are available here: <a href="https://docs.ros.org/en/humble/Installation/Alternatives.html">docs.ros.org/en/humble/Installation/Alternatives.html</a></p>
 <p>The following description is based on <a href="https://docs.ros.org/en/humble/Installation.html">docs.ros.org/en/humble/Installation.html</a>.</p>
 <h2 id="set-language">Set language<a class="headerlink" href="#set-language" title="Permanent link">&para;</a></h2>
@@ -3146,8 +3185,8 @@
 <p>It is also advisable to set the <code>colcon_cd</code> command so that you can quickly change your working directory to the directory of a package. As an example, the command <code>colcon_cd some_ros_package</code> can quickly jump to the directory <code>~/ros2_ws/src/some_ros_package</code>.</p>
 <p>Details: <a href="https://docs.ros.org/en/humble/Tutorials/ Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd">docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd</a></p>
 <h1 id="home-laboratory-room-installation">Home / laboratory room installation<a class="headerlink" href="#home-laboratory-room-installation" title="Permanent link">&para;</a></h1>
-<p>In the lab, we run the <a href="https://github.com/sze-info/arj/blob/main/docs/telepites/install_humble.sh">following <code>install_humble.sh</code></a> file (shell script) on each machine.</p>
-<p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/arj/main/docs/telepites/install_humble.sh
+<p>In the lab, we run the <a href="https://github.com/sze-info/ajr/blob/main/docs/telepites/install_humble.sh">following <code>install_humble.sh</code></a> file (shell script) on each machine.</p>
+<p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/ajr/main/docs/telepites/install_humble.sh
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>install_humble.sh
 </code></pre></div></p>
@@ -3157,9 +3196,44 @@
 In the laboratory room (campus):
 <div class="highlight"><pre><span></span><code>./install_humble.sh<span class="w"> </span>campus
 </code></pre></div></p>
+<h2 id="installing-wsl-and-importing-the-snapshot">Installing WSL and Importing the Snapshot<a class="headerlink" href="#installing-wsl-and-importing-the-snapshot" title="Permanent link">&para;</a></h2>
+<p>Installation walkthrough video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yBLtg2c4yA4?si=PO7NefOrQJQV0tG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>The steps from the video in text form:</p>
+<ol>
+<li>Download the WSL snapshot (backup file): <a class="md-button" href="https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EYxEY_oJa7ZEursLIBMZeZ4BWUvT_LbkHbOIsPToBgRxbg?download=1">Download WSL snapshot <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span> ~2.5 GB</a></li>
+<li>Extract the snapshot <code>.zip</code> &gt;&gt; <code>.tar</code></li>
+<li>In PowerShell (Admin), enable the WSL feature, then install WSL:
+<div class="highlight"><pre><span></span><code><span class="nb">Enable-WindowsOptionalFeature</span> <span class="n">-Online</span> <span class="n">-FeatureName</span> <span class="n">Microsoft-Windows-Subsystem-Linux</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-install</span> <span class="p">-</span><span class="n">-no-distribution</span>
+</code></pre></div></li>
+<li>In PowerShell, import the WSL snapshot file (tar):
+<div class="highlight"><pre><span></span><code><span class="n">wsl</span> <span class="p">-</span><span class="n">-import</span> <span class="n">ajr1</span> <span class="p">.\</span><span class="n">ajr1</span><span class="p">\</span> <span class="p">.\</span><span class="n">ajr24a</span><span class="p">.</span><span class="n">tar</span>
+</code></pre></div></li>
+<li>Install VS Code and the WSL extension:</li>
+</ol>
+<p><img alt="wsl03" src="https://sze-info.github.io/ajr/assets/images_common/wsl03.png" /></p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>The <code>wsl -l -v</code> command lists the installed WSL versions. The <code>VERSION</code> column must show <code>2</code>, otherwise an outdated version of WSL has been installed. Example of correct output:</p>
+</div>
+<p><div class="highlight"><pre><span></span><code><span class="w">    </span>NAME<span class="w">            </span>STATE<span class="w">           </span>VERSION
+<span class="w">    </span>Ubuntu<span class="w">          </span>Stopped<span class="w">         </span><span class="m">2</span>
+<span class="w">    </span>Ubuntu-22.04<span class="w">    </span>Stopped<span class="w">         </span><span class="m">2</span>
+<span class="w">    </span>Ubuntu-24.04<span class="w">    </span>Running<span class="w">         </span><span class="m">2</span>
+<span class="w">    </span>ajr1<span class="w">            </span>Stopped<span class="w">         </span><span class="m">2</span>
+</code></pre></div>
+    If <code>1</code> appears in the <code>VERSION</code> column, you can update the version with the <code>wsl --update</code> command.</p>
+<h3 id="additional-recommended-settings">Additional recommended settings<a class="headerlink" href="#additional-recommended-settings" title="Permanent link">&para;</a></h3>
+<p>In Windows Terminal, it is recommended to set the <code>Default Profile</code> to <code>ajr1</code>, so the program always starts with that profile. The <code>Open windows from previous session</code> setting can also be useful so that the program reopens in its most recent state (e.g., with multiple panes).</p>
+<p><img alt="wsl04" src="https://sze-info.github.io/ajr/assets/images_common/wsl04.png" /></p>
+<p>Panes can then be created with the <code>Alt</code>+<code>Shift</code>+<code>minus</code> or <code>Alt</code>+<code>Shift</code>+<code>plus</code> keyboard shortcuts. This divides the terminal window (<code>Split pane</code>) into multiple sections vertically or horizontally.</p>
+<p><img alt="wsl05" src="https://sze-info.github.io/ajr/assets/images_common/wsl05.png" /></p>
 <h1 id="workspace-reset">Workspace reset<a class="headerlink" href="#workspace-reset" title="Permanent link">&para;</a></h1>
 <p>If we want to delete the entire <code>ros2_ws</code>, then clone and build it again (~5 minutes), we can do it with the following single long command:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="p">;</span><span class="w"> </span>rm<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/arj/main/docs/telepites/ws_reset.sh<span class="p">;</span><span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>./ws_reset.sh
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>~<span class="w"> </span><span class="p">;</span><span class="w"> </span>rm<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>wget<span class="w"> </span>https://raw.githubusercontent.com/sze-info/ajr/main/docs/telepites/ws_reset.sh<span class="p">;</span><span class="w"> </span>sudo<span class="w"> </span>chmod<span class="w"> </span>+x<span class="w"> </span>ws_reset.sh<span class="p">;</span><span class="w"> </span>./ws_reset.sh
 </code></pre></div>
 
 

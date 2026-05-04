@@ -33,7 +33,7 @@ graph TD;
 As a result of the above, `ROS 2` moved from the world of academic research to industrial use. It is interesting that NASA's VIPER lunar rover also runs `ROS 2`. It is also used by automotive giants such as Bosch, BMW and Volvo. Many other examples could be given from robotics companies. Links: [www.nasa.gov/viper/lunar-operations](https://www.nasa.gov/viper/lunar-operations), [rosindustrial.org/ric/current-members](https://rosindustrial .org/ric/current-members/), [www.bosch.com/stories/bringing-robotics-middleware-onto-tiny-microcontrollers](https://www.bosch.com/stories/bringing-robotics-middleware -onto-tiny-microcontrollers/). ROS users in the world: [metrorobots.com/rosmap.html](http://metrorobots.com/rosmap.html).
 
 
-![](/assets/images_common/robot_fleet01.png)
+![](https://jkk-research.github.io/latest/assets/images_common/robot_fleet01.png)
 
 ![ROS 2 in space](https://sze-info.github.io/ajr/assets/images_common/ros2space01.png)
 

@@ -2,7 +2,8 @@
 
 This document will guide you through the installation process of `ROS 2`.
 
-This document also served as small overview of the `Bavarian-Hungarian Self-driving vehicles` workshop. **Date**: 2024.06.08, **place**: Győr, Hungary.
+This document also served as small overview of the `Bavarian-Hungarian Self-driving vehicles` workshop.
+
 
 
 ## Install `ROS 2` video
@@ -53,7 +54,7 @@ We recommend the first two of these 4 options, but of course the others are not 
 
 Illustration of the first three options:
 
-![wsl overview](https://raw.githubusercontent.com/sze-info/ajr/master/docs/telepites/wsl_overview01.svg)
+![wsl overview](https://sze-info.github.io/ajr/assets/images_common/wsl_overview01.svg)
 
 The following description applies to Ubuntu 22.04 Jammy. *Note* that other versions are also supported, their installation and descriptions are available here: [docs.ros.org/en/humble/Installation/Alternatives.html](https://docs.ros.org/en/humble/Installation/Alternatives.html)
 
@@ -170,10 +171,10 @@ Details: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tuto
 
 # Home / laboratory room installation
 
-In the lab, we run the [following `install_humble.sh`](https://github.com/sze-info/arj/blob/main/docs/telepites/install_humble.sh) file (shell script) on each machine.
+In the lab, we run the [following `install_humble.sh`](https://github.com/sze-info/ajr/blob/main/docs/telepites/install_humble.sh) file (shell script) on each machine.
 
 ``` bash
-wget https://raw.githubusercontent.com/sze-info/arj/main/docs/telepites/install_humble.sh
+wget https://raw.githubusercontent.com/sze-info/ajr/main/docs/telepites/install_humble.sh
 ```
 ``` bash
 sudo chmod +x install_humble.sh
@@ -188,10 +189,56 @@ In the laboratory room (campus):
 ./install_humble.sh campus
 ```
 
+## Installing WSL and Importing the Snapshot
+
+Installation walkthrough video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yBLtg2c4yA4?si=PO7NefOrQJQV0tG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+The steps from the video in text form:
+
+1. Download the WSL snapshot (backup file): [Download WSL snapshot :material-download: ~2.5 GB](https://laesze-my.sharepoint.com/:u:/g/personal/herno_sze_hu/EYxEY_oJa7ZEursLIBMZeZ4BWUvT_LbkHbOIsPToBgRxbg?download=1){ .md-button}
+2. Extract the snapshot `.zip` >> `.tar`
+3. In PowerShell (Admin), enable the WSL feature, then install WSL:
+``` powershell
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+``` powershell
+wsl --install --no-distribution
+```
+4. In PowerShell, import the WSL snapshot file (tar):
+``` powershell
+wsl --import ajr1 .\ajr1\ .\ajr24a.tar
+```
+5. Install VS Code and the WSL extension:
+
+![wsl03](https://sze-info.github.io/ajr/assets/images_common/wsl03.png)
+
+!!! danger
+    The `wsl -l -v` command lists the installed WSL versions. The `VERSION` column must show `2`, otherwise an outdated version of WSL has been installed. Example of correct output:
+``` bash
+    NAME            STATE           VERSION
+    Ubuntu          Stopped         2
+    Ubuntu-22.04    Stopped         2
+    Ubuntu-24.04    Running         2
+    ajr1            Stopped         2
+```
+    If `1` appears in the `VERSION` column, you can update the version with the `wsl --update` command.
+
+### Additional recommended settings
+
+In Windows Terminal, it is recommended to set the `Default Profile` to `ajr1`, so the program always starts with that profile. The `Open windows from previous session` setting can also be useful so that the program reopens in its most recent state (e.g., with multiple panes).
+
+![wsl04](https://sze-info.github.io/ajr/assets/images_common/wsl04.png)
+
+Panes can then be created with the `Alt`+`Shift`+`minus` or `Alt`+`Shift`+`plus` keyboard shortcuts. This divides the terminal window (`Split pane`) into multiple sections vertically or horizontally.
+
+![wsl05](https://sze-info.github.io/ajr/assets/images_common/wsl05.png)
+
 # Workspace reset
 
 If we want to delete the entire `ros2_ws`, then clone and build it again (~5 minutes), we can do it with the following single long command:
 
 ``` bash
-cd ~ ; rm ws_reset.sh; wget https://raw.githubusercontent.com/sze-info/arj/main/docs/telepites/ws_reset.sh; sudo chmod +x ws_reset.sh; ./ws_reset.sh
+cd ~ ; rm ws_reset.sh; wget https://raw.githubusercontent.com/sze-info/ajr/main/docs/telepites/ws_reset.sh; sudo chmod +x ws_reset.sh; ./ws_reset.sh
 ```

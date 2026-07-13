@@ -1,6 +1,8 @@
 # Lexus RX450h
 **Sensors**: 1x Ouster OS2-64 LIDAR, 2x OS1-32 LIDAR, 1x Luminar Iris, 1x Stereolabs Zed2i, 2x TIER IV C2, GPS(GNSS)/IMU, Fixposition Vision-RTK 2, 5x radars
 
+**JKK-wiki link**: [Lexus RX450h](/wiki/sensorset-lexus/)
+
 <figure markdown="span">
   ![Image](/assets/images_common/vehcile_lexus01.png){ width="80%" }
   <figcaption>Lexus</figcaption>
@@ -8,8 +10,11 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FmAkOa9vDyY?si=1MDCRIBAIX-M5OMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
 # Nissan Leaf
 **Sensors**: 2x Ouster OS1-64 LIDAR, 2x Velodyne VLP16 LIDAR, SICK LMS111 LIDAR, Stereolabs Zed / Zed2
+
+**JKK-wiki link**: [Nissan Leaf](/wiki/sensorset-nissan/)
 
 <figure markdown="span">
   ![Image](/assets/images_common/vehcile_leaf01.png){ width="80%" }
@@ -35,6 +40,8 @@
 
 # Szenergy 
 **Sensors**: Ouster OS1-128 LIDAR, SICK LMS111 LIDAR, Stereolabs Zed2i
+
+**JKK-wiki link**: [Szenergy](/wiki/sensorset-szenergy/)
 
 <figure markdown="span">
   ![Image title](/assets/images_common/vehicle_szenergy01.png){ width="80%" }

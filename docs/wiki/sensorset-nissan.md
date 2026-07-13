@@ -8,6 +8,11 @@ icon: material/car
 
 Vehicle: Nissan Leaf 1.gen
 
+<figure markdown="span">
+  ![Image](/assets/images_common/vehcile_leaf01.png){ width="80%" }
+  <figcaption>Nissan Leaf</figcaption>
+</figure>
+
 Sensors:
 
 |Type|Name|Pieces| ROS2 driver |
@@ -19,3 +24,4 @@ Sensors:
 |GPS| Fixposition Vision-RTK 2|1| [fixposition_ros_driver](https://github.com/fixposition/fixposition_driver)|
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9eFqsei1J70?si=Y9rnsmGnoiofxhiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

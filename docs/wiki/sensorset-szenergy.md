@@ -6,6 +6,11 @@ icon: material/car
 
 Vehicle: Szenergy Szemission
 
+<figure markdown="span">
+  ![Image title](/assets/images_common/vehicle_szenergy01.png){ width="80%" }
+  <figcaption>Szenergy</figcaption>
+</figure>
+
 Sensors:
 
 |Type|Name|Pieces| ROS2 driver |

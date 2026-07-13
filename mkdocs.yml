@@ -126,9 +126,9 @@ nav:
     - wiki/index.md
     - Hardware:
       - Ground Vehicles:
-        - Sensorset 2026-Lexus: wiki/sensorset2026-lexus.md
-        - Sensorset 2026-Leaf: wiki/sensorset2026-leaf.md
-        - Sensorset 2026-Szenergy: wiki/sensorset2026-szenergy.md
+        - Sensorset Lexus: wiki/sensorset-lexus.md
+        - Sensorset Nissan: wiki/sensorset-nissan.md
+        - Sensorset Szenergy: wiki/sensorset-szenergy.md
       - Sensors:
         - GPS/GNSS:
           - Novatel PwrPak7 RTK : wiki/novatel.md
@@ -176,7 +176,12 @@ nav:
         - HD Map Usage: wiki/hdmap_usage.md
       - JKK utils:
         - JKK utils: wiki/jkk_utils.md
-      
+        - Steam Deck: wiki/steam_deck.md
+    - Datasets: 
+      - Dataset overview: dataset/index.md
+      - jkk_dataset_01 : dataset/jkk_dataset_01.md
+      - jkk_dataset_02 : dataset/jkk_dataset_02.md
+      - jkk_dataset_03 : dataset/jkk_dataset_03.md
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |

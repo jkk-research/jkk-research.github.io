@@ -17,7 +17,7 @@ The laboratory features an advanced NHR9200 modular measurement and emulation sy
 
 Complementing the core systems, our lab includes multiple 5 kW EA power supplies and electronic loads, a Gamry electrochemical impedance spectroscopy (EIS) measurement unit, and a custom NI CompactRIO-based system. This measurement system enables up to 16 channels of active cell balancing and 24 channels of cell voltage and temperature monitoring, supporting both cell-level and pack level measurements up to 60 V and 200 A. For storage and charging safety, we utilize Düperthal Battery Standard XL safety cabinets, which offer 90 minutes of fire resistance and comply with DIN EN 14470-1 and DIN EN 14727. These cabinets feature automatic fire responsive door closures, fire escape locks, and exhaust connections. Additionally, for safe battery handling and transport, the lab is equipped with a fire extinguisher system specifically designed for lithium battery applications.
 
-![map](/assets/images_common/l2_4_map_campus01.svg){: style="height:300px"}
+![map](images_common/l2_4_map_campus01.svg){: style="height:300px"}
 
 ## Electric Powertrain Testbench
 
@@ -29,7 +29,7 @@ In the Electric Powertrain Testbench Laboratory is able to test electrical machi
 
 Link: [szolgaltatas.sze.hu/en_GB/electric-powertrain-testbench](https://szolgaltatas.sze.hu/en_GB/electric-powertrain-testbench)
 
-![map](/assets/images_common/l2_5_map_campus01.svg){: style="height:300px"}
+![map](images_common/l2_5_map_campus01.svg){: style="height:300px"}
 
 
 ## Robotics Laboratory
@@ -39,8 +39,7 @@ Link: [szolgaltatas.sze.hu/en_GB/electric-powertrain-testbench](https://szolgalt
 
 The Robotics Laboratory is equipped with a variety of robotic platforms, including the Unitree Go2 Edu quadruped robot, which serves as a versatile tool for research and development in robotics. The lab provides an environment for testing and developing algorithms related to perception, navigation, and control. It is also equipped with various sensors and computing resources to support advanced robotics research. The lab's infrastructure allows for the integration of different robotic systems and the development of custom solutions for specific research challenges.
 
-
-![map](/assets/images_common/l1_101_map_campus01.svg){: style="height:300px"}
+![map](images_common/l1_101_map_campus01.svg){: style="height:300px"}
 ![alt text](images_common/robot_unitree_go2_edu01.png){: style="height:300px"}
 
 ## Calibration and Diagnostics Laboratory

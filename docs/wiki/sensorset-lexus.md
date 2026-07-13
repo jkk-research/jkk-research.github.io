@@ -6,6 +6,12 @@ icon: material/car
 
 Vehicle: Lexus rx450h 
 
+<figure markdown="span">
+  ![Image](/assets/images_common/vehcile_lexus01.png){ width="80%" }
+  <figcaption>Lexus</figcaption>
+</figure>
+
+
 ## Sensors
 
 |Type|Name|Pieces| ROS2 driver |
@@ -26,3 +32,6 @@ Vehicle: Lexus rx450h
 - [Lexus autonomous FOV2 PDF](img/Lexus_autonomous_fov2.pdf)
 
 ![svg](img/Lexus_autonomous_fov2.svg)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FmAkOa9vDyY?si=1MDCRIBAIX-M5OMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -12,11 +12,11 @@ hide:
 Welcome to the JKK wiki! Here you can find information about our research, projects, and publications.
 
 <figure markdown="span">
-  ![Image title](/assets/images_common/wiki01.svg){: style="height:200px; text-align: center;" }
+  ![Image title](images_common/wiki01.svg){: style="height:200px; text-align: center;" }
   <figcaption>Welcome to JKK wiki</figcaption>
 </figure>
 
-![Image](/assets/images_common/aw_sze05.png){ width="80%" }
+![Image](images_common/aw_sze05.png){ width="80%" }
 
 
 
@@ -48,5 +48,5 @@ Recorded rosbag/mcap logs and HLB use-case data from our vehicles, released for 
 ---
 
 Copyright © 2023 JKK Research. All rights reserved. Made with ❤️ at Széchenyi University, Hungary, EU. 
-![alt text](/assets/images_common/hu_flag01.svg){ width="20px" }
-![alt text](/assets/images_common/eu_flag01.svg){ width="20px" }
+![alt text](images_common/hu_flag01.svg){ width="20px" }
+![alt text](images_common/eu_flag01.svg){ width="20px" }

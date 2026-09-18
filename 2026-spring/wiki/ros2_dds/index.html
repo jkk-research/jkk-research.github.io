@@ -3135,11 +3135,11 @@
 <span class="nb">export</span><span class="w"> </span><span class="nv">CYCLONEDDS_URI</span><span class="o">=</span>/home/&lt;user&gt;/cyclone_profile.xml
 </code></pre></div>
 <h2 id="cyclone_profilexml-file"><code>cyclone_profile.xml</code> file<a class="headerlink" href="#cyclone_profilexml-file" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;CycloneDDS</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;https://cdds.io/config&quot;</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="w"> </span><span class="na">xsi:schemaLocation=</span><span class="s">&quot;https://cdds.io/config https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Domain</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;any&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;CycloneDDS</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"https://cdds.io/config"</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="w"> </span><span class="na">xsi:schemaLocation=</span><span class="s">"https://cdds.io/config https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Domain</span><span class="w"> </span><span class="na">id=</span><span class="s">"any"</span><span class="nt">&gt;</span>
 <span class="w">         </span><span class="nt">&lt;General&gt;</span>
 <span class="w">           </span><span class="nt">&lt;Interfaces&gt;</span>
-<span class="w">              </span><span class="nt">&lt;NetworkInterface</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;tun0&quot;</span><span class="w">  </span><span class="na">multicast=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">              </span><span class="nt">&lt;NetworkInterface</span><span class="w"> </span><span class="na">name=</span><span class="s">"tun0"</span><span class="w">  </span><span class="na">multicast=</span><span class="s">"false"</span><span class="w"> </span><span class="nt">/&gt;</span>
 <span class="w">           </span><span class="nt">&lt;/Interfaces&gt;</span>
 <span class="w">           </span><span class="nt">&lt;AllowMulticast&gt;</span>false<span class="nt">&lt;/AllowMulticast&gt;</span>
 <span class="w">           </span><span class="nt">&lt;EnableMulticastLoopback&gt;</span>false<span class="nt">&lt;/EnableMulticastLoopback&gt;</span>
@@ -3147,18 +3147,18 @@
 
 <span class="w">        </span><span class="nt">&lt;Discovery&gt;</span>
 <span class="w">            </span><span class="nt">&lt;Peers&gt;</span>
-<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">&quot;10.8.0.10&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- lexus.opn --&gt;</span>
-<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">&quot;10.8.0.11&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- teleopstation.opn --&gt;</span>
-<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">&quot;10.8.0.12&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- nisssan --&gt;</span>
-<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">&quot;10.8.0.15&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- lexus-bme.ovpn --&gt;</span>
-<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">&quot;10.8.0.17&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- gamma-rover.ovpn --&gt;</span>
-<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">&quot;10.8.0.18&quot;</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- gamma-station.ovpn --&gt;</span>
-<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">&quot;10.8.0.1&quot;</span><span class="nt">/&gt;</span>
+<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">"10.8.0.10"</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- lexus.opn --&gt;</span>
+<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">"10.8.0.11"</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- teleopstation.opn --&gt;</span>
+<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">"10.8.0.12"</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- nisssan --&gt;</span>
+<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">"10.8.0.15"</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- lexus-bme.ovpn --&gt;</span>
+<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">"10.8.0.17"</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- gamma-rover.ovpn --&gt;</span>
+<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">"10.8.0.18"</span><span class="nt">/&gt;</span><span class="w"> </span><span class="cm">&lt;!-- gamma-station.ovpn --&gt;</span>
+<span class="w">                </span><span class="nt">&lt;Peer</span><span class="w"> </span><span class="na">address=</span><span class="s">"10.8.0.1"</span><span class="nt">/&gt;</span>
 <span class="w">            </span><span class="nt">&lt;/Peers&gt;</span>
 <span class="w">            </span><span class="nt">&lt;ParticipantIndex&gt;</span>auto<span class="nt">&lt;/ParticipantIndex&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/Discovery&gt;</span>
 
-<span class="w">       </span><span class="nt">&lt;Domain</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;any&quot;</span><span class="nt">&gt;</span>
+<span class="w">       </span><span class="nt">&lt;Domain</span><span class="w"> </span><span class="na">id=</span><span class="s">"any"</span><span class="nt">&gt;</span>
 <span class="w">         </span><span class="nt">&lt;SharedMemory&gt;</span>
 <span class="w">            </span><span class="nt">&lt;Enable&gt;</span>true<span class="nt">&lt;/Enable&gt;</span>
 <span class="w">            </span><span class="nt">&lt;SubQueueCapacity&gt;</span>256<span class="nt">&lt;/SubQueueCapacity&gt;</span>
@@ -3179,13 +3179,13 @@
 </code></pre></div>
 <h2 id="cyclone_profilexml-file-for-autoware"><code>cyclone_profile.xml</code> file for Autoware<a class="headerlink" href="#cyclone_profilexml-file-for-autoware" title="Permanent link">&para;</a></h2>
 <p>https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/dds-settings/
-<div class="highlight"><pre><span></span><code><span class="nt">&lt;CycloneDDS</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;https://cdds.io/config&quot;</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><span class="w"> </span><span class="na">xsi:schemaLocation=</span><span class="s">&quot;https://cdds.io/config https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd&quot;</span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;CycloneDDS</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"https://cdds.io/config"</span><span class="w"> </span><span class="na">xmlns:xsi=</span><span class="s">"http://www.w3.org/2001/XMLSchema-instance"</span><span class="w"> </span><span class="na">xsi:schemaLocation=</span><span class="s">"https://cdds.io/config https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd"</span><span class="nt">&gt;</span>
 <span class="cm">&lt;!-- https://github.com/szenergy/szenergy-public-resources/wiki/ROS-2-DDS --&gt;</span>
-<span class="w">    </span><span class="nt">&lt;Domain</span><span class="w"> </span><span class="na">Id=</span><span class="s">&quot;any&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;Domain</span><span class="w"> </span><span class="na">Id=</span><span class="s">"any"</span><span class="nt">&gt;</span>
 <span class="w">         </span><span class="nt">&lt;General&gt;</span>
 <span class="w">           </span><span class="nt">&lt;Interfaces&gt;</span>
-<span class="w">              </span><span class="nt">&lt;NetworkInterface</span><span class="w"> </span><span class="na">autodetermine=</span><span class="s">&quot;false&quot;</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;lo&quot;</span><span class="w"> </span><span class="na">priority=</span><span class="s">&quot;default&quot;</span><span class="w"> </span><span class="na">multicast=</span><span class="s">&quot;default&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
-<span class="w">              </span><span class="cm">&lt;!-- &lt;NetworkInterface name=&quot;tun0&quot;  multicast=&quot;false&quot; /&gt; --&gt;</span>
+<span class="w">              </span><span class="nt">&lt;NetworkInterface</span><span class="w"> </span><span class="na">autodetermine=</span><span class="s">"false"</span><span class="w"> </span><span class="na">name=</span><span class="s">"lo"</span><span class="w"> </span><span class="na">priority=</span><span class="s">"default"</span><span class="w"> </span><span class="na">multicast=</span><span class="s">"default"</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">              </span><span class="cm">&lt;!-- &lt;NetworkInterface name="tun0"  multicast="false" /&gt; --&gt;</span>
 <span class="w">           </span><span class="nt">&lt;/Interfaces&gt;</span>
 <span class="w">           </span><span class="nt">&lt;AllowMulticast&gt;</span>default<span class="nt">&lt;/AllowMulticast&gt;</span>
 <span class="w">           </span><span class="nt">&lt;MaxMessageSize&gt;</span>65500B<span class="nt">&lt;/MaxMessageSize&gt;</span>
@@ -3193,7 +3193,7 @@
 <span class="w">        </span><span class="nt">&lt;/General&gt;</span>
 
 <span class="w">        </span><span class="nt">&lt;Internal&gt;</span>
-<span class="w">        </span><span class="nt">&lt;SocketReceiveBufferSize</span><span class="w"> </span><span class="na">min=</span><span class="s">&quot;10MB&quot;</span><span class="nt">/&gt;</span>
+<span class="w">        </span><span class="nt">&lt;SocketReceiveBufferSize</span><span class="w"> </span><span class="na">min=</span><span class="s">"10MB"</span><span class="nt">/&gt;</span>
 <span class="w">        </span><span class="nt">&lt;Watermarks&gt;</span>
 <span class="w">            </span><span class="nt">&lt;WhcHigh&gt;</span>500kB<span class="nt">&lt;/WhcHigh&gt;</span>
 <span class="w">        </span><span class="nt">&lt;/Watermarks&gt;</span>
@@ -3201,13 +3201,13 @@
 
 <span class="w">        </span><span class="cm">&lt;!-- &lt;Discovery&gt; --&gt;</span>
 <span class="w">            </span><span class="cm">&lt;!-- &lt;Peers&gt; --&gt;</span>
-<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address=&quot;10.8.0.10&quot;/&gt; lexus.opn --&gt;</span>
-<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address=&quot;10.8.0.11&quot;/&gt; teleopstation.opn --&gt;</span>
-<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address=&quot;10.8.0.12&quot;/&gt; nisssan --&gt;</span>
-<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address=&quot;10.8.0.15&quot;/&gt; lexus-bme.ovpn --&gt;</span>
-<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address=&quot;10.8.0.17&quot;/&gt;  gamma-rover.ovpn --&gt;</span>
-<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address=&quot;10.8.0.18&quot;/&gt;  gamma-station.ovpn --&gt;</span>
-<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address=&quot;10.8.0.1&quot;/&gt; --&gt;</span>
+<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address="10.8.0.10"/&gt; lexus.opn --&gt;</span>
+<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address="10.8.0.11"/&gt; teleopstation.opn --&gt;</span>
+<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address="10.8.0.12"/&gt; nisssan --&gt;</span>
+<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address="10.8.0.15"/&gt; lexus-bme.ovpn --&gt;</span>
+<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address="10.8.0.17"/&gt;  gamma-rover.ovpn --&gt;</span>
+<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address="10.8.0.18"/&gt;  gamma-station.ovpn --&gt;</span>
+<span class="w">                </span><span class="cm">&lt;!-- &lt;Peer address="10.8.0.1"/&gt; --&gt;</span>
 <span class="w">            </span><span class="cm">&lt;!-- &lt;/Peers&gt; --&gt;</span>
 <span class="w">            </span><span class="cm">&lt;!-- &lt;ParticipantIndex&gt;auto&lt;/ParticipantIndex&gt; --&gt;</span>
 <span class="w">            </span><span class="cm">&lt;!-- &lt;MaxAutoParticipantIndex&gt;100&lt;/MaxAutoParticipantIndex&gt; --&gt;</span>
@@ -3222,9 +3222,9 @@
 <span class="nt">&lt;/CycloneDDS&gt;</span>
 </code></pre></div></p>
 <h2 id="fastdds_profilexml-file"><code>fastdds_profile.xml</code> file<a class="headerlink" href="#fastdds_profilexml-file" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;</span>
-<span class="nt">&lt;profiles</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">&quot;http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles&quot;</span><span class="nt">&gt;</span>
-<span class="w">    </span><span class="nt">&lt;participant</span><span class="w"> </span><span class="na">profile_name=</span><span class="s">&quot;initial_peers_profile&quot;</span><span class="w"> </span><span class="na">is_default_profile=</span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="nt">&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span>
+<span class="nt">&lt;profiles</span><span class="w"> </span><span class="na">xmlns=</span><span class="s">"http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles"</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;participant</span><span class="w"> </span><span class="na">profile_name=</span><span class="s">"initial_peers_profile"</span><span class="w"> </span><span class="na">is_default_profile=</span><span class="s">"true"</span><span class="w"> </span><span class="nt">&gt;</span>
 <span class="w">        </span><span class="nt">&lt;rtps&gt;</span>
 <span class="w">            </span><span class="nt">&lt;builtin&gt;</span>
 <span class="w">                </span><span class="nt">&lt;initialPeersList&gt;</span>

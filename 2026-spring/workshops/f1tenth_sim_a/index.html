@@ -3356,7 +3356,7 @@ the metapackage <code>ignition-fortress</code> can be installed. The following i
 <p>Then install Ignition Fortress:</p>
 <p><div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>wget<span class="w"> </span>https://packages.osrfoundation.org/gazebo.gpg<span class="w"> </span>-O<span class="w"> </span>/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;deb [arch=</span><span class="k">$(</span>dpkg<span class="w"> </span>--print-architecture<span class="k">)</span><span class="s2"> signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> main&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/gazebo-stable.list<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">"deb [arch=</span><span class="k">$(</span>dpkg<span class="w"> </span>--print-architecture<span class="k">)</span><span class="s2"> signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg] http://packages.osrfoundation.org/gazebo/ubuntu-stable </span><span class="k">$(</span>lsb_release<span class="w"> </span>-cs<span class="k">)</span><span class="s2"> main"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>tee<span class="w"> </span>/etc/apt/sources.list.d/gazebo-stable.list<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
 </code></pre></div>
 <div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
 </code></pre></div>
@@ -3385,7 +3385,7 @@ the metapackage <code>ignition-fortress</code> can be installed. The following i
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">LIBGL_ALWAYS_SOFTWARE</span><span class="o">=</span><span class="m">1</span>
 </code></pre></div>
 <p>Set it in <code>~/.bashrc</code>:
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export LIBGL_ALWAYS_SOFTWARE=1&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">"export LIBGL_ALWAYS_SOFTWARE=1"</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.bashrc
 </code></pre></div></p>
 <details>
 <summary> Don't forget to source bashrc.</summary>
@@ -3493,7 +3493,7 @@ should print the line.</p>
 <p><img alt="" src="https://raw.githubusercontent.com/jkk-research/jkk-research.github.io/refs/heads/master/docs/img/sim02.gif" /></p>
 <h2 id="useful-commands">Useful commands<a class="headerlink" href="#useful-commands" title="Permanent link">&para;</a></h2>
 <p>Publish command topic:
-<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>--once<span class="w"> </span>/roboworks/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="s2">&quot;{linear: {x: 2.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -0.01}}&quot;</span>
+<div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>topic<span class="w"> </span>pub<span class="w"> </span>--once<span class="w"> </span>/roboworks/cmd_vel<span class="w"> </span>geometry_msgs/msg/Twist<span class="w"> </span><span class="s2">"{linear: {x: 2.5, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: -0.01}}"</span>
 </code></pre></div></p>
 <p>Teleop twist keyboard:
 <div class="highlight"><pre><span></span><code>ros2<span class="w"> </span>run<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>teleop_twist_keyboard<span class="w"> </span>--ros-args<span class="w"> </span>-r<span class="w"> </span>/cmd_vel:<span class="o">=</span>/roboworks/cmd_vel

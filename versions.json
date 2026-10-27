@@ -7,6 +7,11 @@
   {
     "version": "2026-spring",
     "title": "2026-spring",
+    "aliases": []
+  },
+  {
+    "version": "2026-autumn",
+    "title": "2026-autumn",
     "aliases": [
       "latest"
     ]

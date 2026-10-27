@@ -1,4 +1,4 @@
-## `ROS 2` install hands-on workshop :simple-ros:{ .sze-color } 
+## `ROS 2` install hands-on workshop :simple-ros:{ .sze-color } { #ros-2-install-hands-on-workshop }
 
 This document will guide you through the installation process of `ROS 2`.
 
@@ -35,7 +35,7 @@ wsl --install -d Ubuntu-22.04
 - Start the Windows Terminal program and open the settings with the Ctrl+, (Control and comma) key combination. Select Ubuntu 22.04 from the drop-down list of the Default Profile setting line.
 - Restart the Windows Terminal. When starting for the first time, enter a user name and password of your choice.
 - We recommend the VS Code editor to develop the solution. Install from: [code.visualstudio.com/download](https://code.visualstudio.com/download)
-- Finally, install the VS Code Remote Development add-on to be available using WSL: [marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com /items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
+- Finally, install the VS Code Remote Development add-on to be available using WSL: [marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
 
 ## Installation (after you have Ubuntu)
@@ -147,7 +147,7 @@ $ ros2 topic list
 /rosout
 ```
 
-If everything is fine, the above two topics should appear. Then you can learn how to use simple example nodes: [docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html](https://docs.ros.org/en/humble/Tutorials/Beginner -CLI-Tools.html)
+If everything is fine, the above two topics should appear. Then you can learn how to use simple example nodes: [docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools.html)
 
 # Recommended settings after installation
 
@@ -161,13 +161,13 @@ export RCUTILS_COLORIZED_OUTPUT=1
 
 ![RCUTILS_COLORIZED_OUTPUT](https://github-production-user-asset-6210df.s3.amazonaws.com/11504709/248783932-a71a5d37-d49b-4508-93db-2e74a3c24365.gif)
 
-Details: [docs.ros.org/en/humble/Tutorials/Demos/Logging-and-logger-configuration.html#id14](https://docs.ros.org/en/humble/Tutorials/Demos/Logging- and-logger-configuration.html#id14)
+Details: [docs.ros.org/en/humble/Tutorials/Demos/Logging-and-logger-configuration.html#id14](https://docs.ros.org/en/humble/Tutorials/Demos/Logging-and-logger-configuration.html#id14)
 
 ## `colcon_cd`
 
 It is also advisable to set the `colcon_cd` command so that you can quickly change your working directory to the directory of a package. As an example, the command `colcon_cd some_ros_package` can quickly jump to the directory `~/ros2_ws/src/some_ros_package`.
 
-Details: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd](https://docs.ros.org/en/humble/Tutorials/ Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd)
+Details: [docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd](https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html#setup-colcon-cd)
 
 # Home / laboratory room installation
 

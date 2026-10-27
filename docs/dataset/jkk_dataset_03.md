@@ -1,6 +1,6 @@
 This dataset contains the raw data of naturalistic driving, utilized for Human-Like Behavior studies of Automated Vehicles (HLB4AV).
 
-![](/img/ldm1.svg)
+![](../img/ldm1.svg)
 
 The zipped measurements can be downloaded from the following link.
 [Download from here](https://laesze-my.sharepoint.com/:u:/g/personal/igneczi_gergo_ferenc_hallgato_sze_hu/EbVJe6U9VIxLnCtZuJNKifwB4_Uzle12HcY3wH9LszN-7g?e=bJrSmw?download=1){ .md-button }.
@@ -40,7 +40,7 @@ Explanation to notations:<br/>
 
 The dataset uses the following coordinate system of the vehicle:
 
-![](/img/coordinates_dataset_03.jpg)
+![](../img/coordinates_dataset_03.jpg)
 
 Even though the data is recorded considering only two dimensional movement, the Z axis is displayed to give the right explanation of the yaw rate signal. Always, positive direction of a rotational quantity means CCW direction.
 
@@ -73,7 +73,7 @@ This vehicle was only equipped with the Genesys ADMA Gen3 (DGPS) device. The lan
 ### Static Lane Map
 Based on the reference measurements, the lane map of the test route was created. For this, the lane position provided by the video camera was used. The lane position accuracy has +/- 2cm, while the localization has accuracy of +/- 1 cm.
 
-![](/img/lane_dataset_03.png)
+![](../img/lane_dataset_03.png)
 
 The camera provides information of the position of the lane edges at each sample time. The following information are provided:<br/>
 - lane position ($d$)<br/>
@@ -94,11 +94,11 @@ However, by manual labelling the following information were added to the data: <
 
 An example of a convoy, passing the ego vehicle is shown here:
 
-![](/img/oncomingTraffic_dataset_03.png)
+![](../img/oncomingTraffic_dataset_03.png)
 
 The **same** scenario on the dash cam video (snippets cut by hand):
 
-![](/img/dataset_03_oncoming_video.png)
+![](../img/dataset_03_oncoming_video.png)
 
 **Please be noted, that this information is added manually, therefore not suitable for quantitative evaluation, only qualitative!**
 

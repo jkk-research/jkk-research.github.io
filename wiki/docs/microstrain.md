@@ -1,7 +1,5 @@
 # MicroStrain 3DM-GX5-AR IMU/VRU
 
-![3DM-GX5-AR](https://media.hbkworld.com/transform/34d7211d-64af-4ffe-94c3-63ea53e82c15/3DM-GX5-SMALL-Product-Photo?io=transform:fill,width:1024&quality=80)
-
 ## Technical specifications
 
 | Parameter | Specification |

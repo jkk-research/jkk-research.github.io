@@ -19,7 +19,7 @@ This dataset consists of measurement log files (ROS 2 mcap) with additional scri
 
 [Details](jkk_dataset_02){ .md-button .md-button--primary }
 
-![](/img/jkk_dataset_02_2023_07_11-11_12.svg){ width="600" }
+![](../img/jkk_dataset_02_2023_07_11-11_12.svg){ width="600" }
 
 ## `JKK_DATASET_03`
 
@@ -27,5 +27,5 @@ This dataset contains the Human-like Behavior (HLB) usecase data, in mat format.
 
 [Details](jkk_dataset_03){ .md-button .md-button--primary }
 
-![](/img/ldm1.svg){ width="600" }
+![](../img/ldm1.svg){ width="600" }
 

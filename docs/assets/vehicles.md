@@ -4,7 +4,7 @@
 **JKK-wiki link**: [Lexus RX450h](/wiki/latest/sensorset-lexus/)
 
 <figure markdown="span">
-  ![Image](/assets/images_common/vehcile_lexus01.png){ width="80%" }
+  ![Image](images_common/vehcile_lexus01.png){ width="80%" }
   <figcaption>Lexus</figcaption>
 </figure>
 
@@ -19,7 +19,7 @@
 **JKK-wiki link**: [Nissan Leaf](/wiki/latest/sensorset-nissan/)
 
 <figure markdown="span">
-  ![Image](/assets/images_common/vehcile_leaf01.png){ width="80%" }
+  ![Image](images_common/vehcile_leaf01.png){ width="80%" }
   <figcaption>Nissan Leaf</figcaption>
 </figure>
 
@@ -29,14 +29,14 @@
 **Sensors**: Intel RealSense RGB-D camera, IMU, GPS(GNSS)
 
 <figure markdown="span">
-  ![Image title](/assets/images_common/robot_traffic_cone01.png){ width="60%" }
+  ![Image title](images_common/robot_traffic_cone01.png){ width="60%" }
   <figcaption>Traffic Cone Manipulation Robot</figcaption>
 </figure>
 
 # Unitree Go2 Edu
 **Sensors**: Unitree 4D LiDAR L2, HD Wide-angle Camera, IMU
 <figure markdown="span">
-  ![Image title](/assets/images_common/robot_unitree_go2_edu01.png){ width="60%" }
+  ![Image title](images_common/robot_unitree_go2_edu01.png){ width="60%" }
   <figcaption>Unitree Go2 Edu</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@
 **JKK-wiki link**: [Szenergy](/wiki/latest/sensorset-szenergy/)
 
 <figure markdown="span">
-  ![Image title](/assets/images_common/vehicle_szenergy01.png){ width="80%" }
+  ![Image title](images_common/vehicle_szenergy01.png){ width="80%" }
   <figcaption>Szenergy</figcaption>
 </figure>
 

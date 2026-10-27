@@ -153,7 +153,7 @@ ign gazebo shapes.sdf
 ```
 
 
-![](https://api.gazebosim.org/1.0/images/fortress/img/snap.gif)
+![](https://raw.githubusercontent.com/gazebosim/docs/master/fortress/img/snap.gif)
 
 ```bash
 ign param --versions
@@ -380,7 +380,7 @@ net.ipv4.ipfrag_high_thresh=134217728  # 128 MiB, default is 256 KiB
 ```
 Save and exit (`CTRL+O`, `ENTER`, `CTRL+X`).
 
-Also have a look at [Network settings for ROS 2 and Autoware](https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/) and [Performance Troubleshooting](https://autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/performance-troubleshooting/)
+Also have a look at [Network settings for ROS 2 and Autoware](https://autowarefoundation.github.io/autoware-documentation/main/installation/additional-settings-for-developers/network-configuration/) and [Performance Troubleshooting](https://autowarefoundation.github.io/autoware-documentation/main/community/support/troubleshooting/performance-troubleshooting/)
 
 ## Additional resources
 
@@ -389,4 +389,4 @@ Also have a look at [Network settings for ROS 2 and Autoware](https://autowarefo
 - [github.com/robotverseny/megoldas_sim24](https://github.com/robotverseny/megoldas_sim24)
 - [robotverseny.github.io](https://robotverseny.github.io)
 - [sze-info.github.io/ajr/szimulacio/f1tenth_sim_a](https://sze-info.github.io/ajr/szimulacio/f1tenth_sim_a/)
-- [autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/performance-troubleshooting](https://autowarefoundation.github.io/autoware-documentation/main/support/troubleshooting/performance-troubleshooting/)
+- [autowarefoundation.github.io/autoware-documentation/main/community/support/troubleshooting/performance-troubleshooting](https://autowarefoundation.github.io/autoware-documentation/main/community/support/troubleshooting/performance-troubleshooting/)

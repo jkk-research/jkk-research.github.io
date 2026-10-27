@@ -1,0 +1,165 @@
+# JKK Research Center main site, built with Zensical (https://zensical.org)
+# and published with mike to https://jkk-research.github.io/<version>/, where
+# the site root redirects to /latest/ (see .github/workflows/deploy.yml).
+#
+# The wiki is a separate Zensical site in wiki/ (see wiki/zensical.toml). The
+# theme settings below match the ones there; keep them in sync.
+#
+#   pip install -r requirements.txt
+#   zensical serve     # preview on http://localhost:8000
+#   zensical build     # output in site/
+
+[project]
+site_name = "JKK Research Center"
+site_description = "Research Center of Vehicle Industry"
+site_author = "jkk-research"
+# mike adds the version (canonical_version below) to this URL.
+site_url = "https://jkk-research.github.io/"
+copyright = "&copy; SZE-JKK"
+repo_url = "https://github.com/jkk-research/"
+docs_dir = "docs"
+site_dir = "site"
+extra_css = ["stylesheets/bibliography.css", "stylesheets/extra.css"]
+
+nav = [
+  { "Home" = [
+    "index.md",
+    { "About us" = "home/about.md" },
+    { "Social media" = "home/social.md" },
+    { "Videos" = "home/videos.md" },
+  ] },
+  { "Dataset" = [
+    "dataset/index.md",
+    { "jkk_dataset_01" = "dataset/jkk_dataset_01.md" },
+    { "jkk_dataset_02" = "dataset/jkk_dataset_02.md" },
+    { "jkk_dataset_03" = "dataset/jkk_dataset_03.md" },
+  ] },
+  { "Publications" = [
+    "papers/index.md",
+  ] },
+  { "Workshops" = [
+    "workshops/index.md",
+    { "ROS 2" = [
+      { "ROS 2 intro" = "workshops/ros2_b.md" },
+      { "ROS 2 install" = "workshops/ros2_a.md" },
+      { "Control simulation" = "workshops/control_sim.md" },
+      { "Race simulation" = "workshops/f1tenth_sim_a.md" },
+      { "LIDAR clustering" = "workshops/clustering_a.md" },
+      { "Wheeltec 101" = "workshops/wheeltec_real_b.md" },
+    ] },
+    { "ROS 1 (legacy)" = [
+      { "Wheeltec hands-on (ROS 1)" = "workshops/wheeltec_real_a.md" },
+    ] },
+  ] },
+  { "Assets" = [
+    { "Vehicles & robots" = "assets/vehicles.md" },
+    { "Test track" = "assets/zalazone.md" },
+    { "Laboratory" = "assets/lab.md" },
+    { "Capabilities" = "assets/capabilities.md" },
+  ] },
+  { "F1/10 @SMT25" = "smt25/index.md" },
+  # The wiki is a separate Zensical site (see wiki/zensical.toml).
+  { "Wiki" = "https://jkk-research.github.io/wiki/" },
+]
+
+[project.theme]
+# Zensical's own design, with the JKK colours from stylesheets/extra.css.
+variant = "modern"
+logo = "img/jkk03.svg"
+favicon = "img/favicon.ico"
+features = [
+  "content.code.copy",
+  "content.code.select",
+  "content.tabs.link",
+  "navigation.footer",
+  "navigation.instant",
+  "search.highlight",
+  "navigation.tabs",
+  "navigation.top",
+  "toc.follow",
+]
+
+[project.theme.icon]
+logo = "material/library"
+repo = "material/library"
+
+# "youtube" is the custom light scheme defined in stylesheets/extra.css.
+[[project.theme.palette]]
+scheme = "youtube"
+primary = "custom"
+toggle.icon = "material/brightness-7"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "black"
+toggle.icon = "material/brightness-4"
+toggle.name = "Switch to light mode"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/jkk-research/jkk-research.github.io"
+
+# Version selector, fed by /versions.json that mike maintains.
+[project.extra.version]
+provider = "mike"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+footnotes = {}
+md_in_html = {}
+toc.permalink = true
+codehilite.guess_lang = false
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
+
+# Canonical URLs point to /latest/ rather than to the deployed version.
+[project.plugins.mike]
+canonical_version = "latest"
+
+# Builds the Publications list from refs.bib (see bibliography.py). Only pages
+# with "render_macros: true" in their front matter are rendered.
+[project.plugins.macros]
+module_name = "bibliography"
+render_by_default = false
+on_error_fail = true
+
+# Old URLs of the wiki pages, now served by the separate wiki site.
+[project.plugins.redirects.redirect_maps]
+"wiki/bosch_radar.md" = "https://jkk-research.github.io/wiki/latest/bosch_radar/"
+"wiki/crp.md" = "https://jkk-research.github.io/wiki/latest/crp/"
+"wiki/docker_humble.md" = "https://jkk-research.github.io/wiki/latest/docker_humble/"
+"wiki/fixposition.md" = "https://jkk-research.github.io/wiki/latest/fixposition/"
+"wiki/index.md" = "https://jkk-research.github.io/wiki/latest/"
+"wiki/jkk_utils.md" = "https://jkk-research.github.io/wiki/latest/jkk_utils/"
+"wiki/luminar.md" = "https://jkk-research.github.io/wiki/latest/luminar/"
+"wiki/microstrain.md" = "https://jkk-research.github.io/wiki/latest/microstrain/"
+"wiki/novatel.md" = "https://jkk-research.github.io/wiki/latest/novatel/"
+"wiki/novatel_config.md" = "https://jkk-research.github.io/wiki/latest/novatel_config/"
+"wiki/ouster.md" = "https://jkk-research.github.io/wiki/latest/ouster/"
+"wiki/pacmod_actuation.md" = "https://jkk-research.github.io/wiki/latest/pacmod_actuation/"
+"wiki/ros2_dds.md" = "https://jkk-research.github.io/wiki/latest/ros2_dds/"
+"wiki/ros2_joystick.md" = "https://jkk-research.github.io/wiki/latest/ros2_joystick/"
+"wiki/ros2_luminar.md" = "https://jkk-research.github.io/wiki/latest/ros2_luminar/"
+"wiki/ros2_microstrain.md" = "https://jkk-research.github.io/wiki/latest/ros2_microstrain/"
+"wiki/ros2_ouster.md" = "https://jkk-research.github.io/wiki/latest/ros2_ouster/"
+"wiki/ros2_pacmod.md" = "https://jkk-research.github.io/wiki/latest/ros2_pacmod/"
+"wiki/ros2_steam_deck.md" = "https://jkk-research.github.io/wiki/latest/ros2_steam_deck/"
+"wiki/ros2_tier4_c2.md" = "https://jkk-research.github.io/wiki/latest/ros2_tier4_c2/"
+"wiki/ros2_zed.md" = "https://jkk-research.github.io/wiki/latest/ros2_zed/"
+"wiki/sensorset-lexus.md" = "https://jkk-research.github.io/wiki/latest/sensorset-lexus/"
+"wiki/sensorset-nissan.md" = "https://jkk-research.github.io/wiki/latest/sensorset-nissan/"
+"wiki/sensorset-szenergy.md" = "https://jkk-research.github.io/wiki/latest/sensorset-szenergy/"
+"wiki/steam_deck.md" = "https://jkk-research.github.io/wiki/latest/steam_deck/"
+"wiki/swift_navigation.md" = "https://jkk-research.github.io/wiki/latest/swift_navigation/"
+"wiki/tier4_c2.md" = "https://jkk-research.github.io/wiki/latest/tier4_c2/"
+"wiki/vectornav.md" = "https://jkk-research.github.io/wiki/latest/vectornav/"
+"wiki/zed.md" = "https://jkk-research.github.io/wiki/latest/zed/"
+"wiki/ros2_mircrostrain.md" = "https://jkk-research.github.io/wiki/latest/ros2_microstrain/"

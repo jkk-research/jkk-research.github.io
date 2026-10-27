@@ -1,6 +1,6 @@
 # NovAtel PwrPak7 Datasheet (Short)
 
-![PwrPak7](https://novatel.com/-/media/Images/Hexagon/Hexagon-Core/Novatel/assestsFinal/assets/Web-Phase-2-2012/Product-Page-Images/Product-Images-Banner-and-Thumbnail/Receivers/_resampled/ScaleWidthWyIxNTgiXQ/PwrPak7-1680x885.ashx?la=en&h=885&w=1680&hash=8049B88C6E873D784B797BDA4980C923)
+![PwrPak7](https://docs.novatel.com/OEM7/Content/Resources/Images/HomePage/PwrPak7Family.png)
 
 ## Technical specifications
 

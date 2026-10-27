@@ -111,7 +111,7 @@ ros2 launch sim_wayp_plan_tools waypoint_to_target.launch.py
 There are some options:
 
 - `single_goal_pursuit`: Pure pursuit (for vehicles / robots), a simple cross-track error method
-- `multiple_goal_pursuit`: Multiple goal pursuit for vehicles / robots an implementation of our [paper](https://hjic.mk.uni-pannon.hu/index.php/hjic/article/view/914)
+- `multiple_goal_pursuit`: Multiple goal pursuit for vehicles / robots an implementation of our [paper](https://doi.org/10.33927/hjic-2020-03)
 - `stanley_control`: Stanley controller, a heading error + cross-track error method
 - `follow_the_carrot`: Follow-the-carrot, the simplest controller
 

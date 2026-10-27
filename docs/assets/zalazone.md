@@ -1,17 +1,17 @@
 Our research center has direct access to [ZalaZone test track](https://zalazone.hu), one of the most advanced automotive proving grounds in Europe. The track features a variety of road types and conditions, including urban environments, highways, and off-road sections, allowing us to conduct comprehensive testing of autonomous vehicles and advanced driver-assistance systems (ADAS).
 
 <figure markdown="span">
-  ![Image](/assets/images_common/zalazone01.png){ width="80%" }
+  ![Image](images_common/zalazone01.png){ width="80%" }
   <figcaption>ZalaZone test track</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Image](/assets/images_common/zalazone02.png){ width="80%" }
+  ![Image](images_common/zalazone02.png){ width="80%" }
   <figcaption>ZalaZone test track</figcaption>
 </figure>
 
 <figure markdown="span">
-  ![Image](/assets/images_common/zalazone03.png){ width="80%" }
+  ![Image](images_common/zalazone03.png){ width="80%" }
   <figcaption>ZalaZone test track</figcaption>
 </figure>
 

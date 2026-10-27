@@ -2,8 +2,8 @@
 # to https://jkk-research.github.io/wiki/<version>/, where /wiki/ redirects to
 # /wiki/latest/ (see .github/workflows/deploy-wiki.yml).
 #
-# The rest of the site is still built with MkDocs from ../mkdocs.yml. The nav
-# tabs, palette and colours below mirror that file; keep them in sync.
+# The rest of the site is a separate Zensical site (../zensical.toml). The nav
+# tabs and theme settings below match the ones there; keep them in sync.
 #
 #   pip install -r requirements.txt
 #   zensical serve     # preview on http://localhost:8000
@@ -13,7 +13,8 @@
 site_name = "JKK Research Center"
 site_description = "Research Center of Vehicle Industry"
 site_author = "jkk-research"
-site_url = "https://jkk-research.github.io/wiki/latest/"
+# mike adds the version (canonical_version below) to this URL.
+site_url = "https://jkk-research.github.io/wiki/"
 copyright = "&copy; SZE-JKK"
 repo_url = "https://github.com/jkk-research/"
 docs_dir = "docs"
@@ -158,6 +159,10 @@ link = "https://github.com/jkk-research/jkk-research.github.io"
 # Version selector, fed by /wiki/versions.json that mike maintains.
 [project.extra.version]
 provider = "mike"
+
+# Canonical URLs point to /wiki/latest/ rather than to the deployed version.
+[project.plugins.mike]
+canonical_version = "latest"
 
 [project.markdown_extensions]
 admonition = {}

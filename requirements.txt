@@ -1,9 +1,5 @@
-
-mkdocs-material==9.5.23
-mkdocs-bibtex
-mkdocs-material-extensions>=1.1
-mike>=2.1
-pillow 
-cairosvg
-mkdocs-slides
-mkdocs-redirects==1.2.2  # 1.2.3+ pulls in properdocs, which makes mike build with it instead of mkdocs
+zensical==0.0.73
+# Zensical's fork of mike (not on PyPI), pinned to a commit.
+mike @ git+https://github.com/squidfunk/mike.git@2d4ad799442f4592db8ad53b179bfb33db8c69ac
+# Formats the Publications list from refs.bib (see bibliography.py).
+pybtex==0.26.1

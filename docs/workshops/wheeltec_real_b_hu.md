@@ -6,7 +6,7 @@
 [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)  
 [![Static Badge](https://img.shields.io/badge/ROS_2-Jazzy-34aec5)](https://docs.ros.org/en/jazzy/)
 
-![](/img/wheeltec_roboworks02.png)
+![](../img/wheeltec_roboworks02.png)
 
 Rövid link az oldalhoz: [go.sze.hu/wh](https://go.sze.hu/wh)
 
@@ -75,7 +75,7 @@ start_drivers
 stop_all
 ```
 
-![](/img/start_wheeltec_driver01.png)
+![](../img/start_wheeltec_driver01.png)
 
 ---
 
@@ -130,9 +130,9 @@ A roboton történő kódszerkesztés ajánlott módja a VS Code használata a
 - [github.com/szenergy/szenergy-public-resources/wiki/H-SSH-no-password](https://github.com/szenergy/szenergy-public-resources/wiki/H-SSH-no-password)
 - [github.com/robotverseny/jkk_utils/tree/mcap_rec/mcap_rec](https://github.com/robotverseny/jkk_utils/tree/mcap_rec/mcap_rec)
 - [github.com/robotverseny/megoldas_sim24](https://github.com/robotverseny/megoldas_sim24)
-- [jkk-research.github.io/workshops/f1tenth_sim_a](https://jkk-research.github.io/workshops/f1tenth_sim_a)
+- [jkk-research.github.io/latest/workshops/f1tenth_sim_a](f1tenth_sim_a.md)
 - [code.visualstudio.com/docs/remote/ssh](https://code.visualstudio.com/docs/remote/ssh)
 
 ---
 
-![](/img/wheeltec_roboworks01.png)
+![](../img/wheeltec_roboworks01.png)

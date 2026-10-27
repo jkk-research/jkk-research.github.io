@@ -1,6 +1,6 @@
 # Luminar Iris Datasheet (Short)
 
-![Luminar Iris Lidar](https://autonomoustuff.com/-/media/Images/Hexagon/Hexagon-Core/autonomousstuff/products/luminar-iris-1680x885.ashx?la=en&h=885&w=1680&hash=9B5DD84E988ECCBFD8F6AA7ADAFC5DC4)
+![Luminar Iris Lidar](https://d1io3yog0oux5.cloudfront.net/_267367272e1bfe85d8c895f11cdef214/microvision/files/theme/images/iris.jpg)
 
 ## Technical specifications
 
@@ -14,7 +14,7 @@
 
 ## ROS 2 Driver
 
-- [luminar_ros2_driver](https://github.com/jkk-research/luminar_ros2_driver) - Community ROS 2 driver
+- [luminar_ros2_driver](https://github.com/packwidth/luminar_ros2_driver) - Community ROS 2 driver
 
 ## References
 

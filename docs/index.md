@@ -5,7 +5,7 @@ The Vehicle Industry Research Center has been working since May 2011 in Győr, H
 One of our most researched topic is self-driving (a.k.a autonomous) vehicles. We believe that fully self-driving technology can lead to safe, easy and sustainable transportation. We are preparing for this new technology-to-come by studying and researching its fundamentals and exploring the possibilities it offers. Alongside our work on autonomous systems, we actively research the energy efficiency of electric (EVs) and hybrid (HEVs) vehicles  as a cornerstone of sustainable future mobility. Our investigations cover the full spectrum of EV energy consumption, from powertrain optimization and regenerative braking strategies to the interplay between driving behavior, route planning, and battery state management. This process helps us gain unique knowledge on the mixed field of mechatronics, robotics and artificial intelligence. Future transportation can be safe, easy and sustainable without compromises.
 
 
-![](/img/jkk00.svg)
+![](img/jkk00.svg)
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y674pP_cA4I?si=RObm_TJR2x1m4A3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

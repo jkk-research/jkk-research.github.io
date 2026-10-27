@@ -25,7 +25,7 @@ The 3rd Sustainable Mobility and Transportation Symposium, an interdisciplinary 
 ## Official Websites
 
 - [smtsymposium.sze.hu](https://smtsymposium.sze.hu/)
-- [roboracer.ai](https://roboracer.ai/race.html)
+- [roboracer.ai](https://roboracer.ai/)
 
 
 

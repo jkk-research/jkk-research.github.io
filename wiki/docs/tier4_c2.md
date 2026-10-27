@@ -1,6 +1,6 @@
 # TIER IV C2 Camera Datasheet (Short)
 
-![TIER IV C2](https://tier4.github.io/edge-auto-docs/_images/c2_header.jpg)
+![TIER IV C2](https://tier4.github.io/edge-auto-docs/_images/top_camera.webp)
 
 ## Technical specifications
 

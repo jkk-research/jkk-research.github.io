@@ -11,7 +11,7 @@ The log data is in .mcap format, the standard logging format for [`ROS 2`](https
 
 You can instanly view the data in [Foxglove Studio](https://foxglove.dev/) (Free, online or on ay platform).
 
-![](/img/dataset02A.png)
+![](../img/dataset02A.png)
 
 ### Python scripts for MCAP
 
@@ -73,6 +73,6 @@ unzip jkkds02.zip
 
 ## Some images
 
-![](/img/jkk_dataset_02_2023_07_11-11_12.svg){ width="600" }
+![](../img/jkk_dataset_02_2023_07_11-11_12.svg){ width="600" }
 
-![](/img/jkk_dataset_02_2023_07_11-14_02.svg){ width="600" }
+![](../img/jkk_dataset_02_2023_07_11-14_02.svg){ width="600" }

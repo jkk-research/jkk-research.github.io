@@ -1,4 +1,4 @@
-/* JKK colours on Zensical's modern design. The colours match docs/stylesheets/extra.css of the main site. */
+/* JKK colours on Zensical's modern design. Same file as docs/stylesheets/extra.css of the main site; keep the two in sync. */
 [data-md-color-scheme="youtube"] {
     /* Primary color shades */
     --md-primary-fg-color:        #43AEC5;

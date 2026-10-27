@@ -26,6 +26,9 @@ $ mike set-default latest
 The wiki (`wiki/`) is a separate Zensical site, published to
 [jkk-research.github.io/wiki](https://jkk-research.github.io/wiki/) by `.github/workflows/deploy-wiki.yml`.
 It uses the same version as the main site.
+Its version menu also lists `dev` and `2026-spring`, from before the wiki had its own site:
+`wiki/dev/` and `wiki/2026-spring/` on the gh-pages branch hold redirect pages to the wiki
+inside those versions of the main site (`/<version>/wiki/`).
 
 ``` r
 $ cd wiki

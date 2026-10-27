@@ -122,66 +122,8 @@ nav:
     - Laboratory: assets/lab.md
     - Capabilities: assets/capabilities.md
   - F1/10 @SMT25: smt25/index.md
-  - Wiki:
-    - wiki/index.md
-    - Hardware:
-      - Ground Vehicles:
-        - Sensorset Lexus: wiki/sensorset-lexus.md
-        - Sensorset Nissan: wiki/sensorset-nissan.md
-        - Sensorset Szenergy: wiki/sensorset-szenergy.md
-      - Sensors:
-        - GPS/GNSS:
-          - Novatel PwrPak7 RTK : wiki/novatel.md
-          - Swift Navigation Duro: wiki/swift_navigation.md
-          - Fixposition Vision-RTK 2: wiki/fixposition.md
-          - Vectornav VN-310: wiki/vectornav.md
-        - LIDAR:
-          - Ouster: wiki/ouster.md
-          - Luminar: wiki/luminar.md
-        - Radar:
-          - Bosch Automotive Radar Gen 6: wiki/bosch_radar.md
-        - Cameras:
-          - Stereolabs ZED: wiki/zed.md
-          - Tier IV C2: wiki/tier4_c2.md
-        - IMU:
-          - Microstrain LORD IMU: wiki/microstrain.md
-      - Actuation:
-        - PacMod:
-          - PACMod actuation: wiki/pacmod_actuation.md
-        - Labview: wiki/labview.md
-    - Software:    
-      - ROS 2:
-        - ROS Drivers:
-          - ROS 2 Ouster driver: wiki/ros2_ouster.md
-          - ROS 2 Luminar driver: wiki/ros2_luminar.md
-          - ROS 2 ZED driver: wiki/ros2_zed.md
-          - ROS 2 Tier IV C2 driver: wiki/ros2_tier4_c2.md
-          - ROS 2 Microstrain driver: wiki/ros2_microstrain.md
-          - ROS 2 PacMod: wiki/ros2_pacmod.md
-        - ROS 2 Docker Humble: wiki/docker_humble.md
-        - ROS2 DDS: wiki/ros2_dds.md
-        - ROS2 Joystick setup: wiki/ros2_joystick.md
-        - ROS2 Steam Deck: wiki/ros2_steam_deck.md
-      - Networking:
-        - ROS 2 Networking: wiki/ros2_networking.md
-        - ROS 2 QoS: wiki/ros2_qos.md
-      - Localization:
-        - Novatel PwrPak7 RTK config: wiki/novatel_config.md
-      - Autoware:
-        - Autoware Getting Started: wiki/autoware_auto.md
-      - Cooprative Research Platform:
-        - CRP Overview: wiki/crp.md
-      - HD Maps:
-        - HD Map Creation: wiki/hdmap_creation.md
-        - HD Map Usage: wiki/hdmap_usage.md
-      - JKK utils:
-        - JKK utils: wiki/jkk_utils.md
-        - Steam Deck: wiki/steam_deck.md
-    - Datasets: 
-      - Dataset overview: dataset/index.md
-      - jkk_dataset_01 : dataset/jkk_dataset_01.md
-      - jkk_dataset_02 : dataset/jkk_dataset_02.md
-      - jkk_dataset_03 : dataset/jkk_dataset_03.md
+  # The wiki is a separate Zensical site (see wiki/zensical.toml).
+  - Wiki: https://jkk-research.github.io/wiki/
 
 # +--------------------------------------------------------------------------------------------------------+
 # |                                                                                                        |
@@ -498,7 +440,7 @@ extra:
   # +------------------------------------------------------------------------------------------------------+
   social:
     - icon: 'fontawesome/brands/github'
-      link: 'https://jkk-research/jkk-research.github.io'
+      link: 'https://github.com/jkk-research/jkk-research.github.io'
   
   # +------------------------------------------------------------------------------------------------------+
   # |                                                                                                      |
@@ -620,3 +562,36 @@ plugins:
       bib_file: "refs.bib"
   - mike:
       canonical_version: latest
+  # Old URLs of the wiki pages, now served by the separate wiki site.
+  - redirects:
+      redirect_maps:
+        wiki/bosch_radar.md: https://jkk-research.github.io/wiki/latest/bosch_radar/
+        wiki/crp.md: https://jkk-research.github.io/wiki/latest/crp/
+        wiki/docker_humble.md: https://jkk-research.github.io/wiki/latest/docker_humble/
+        wiki/fixposition.md: https://jkk-research.github.io/wiki/latest/fixposition/
+        wiki/index.md: https://jkk-research.github.io/wiki/latest/
+        wiki/jkk_utils.md: https://jkk-research.github.io/wiki/latest/jkk_utils/
+        wiki/luminar.md: https://jkk-research.github.io/wiki/latest/luminar/
+        wiki/microstrain.md: https://jkk-research.github.io/wiki/latest/microstrain/
+        wiki/novatel.md: https://jkk-research.github.io/wiki/latest/novatel/
+        wiki/novatel_config.md: https://jkk-research.github.io/wiki/latest/novatel_config/
+        wiki/ouster.md: https://jkk-research.github.io/wiki/latest/ouster/
+        wiki/pacmod_actuation.md: https://jkk-research.github.io/wiki/latest/pacmod_actuation/
+        wiki/ros2_dds.md: https://jkk-research.github.io/wiki/latest/ros2_dds/
+        wiki/ros2_joystick.md: https://jkk-research.github.io/wiki/latest/ros2_joystick/
+        wiki/ros2_luminar.md: https://jkk-research.github.io/wiki/latest/ros2_luminar/
+        wiki/ros2_microstrain.md: https://jkk-research.github.io/wiki/latest/ros2_microstrain/
+        wiki/ros2_ouster.md: https://jkk-research.github.io/wiki/latest/ros2_ouster/
+        wiki/ros2_pacmod.md: https://jkk-research.github.io/wiki/latest/ros2_pacmod/
+        wiki/ros2_steam_deck.md: https://jkk-research.github.io/wiki/latest/ros2_steam_deck/
+        wiki/ros2_tier4_c2.md: https://jkk-research.github.io/wiki/latest/ros2_tier4_c2/
+        wiki/ros2_zed.md: https://jkk-research.github.io/wiki/latest/ros2_zed/
+        wiki/sensorset-lexus.md: https://jkk-research.github.io/wiki/latest/sensorset-lexus/
+        wiki/sensorset-nissan.md: https://jkk-research.github.io/wiki/latest/sensorset-nissan/
+        wiki/sensorset-szenergy.md: https://jkk-research.github.io/wiki/latest/sensorset-szenergy/
+        wiki/steam_deck.md: https://jkk-research.github.io/wiki/latest/steam_deck/
+        wiki/swift_navigation.md: https://jkk-research.github.io/wiki/latest/swift_navigation/
+        wiki/tier4_c2.md: https://jkk-research.github.io/wiki/latest/tier4_c2/
+        wiki/vectornav.md: https://jkk-research.github.io/wiki/latest/vectornav/
+        wiki/zed.md: https://jkk-research.github.io/wiki/latest/zed/
+        wiki/ros2_mircrostrain.md: https://jkk-research.github.io/wiki/latest/ros2_microstrain/

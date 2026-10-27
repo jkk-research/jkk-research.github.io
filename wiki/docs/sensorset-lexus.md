@@ -7,7 +7,7 @@ icon: material/car
 Vehicle: Lexus rx450h 
 
 <figure markdown="span">
-  ![Image](/assets/images_common/vehcile_lexus01.png){ width="80%" }
+  ![Image](https://jkk-research.github.io/latest/assets/images_common/vehcile_lexus01.png){ width="80%" }
   <figcaption>Lexus</figcaption>
 </figure>
 

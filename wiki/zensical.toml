@@ -1,0 +1,176 @@
+# JKK Wiki, built with Zensical (https://zensical.org) and published with mike
+# to https://jkk-research.github.io/wiki/<version>/, where /wiki/ redirects to
+# /wiki/latest/ (see .github/workflows/deploy-wiki.yml).
+#
+# The rest of the site is still built with MkDocs from ../mkdocs.yml. The nav
+# tabs, palette and colours below mirror that file; keep them in sync.
+#
+#   pip install -r requirements.txt
+#   zensical serve     # preview on http://localhost:8000
+#   zensical build     # output in site/
+
+[project]
+site_name = "JKK Research Center"
+site_description = "Research Center of Vehicle Industry"
+site_author = "jkk-research"
+site_url = "https://jkk-research.github.io/wiki/latest/"
+copyright = "&copy; SZE-JKK"
+repo_url = "https://github.com/jkk-research/"
+docs_dir = "docs"
+site_dir = "site"
+extra_css = ["stylesheets/extra.css"]
+
+# The top-level tabs other than "Wiki" link back to the main (MkDocs) site, so
+# the tab bar matches the one there.
+nav = [
+  { "Home" = "https://jkk-research.github.io/latest/" },
+  { "Dataset" = "https://jkk-research.github.io/latest/dataset/" },
+  { "Publications" = "https://jkk-research.github.io/latest/papers/" },
+  { "Workshops" = "https://jkk-research.github.io/latest/workshops/" },
+  { "Assets" = "https://jkk-research.github.io/latest/assets/vehicles/" },
+  { "F1/10 @SMT25" = "https://jkk-research.github.io/latest/smt25/" },
+  { "Wiki" = [
+    "index.md",
+    { "Hardware" = [
+      { "Ground Vehicles" = [
+        { "Sensorset Lexus" = "sensorset-lexus.md" },
+        { "Sensorset Nissan" = "sensorset-nissan.md" },
+        { "Sensorset Szenergy" = "sensorset-szenergy.md" },
+      ] },
+      { "Sensors" = [
+        { "GPS/GNSS" = [
+          { "Novatel PwrPak7 RTK" = "novatel.md" },
+          { "Swift Navigation Duro" = "swift_navigation.md" },
+          { "Fixposition Vision-RTK 2" = "fixposition.md" },
+          { "Vectornav VN-310" = "vectornav.md" },
+        ] },
+        { "LIDAR" = [
+          { "Ouster" = "ouster.md" },
+          { "Luminar" = "luminar.md" },
+        ] },
+        { "Radar" = [
+          { "Bosch Automotive Radar Gen 6" = "bosch_radar.md" },
+        ] },
+        { "Cameras" = [
+          { "Stereolabs ZED" = "zed.md" },
+          { "Tier IV C2" = "tier4_c2.md" },
+        ] },
+        { "IMU" = [
+          { "Microstrain LORD IMU" = "microstrain.md" },
+        ] },
+      ] },
+      { "Actuation" = [
+        { "PacMod" = [
+          { "PACMod actuation" = "pacmod_actuation.md" },
+        ] },
+        # Not written yet:
+        # { "Labview" = "labview.md" },
+      ] },
+    ] },
+    { "Software" = [
+      { "ROS 2" = [
+        { "ROS Drivers" = [
+          { "ROS 2 Ouster driver" = "ros2_ouster.md" },
+          { "ROS 2 Luminar driver" = "ros2_luminar.md" },
+          { "ROS 2 ZED driver" = "ros2_zed.md" },
+          { "ROS 2 Tier IV C2 driver" = "ros2_tier4_c2.md" },
+          { "ROS 2 Microstrain driver" = "ros2_microstrain.md" },
+          { "ROS 2 PacMod" = "ros2_pacmod.md" },
+        ] },
+        { "ROS 2 Docker Humble" = "docker_humble.md" },
+        { "ROS2 DDS" = "ros2_dds.md" },
+        { "ROS2 Joystick setup" = "ros2_joystick.md" },
+        { "ROS2 Steam Deck" = "ros2_steam_deck.md" },
+      ] },
+      # Not written yet:
+      # { "Networking" = [
+      #   { "ROS 2 Networking" = "ros2_networking.md" },
+      #   { "ROS 2 QoS" = "ros2_qos.md" },
+      # ] },
+      { "Localization" = [
+        { "Novatel PwrPak7 RTK config" = "novatel_config.md" },
+      ] },
+      # Not written yet:
+      # { "Autoware" = [
+      #   { "Autoware Getting Started" = "autoware_auto.md" },
+      # ] },
+      { "Cooprative Research Platform" = [
+        { "CRP Overview" = "crp.md" },
+      ] },
+      # Not written yet:
+      # { "HD Maps" = [
+      #   { "HD Map Creation" = "hdmap_creation.md" },
+      #   { "HD Map Usage" = "hdmap_usage.md" },
+      # ] },
+      { "JKK utils" = [
+        { "JKK utils" = "jkk_utils.md" },
+        { "Steam Deck" = "steam_deck.md" },
+      ] },
+    ] },
+    { "Datasets" = [
+      { "Dataset overview" = "https://jkk-research.github.io/latest/dataset/" },
+      { "jkk_dataset_01" = "https://jkk-research.github.io/latest/dataset/jkk_dataset_01/" },
+      { "jkk_dataset_02" = "https://jkk-research.github.io/latest/dataset/jkk_dataset_02/" },
+      { "jkk_dataset_03" = "https://jkk-research.github.io/latest/dataset/jkk_dataset_03/" },
+    ] },
+  ] },
+]
+
+[project.theme]
+# Zensical's own design, with the JKK colours from stylesheets/extra.css.
+# ("classic" would match the Material for MkDocs look of the main site.)
+variant = "modern"
+logo = "img/jkk03.svg"
+favicon = "img/favicon.ico"
+features = [
+  "content.code.copy",
+  "content.code.select",
+  "content.tabs.link",
+  "navigation.footer",
+  "navigation.instant",
+  "search.highlight",
+  "navigation.tabs",
+  "navigation.top",
+  "toc.follow",
+]
+
+[project.theme.icon]
+logo = "material/library"
+repo = "material/library"
+
+# "youtube" is the custom light scheme defined in stylesheets/extra.css.
+[[project.theme.palette]]
+scheme = "youtube"
+primary = "custom"
+toggle.icon = "material/brightness-7"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "black"
+toggle.icon = "material/brightness-4"
+toggle.name = "Switch to light mode"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/jkk-research/jkk-research.github.io"
+
+# Version selector, fed by /wiki/versions.json that mike maintains.
+[project.extra.version]
+provider = "mike"
+
+[project.markdown_extensions]
+admonition = {}
+attr_list = {}
+footnotes = {}
+md_in_html = {}
+toc.permalink = true
+codehilite.guess_lang = false
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.inlinehilite = {}
+pymdownx.snippets = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true

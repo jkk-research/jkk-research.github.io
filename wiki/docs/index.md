@@ -38,7 +38,7 @@ Our ROS 2 stack: sensor drivers, networking/QoS, localization, Autoware integrat
 
 Recorded rosbag/mcap logs and HLB use-case data from our vehicles, released for research and teaching.
 
-[Full dataset catalog](https://jkk-research.github.io/dataset/){ .md-button .md-button--primary }
+[Full dataset catalog](https://jkk-research.github.io/latest/dataset/){ .md-button .md-button--primary }
 
 
 !!! info "Contributing"

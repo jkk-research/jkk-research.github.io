@@ -7,7 +7,7 @@ icon: material/car
 Vehicle: Szenergy Szemission
 
 <figure markdown="span">
-  ![Image title](/assets/images_common/vehicle_szenergy01.png){ width="80%" }
+  ![Image title](https://jkk-research.github.io/latest/assets/images_common/vehicle_szenergy01.png){ width="80%" }
   <figcaption>Szenergy</figcaption>
 </figure>
 

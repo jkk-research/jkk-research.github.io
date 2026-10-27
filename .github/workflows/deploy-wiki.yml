@@ -1,0 +1,57 @@
+#
+# Builds the wiki (wiki/, Zensical) and publishes it with mike to the "wiki/"
+# folder of the gh-pages branch: https://jkk-research.github.io/wiki/<version>/,
+# with /wiki/ redirecting to /wiki/latest/.
+#
+# mike only touches "wiki/" (--deploy-prefix), so the versioned main site that
+# deploy.yml publishes to the same branch is left untouched.
+#
+name: Deploy Wiki
+
+on:
+  push:
+    paths:
+    - 'wiki/**'
+    - '.github/workflows/deploy-wiki.yml'
+    branches:
+    - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Shared with deploy.yml so the two never push to gh-pages at the same time.
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Keep in sync with deploy.yml so the wiki shows the same version.
+      DOCS_VERSION: 2026-autumn
+      DOCS_ALIAS: latest
+    defaults:
+      run:
+        working-directory: wiki
+    steps:
+    - uses: actions/checkout@v4
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.x
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install -r requirements.txt
+    - name: Check build
+      run: zensical build --clean --strict
+    - name: Fetch GH pages
+      run: git fetch origin gh-pages --depth=1
+    - name: Deploy Files
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "actions@github.com"
+        mike deploy --push --deploy-prefix wiki --update-aliases "$DOCS_VERSION" "$DOCS_ALIAS"
+        mike set-default --push --deploy-prefix wiki "$DOCS_ALIAS"

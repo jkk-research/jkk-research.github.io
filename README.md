@@ -19,6 +19,22 @@ $ mike set-default latest
 $ mike serve
 ```
 
+### Wiki
+The wiki (`wiki/`) is a separate site built with [Zensical](https://zensical.org) and published to
+[jkk-research.github.io/wiki](https://jkk-research.github.io/wiki/) by `.github/workflows/deploy-wiki.yml`.
+It is versioned with Zensical's fork of mike, using the same version as the main site.
+
+``` r
+$ cd wiki
+$ python3 -m pip install -r requirements.txt
+$ zensical serve
+$ zensical build
+
+# Versioned wiki deployment (mike, under wiki/ on the gh-pages branch)
+$ mike deploy --deploy-prefix wiki --update-aliases 2026-autumn latest
+$ mike set-default --deploy-prefix wiki latest
+```
+
 ## License
 This template is served under the MIT license.  
 Read the [LICENSE] file for more info.

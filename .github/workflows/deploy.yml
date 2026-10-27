@@ -29,11 +29,16 @@ on:
     #tags-ignore:
     #- '**'
 
+# Shared with deploy-wiki.yml so the two never push to gh-pages at the same time.
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      DOCS_VERSION: 2026-spring
+      DOCS_VERSION: 2026-autumn  # keep in sync with deploy-wiki.yml
       DOCS_ALIAS: latest
     steps:
     - uses: actions/checkout@v4

@@ -6,3 +6,4 @@ mike>=2.1
 pillow 
 cairosvg
 mkdocs-slides
+mkdocs-redirects==1.2.2  # 1.2.3+ pulls in properdocs, which makes mike build with it instead of mkdocs

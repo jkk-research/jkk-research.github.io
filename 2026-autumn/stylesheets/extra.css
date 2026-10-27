@@ -1,23 +1,54 @@
+/* JKK colours on Zensical's modern design. Same file as wiki/docs/stylesheets/extra.css; keep the two in sync. */
 [data-md-color-scheme="youtube"] {
     /* Primary color shades */
     --md-primary-fg-color:        #43AEC5;
     --md-primary-fg-color--light: #9fd4e0;
     --md-primary-fg-color--dark:  #182744;
 
-    /* Accent color shades */
-    --md-accent-fg-color: #43AEC5;  }
-  
-  :root > * {
-  
+    /* Accent and link colors, darker than #43AEC5 so they stay readable on white */
+    --md-accent-fg-color: #2a8fa6;
+    --md-typeset-a-color: #1d7489;
+  }
 
-    
+  [data-md-color-scheme="slate"] {
+    --md-accent-fg-color: #6cc4d8;
+    --md-typeset-a-color: #6cc4d8;
+  }
 
-    /* Footer */
-    --md-footer-bg-color: #182744;
-    --md-footer-bg-color--dark: #182744;
-    --md-footer-fg-color: #43AEC5;
-    --md-footer-fg-color--light: #b9e7f2;
-    --md-footer-fg-color--lighter: #d9eef3;
+  /* Thin brand stripe above the header */
+  .md-header {
+    border-top: .2rem solid #43AEC5;
+  }
+
+  /* The logo is white; make it navy on the light header and in the mobile menu */
+  [data-md-color-scheme="youtube"] .md-logo img {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(25%) saturate(2000%) hue-rotate(195deg);
+  }
+
+  [data-md-color-scheme="youtube"] .md-tabs__item--active {
+    border-bottom: .1rem solid #43AEC5;
+  }
+
+  .md-typeset h1 {
+    color: var(--md-primary-fg-color--dark);
+  }
+
+  [data-md-color-scheme="slate"] .md-typeset h1 {
+    color: inherit;
+  }
+
+  /* Navy footer, with light text and links */
+  .md-footer {
+    --md-default-fg-color:          #d9eef3;
+    --md-default-fg-color--light:   #b9e7f2;
+    --md-default-fg-color--lighter: #b9e7f2;
+
+    color: var(--md-default-fg-color);
+    background-color: #182744;
+  }
+
+  .md-footer-meta {
+    background-color: #182744;
   }
 
   .sze-color-primary {

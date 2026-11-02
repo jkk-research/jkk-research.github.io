@@ -30,9 +30,10 @@ nav = [
   ] },
   { "Dataset" = [
     "dataset/index.md",
-    { "jkk_dataset_01" = "dataset/jkk_dataset_01.md" },
-    { "jkk_dataset_02" = "dataset/jkk_dataset_02.md" },
-    { "jkk_dataset_03" = "dataset/jkk_dataset_03.md" },
+    { "jkk_dataset_01 - single vehicle" = "dataset/jkk_dataset_01.md" },
+    { "jkk_dataset_02 - localization" = "dataset/jkk_dataset_02.md" },
+    { "jkk_dataset_03 - HLB4AV" = "dataset/jkk_dataset_03.md" },
+    { "jkk_dataset_04 - mapping" = "dataset/jkk_dataset_04.md" },
   ] },
   { "Publications" = [
     "papers/index.md",
@@ -57,7 +58,7 @@ nav = [
     { "Laboratory" = "assets/lab.md" },
     { "Capabilities" = "assets/capabilities.md" },
   ] },
-  { "F1/10 @SMT25" = "smt25/index.md" },
+  # { "F1/10 @SMT25" = "smt25/index.md" },
   # The wiki is a separate Zensical site (see wiki/zensical.toml).
   { "Wiki" = "https://jkk-research.github.io/wiki/" },
 ]

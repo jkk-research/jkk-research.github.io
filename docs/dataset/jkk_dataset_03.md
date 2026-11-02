@@ -1,3 +1,5 @@
+# `jkk_dataset_03` - naturalistic driving data (HLB4AV)
+
 This dataset contains the raw data of naturalistic driving, utilized for Human-Like Behavior studies of Automated Vehicles (HLB4AV).
 
 ![](../img/ldm1.svg)
@@ -40,7 +42,8 @@ Explanation to notations:<br/>
 
 The dataset uses the following coordinate system of the vehicle:
 
-![](../img/coordinates_dataset_03.jpg)
+![](https://sze-info.github.io/ajr/transzformaciok/vehicle_axes01.svg)
+![](https://sze-info.github.io/ajr/transzformaciok/vehicle_axes02.svg)
 
 Even though the data is recorded considering only two dimensional movement, the Z axis is displayed to give the right explanation of the yaw rate signal. Always, positive direction of a rotational quantity means CCW direction.
 

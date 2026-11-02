@@ -792,6 +792,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        URL
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#download" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1585,6 +1596,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        URL
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#download" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1662,17 +1684,29 @@
 <li><code>pointcloud_map_2026_07_20.pcd</code> dense point cloud map generated from Ouster and Luminar LiDAR scans collected with a ROS 2 / MCAP-based mobile mapping platform.</li>
 <li><code>lanelet2_map_2026_07_20.osm</code> semantic HD map in Lanelet2 format, aligned to the georeferenced point cloud, covering the Győr Campus test site.</li>
 </ul>
-<p>The point cloud was georeferenced and aligned, related map data and tools are available at: <a href="https://github.com/jkk-research/lanelet2_maps">github.com/jkk-research/lanelet2_maps</a></p>
-<p>JKK dataset landing page: <a href="https://jkk-research.github.io/latest/dataset">jkk-research.github.io/latest/dataset</a></p>
+<h3 id="url">URL<a class="headerlink" href="#url" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The point cloud was georeferenced and aligned, related map data and tools are available at: <a href="https://github.com/jkk-research/lanelet2_maps">github.com/jkk-research/lanelet2_maps</a></li>
+<li>JKK dataset landing page: <a href="https://jkk-research.github.io/latest/dataset">jkk-research.github.io/latest/dataset</a></li>
+<li>Zenodo DOI: <a href="https://doi.org/10.5281/zenodo.21871328">doi.org/10.5281/zenodo.21871328</a> <a href="https://doi.org/10.5281/zenodo.21871328"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.21871328.svg" /></a></li>
+<li>Zenodo record: <a href="https://zenodo.org/record/21871328">zenodo.org/record/21871328</a> </li>
+</ul>
 <h3 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h3>
 <p>Either from Zenodo: <a href="https://doi.org/10.5281/zenodo.21871328">https://doi.org/10.5281/zenodo.21871328</a> or directly with <code>wget</code>:</p>
-<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O<span class="w"> </span>pointcloud_map.pcd<span class="w"> </span><span class="s2">"https://zenodo.org/api/records/21871328/files/pointcloud_map_2026_07_20.pcd"</span>
+<p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O<span class="w"> </span>pointcloud_map_2026_07_20.pcd<span class="w">  </span><span class="s2">"https://zenodo.org/records/21871328/files/pointcloud_map_2026_07_20.pcd?download=1"</span>
 </code></pre></div>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O<span class="w"> </span>lanelet2_map_2026_07_20.osm<span class="w">  </span><span class="s2">"https://zenodo.org/records/21871328/files/lanelet2_map_2026_07_20.osm?download=1"</span>
+</code></pre></div></p>
+<p>Alternatively, use Autoware naming conventions (<code>pointcloud_map.pcd</code> and <code>lanelet2_map.osm</code> in a separate directory):</p>
+<p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O<span class="w"> </span>pointcloud_map.pcd<span class="w">  </span><span class="s2">"https://zenodo.org/records/21871328/files/pointcloud_map_2026_07_20.pcd?download=1"</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>-O<span class="w"> </span>lanelet2_map.osm<span class="w">  </span><span class="s2">"https://zenodo.org/records/21871328/files/lanelet2_map_2026_07_20.osm?download=1"</span>
+</code></pre></div></p>
 <h2 id="keywords">Keywords<a class="headerlink" href="#keywords" title="Permanent link">&para;</a></h2>
 <p>LiDAR, point cloud, georeferencing, Lanelet2, mobile mapping, autonomous driving, HD map</p>
 <h2 id="citation">Citation<a class="headerlink" href="#citation" title="Permanent link">&para;</a></h2>
 <p>If you use this dataset in your research, please cite the following:
-<div class="highlight"><pre><span></span><code><span class="nc">@dataset</span><span class="p">{</span><span class="nl">horvath_2026_21871328</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><code><span class="nc">@dataset</span><span class="p">{</span><span class="nl">jkk_dataset_04</span><span class="p">,</span>
 <span class="w">  </span><span class="na">author</span><span class="w">       </span><span class="p">=</span><span class="w"> </span><span class="s">{Horváth, Ernő and</span>
 <span class="s">                  Krecht, Rudolf and</span>
 <span class="s">                  Markó, Norbert and</span>
@@ -1681,8 +1715,12 @@
 <span class="s">                  Kőrös, Péter and</span>
 <span class="s">                  Mesics, Mátyás and</span>
 <span class="s">                  Enisz, Krisztian and</span>
-<span class="s">                  Zahuczki, Zoltán}</span><span class="p">,</span>
-<span class="w">  </span><span class="na">title</span><span class="w">        </span><span class="p">=</span><span class="w"> </span><span class="s">{jkk_dataset_04 mapping | HD map - Győr, Campus 2026-07-20}</span><span class="p">,</span>
+<span class="s">                  Zahuczki, Zoltán and</span>
+<span class="s">                  Unger, Miklós and</span>
+<span class="s">                  Józsa, Dávid}</span><span class="p">,</span>
+<span class="w">  </span><span class="na">title</span><span class="w">        </span><span class="p">=</span><span class="w"> </span><span class="s">{jkk\_dataset\_04 mapping | HD map - Győr, Campus</span>
+<span class="s">                   2026-07-20</span>
+<span class="s">                  }</span><span class="p">,</span>
 <span class="w">  </span><span class="na">month</span><span class="w">        </span><span class="p">=</span><span class="w"> </span><span class="nv">jul</span><span class="p">,</span>
 <span class="w">  </span><span class="na">year</span><span class="w">         </span><span class="p">=</span><span class="w"> </span><span class="m">2026</span><span class="p">,</span>
 <span class="w">  </span><span class="na">publisher</span><span class="w">    </span><span class="p">=</span><span class="w"> </span><span class="s">{Zenodo}</span><span class="p">,</span>

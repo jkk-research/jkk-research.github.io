@@ -36,5 +36,9 @@ IP addresses:
 |`192.168.11.112`|Duro|
 |`192.168.11.124`|Fixposition|
 
+<figure markdown="span">
+  ![Nissan Leaf Sensor Set](img/nissan_leaf_sensor_set.png){ width="100%" }
+  <figcaption>Nissan Leaf Sensor Set - Dimensions and Layout</figcaption>
+</figure>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9eFqsei1J70?si=Y9rnsmGnoiofxhiz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -37,7 +37,7 @@ IP addresses:
 |`192.168.11.124`|Fixposition|
 
 <figure markdown="span">
-  ![Nissan Leaf Sensor Set](https://jkk-research.github.io/latest/assets/images_common/nissan_leaf_sensor_set.png){ width="100%" }
+  ![Image](https://jkk-research.github.io/latest/assets/images_common/nissan_leaf_sensor_set.png){ width="100%" }
   <figcaption>Nissan Leaf Sensor Set - Dimensions and Layout</figcaption>
 </figure>
 
